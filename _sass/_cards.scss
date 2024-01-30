@@ -1,0 +1,177 @@
+// Project cards
+
+.project-card {
+  width: 100%;
+  padding-bottom: 62px;
+  transition: .4s;
+  padding: 20px 16px;
+  border-radius: 16px;
+
+  h2 {
+    max-width: 90%;
+    font-size: clamp(16px, 16vw, 328px);
+    word-spacing: -1.8vw;
+    letter-spacing: -0.1vw;
+    line-height: 10.6vw;
+    font-size: 27vw;
+    line-height: 17.8vw;
+  }
+  h2 a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .client {
+    margin-bottom: 8px;
+    transition: transform .2s;
+  }
+
+  ul.project-tags {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li {
+      border: 2px solid white;
+      color: white;
+      width: fit-content;
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-size: 16px;
+      transition: .4s;
+    }
+    li:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+.project-card:hover {
+  -ms-transform: scale(0.98); /* IE 9 */
+  -webkit-transform: scale(0.98); /* Safari 3-8 */
+  transform: scale(0.98);
+
+  h2 a {
+    color: white;
+  }
+}
+
+
+// Clients
+
+// Sainsburys
+  .project-card.sainsburys {
+    background: #FF6B18;
+    .client {
+      background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
+  }
+  .project-card.sainsburys:hover {
+    background: #fe4141;
+    .client {
+      background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
+      background-size: contain;
+    }
+  }
+
+// Trainline
+  .project-card.trainline {
+    background: #48D5B5;
+
+    .client {
+      background: url('../images/logos/tl-black-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
+  }
+  .project-card.trainline:hover {
+    background: blue;
+    .client {
+      background: url('../images/logos/tl-white-logo.svg') no-repeat;
+      background-size: contain;
+    }
+  }
+
+// JustEat
+.project-card.justeat {
+  background: #FD8024;
+  .client {
+    background: url('../images/logos/justeat-black-logo.svg') no-repeat;
+    height: 32px;
+    background-size: contain;
+  }
+}
+.project-card.justeat:hover {
+  background: pink;
+}
+
+// Cookpad
+  .project-card.cookpad {
+    background: #FF9933;
+    .client {
+      background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
+      height: 40px;
+      background-size: contain;
+    }
+  }
+  .project-card.cookpad:hover {
+    background: red;
+    .client {
+      background: url('../images/logos/cookpad-white-logo.svg') no-repeat;
+      height: 40px;
+      background-size: contain;
+    }
+  }
+
+// BackBeat
+  .project-card.backbeat {
+    background: coral;
+    .client {
+      background: url('../images/logos/backbeat-black.svg') no-repeat;
+      height: 52px;
+      background-size: contain;
+    }
+  }
+  .project-card.backbeat:hover {
+    background: blue;
+    .client {
+      background: url('../images/logos/backbeat-white.svg') no-repeat;
+      height: 52px;
+      background-size: contain;
+    }
+  }
+
+
+
+// RecliningWorm
+  .project-card.recliningworm {
+    background: purple;
+    .client {
+      background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
+      height: 52px;
+      background-size: contain;
+    }
+  }
+  .project-card.recliningworm:hover {
+    background: purple;
+    .client {
+      background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
+      height: 52px;
+      background-size: contain;
+    }
+  }
+
+// OATBook
+  .project-card.oatbook {
+    background: #FDB813;
+  }
+  .project-card.oatbook:hover {
+    background: black;
+  }

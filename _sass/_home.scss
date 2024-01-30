@@ -1,0 +1,114 @@
+// Homepage
+
+nav.navbar {
+  position: fixed;
+  z-index: 500;
+  padding-top: 18px;
+
+  .container-fluid {
+    justify-content: right;
+  }
+}
+nav {
+  padding: 24px;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  a.navbar-brand {
+    position: fixed;
+    left: 20px;
+    display: none;
+  }
+
+  .navbar-toggler-icon.list {
+    background: url('../images/icons/list.svg') center center no-repeat;
+  }
+  .navbar-toggler-icon.theme-light {
+    background: url('../images/icons/theme-light.svg') center center no-repeat;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-left: 16px;
+    a {
+      color: var(--black);
+    }
+  }
+}
+
+a.navbar-brand {
+  background: url('../images/warface-logo.svg') center center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  z-index: 500;
+  top: 20px;
+  width: 72px;
+  height: 46px;
+  transition: .6s;
+}
+a.navbar-brand:hover {
+   opacity: 0.6;
+}
+.navbar-collapse {
+  background: var(--black);
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  .container {
+    padding: 40px;
+    padding-top: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .container a.navbar-brand {
+    background-size: contain;
+    margin: auto;
+    width: 92px;
+    height: 66px;
+  }
+  .design-studio {
+    background: url('../images/graphics/text-DesignStudio.svg') center center no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    padding-top: 62%;
+  }
+  p.lead {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    max-width: 380px;
+    margin: auto;
+  }
+}
+
+.block {
+  padding: 8vh 5vw 11vh 5vw;
+}
+
+.sheet {
+  background: var(--grey-50);
+  position: relative;
+  z-index: 100;
+  margin-top: 84vh;
+  margin-bottom: 94vw;
+  color: grey;
+
+  .project-card-group {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 12px;
+  }
+}

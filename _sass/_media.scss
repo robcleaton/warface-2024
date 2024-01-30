@@ -1,0 +1,257 @@
+// Mobile
+@media only screen and (max-width: 600px) {
+  .sheet .project-card-group {
+
+    .project-card {
+      h2 {
+        font-size: 17vw;
+        line-height: 11.8vw;
+      }
+      ul.project-tags li {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .project-card.sainsburys .client {
+    height: 20px;
+  }
+  .project-card.trainline .client {
+    height: 22px;
+  }
+
+  .block {
+    padding: 5vw;
+
+    h3 {
+      font-size: 19vw;
+      line-height: 12.9vw;
+    }
+    p.lead {
+      max-width: 100%;
+    }
+  }
+
+}
+
+// Tablet
+@media only screen and (min-width: 601px) {
+
+  .sheet {
+  }
+  .project-card {
+    border-radius: 25px;
+    padding: 40px;
+  }
+  .card-body h5 {
+    font-size: 56px;
+    line-height: 39px;
+    letter-spacing: 0px;
+    word-spacing: -5.9px;
+  }
+
+  .navbar {
+    padding: 0.5rem 0px;
+  }
+
+  .sheet .project-card-group {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 6rem;
+    letter-spacing: -0.1rem;
+    line-height: 3.9rem;
+    margin-bottom: 0px;
+    /* transition-duration: 6s; */
+  }
+  .image-block {
+    margin: 40px 0px;
+  }
+  .color-block {
+    padding: 0px 10px;
+
+      p.lead {
+        font-size: 1rem;
+      }
+      p.tags {
+        font-size: 0.9rem;
+      }
+  }
+  .cs.carousel {
+    .iOS-device {
+      width: 90%;
+      top: 74vw;
+    }
+  }
+  .sheet .cs {
+    .color-block {
+      padding: 20px;
+      padding-top: 4vh;
+    }
+    .center-align {
+      top: 0;
+      transform: translate(0, 0%);
+    }
+  }
+  #carouselRecliningWorm {
+    #slide-1.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-mobile.png');
+    }
+    #slide-2.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-mobile.png');
+    }
+  }
+
+
+
+  .blog-posts {
+    padding: 40px 6vw;
+  }
+  // footer {
+  //   .clients {
+  //     padding: 2vh 6vw;
+  //   }
+  // }
+}
+
+// Desktop
+@media only screen and (min-width: 991px) {
+  html {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>🪖</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  a {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='80' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>☺️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .sheet {
+    margin-top: 96vh;
+  }
+  .navbar-nav .scrollmenu {
+    display: none;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+
+  .color-block .center-align {
+    top: 50%;
+  }
+  .cs.carousel {
+    .center-align {
+      margin-top: -20px;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+  }
+
+
+  #slide-1.color-block, #slide-2.color-block {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #carouselTrainline {
+    #slide-1.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-trainline-desktop.png');
+    }
+    #slide-2.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-trainline-desktop.png');
+    }
+  }
+  #carouselRecliningWorm {
+    #slide-1.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-desktop.png');
+    }
+    #slide-2.color-block {
+      background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-desktop.png');
+    }
+  }
+
+
+  // Case study hero area
+  .case-study .sticky .color-block {
+    height: 88vh;
+  }
+
+
+  // Project slides
+  .color-block {
+    background-image: url('../images/projects/hero-sticky-template-mobile.png');
+    background-position: center;
+    padding: 0px 40px;
+
+      p.lead {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+      p.tags {
+        font-size: 0.9rem;
+      }
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  a.navbar-brand {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>☺️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .contact a {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>🤙</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .carousel-control-prev {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>👈</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .carousel-control-next {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>👉</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  }
+  .blog-posts {
+    padding: 8vh;
+
+    .card {
+      width: 24%;
+      float: left;
+      margin-right: 0.5%;
+    }
+  }
+
+  // Case study hero area
+  .case-study {
+    .color-block.case-study {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+    .color-block.case-study.sainsburys {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+    .color-block.case-study.trainline {
+      background-image: url('../images/projects/trainline/rob-daniel.png');
+    }
+    .color-block.case-study.justeat {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+    .color-block.case-study.cookpad {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+    .color-block.case-study.recliningworm {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+    .color-block.case-study.oatbook {
+      background-image: url('../images/projects/banners/hero-sticky-template-desktop.png');
+    }
+  }
+}
+// Desktop Large
+@media only screen and (min-width: 1350px) {
+
+  .cs.carousel .carousel-item {
+    height: 100vh;
+  }
+  footer {
+    margin-bottom: 0px;
+
+    .clients {
+      padding: 8vh 54px;
+    }
+  }
+}

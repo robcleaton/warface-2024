@@ -1,0 +1,271 @@
+// Case study carousels appear on the homepage
+.cs.carousel {
+  .carousel-item {
+    height: 90vh;
+  }
+  .color-block {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  h2 {
+    font-family: 'Cinderblock';
+    font-size: clamp(144px, 18vw, 328px);
+    letter-spacing: 0.2vw;
+    line-height: clamp(106px, 13.1vw, 236px);
+    margin-top: -2.2vw;
+    margin-bottom: 24px;
+  }
+  .center-align {
+    width: clamp(560px, 80vw, 1300px);
+  }
+
+  .roundel {
+    .etsy {
+      background: url('../images/graphics/etsy-shop.svg')center center no-repeat;
+      background-size: 34%;
+      height: clamp(200px, 20vw, 1000px);
+      width: clamp(200px, 20vw, 1000px);
+      z-index: 10;
+      rotate: 12deg;
+      right: 4%;
+      top: 14%;
+      position: absolute;
+    }
+    .lovie {
+      background: url('../images/graphics/LovieAward.png')center center no-repeat;
+      background-size: 40%;
+      height: clamp(200px, 20vw, 1000px);
+      width: clamp(200px, 20vw, 1000px);
+      z-index: 10;
+      rotate: 12deg;
+      right: 4%;
+      top: 14%;
+      position: absolute;
+    }
+    .award-roundel {
+      background: url('../images/graphics/award-roundel.svg')center center no-repeat;
+      background-size: 100%;
+      height: clamp(200px, 20vw, 1000px);
+      width: clamp(200px, 20vw, 1000px);
+      position: absolute;
+      right: 4%;
+      top: 14%;
+      transform: translate(0px, -140px);
+      -webkit-animation: spin 50s infinite linear;
+      z-index: 2;
+    }
+    @-webkit-keyframes spin {
+      0%  {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(360deg);}
+    }
+  }
+
+  .iOS-device {
+    background: url('../images/projects/banners/case-study-cards/ios-device.png')left top no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 4.1vw;
+    height: 94%;
+    width: 29vw;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+}
+
+
+// Sainsburys
+#carouselSainsburys {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .color-block {
+    background: #FF6B18;
+    background-position: center;
+    background-size: cover;
+  }
+  .cs-logo.sainsburys {
+    background: url('../images/logos/sainsburys-white-logo.svg')left top no-repeat;
+    width: 160px;
+    height: 38px;
+    background-size: 100%;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-sainsburys-desktop-1.png');
+    a:hover {
+      color: #541a1a;
+    }
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-sainsburys-desktop-2.png');
+    background-color: #8223FA;
+    a:hover {
+      color: pink;
+    }
+  }
+  #slide-3.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-sainsburys-desktop-3.png');
+    background-color: #D42114;
+    a:hover {
+      color: #aaffc6;
+    }
+  }
+  #slide-4.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-sainsburys-desktop-4.png');
+    background-color: black;
+    a:hover {
+      color: #ff9898;
+    }
+  }
+}
+
+// Trainline
+#carouselTrainline {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #21304d;
+    text-decoration: none;
+  }
+  .cs-logo.trainline {
+    background: url('../images/logos/tl-logo.svg')center center no-repeat;
+    width: 160px;
+    height: 50px;
+    background-size: 100%;
+  }
+  .color-block {
+    background: #48D5B5;
+    background-position: center;
+    background-size: cover;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-trainline-desktop.png');
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-trainline-desktop.png');
+  }
+}
+
+// JustEat
+#carouselJustEat {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #412302;
+    text-decoration: none;
+  }
+  .color-block {
+    background: #FD8024;
+    background-position: center;
+    background-size: cover;
+  }
+  .cs-logo.justeat {
+    background: url('../images/logos/justeat-white-logo.svg')left top no-repeat;
+    width: 166px;
+    height: 45px;
+    background-size: 100%;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-justeat-desktop.png');
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-justeat-desktop.png');
+  }
+}
+
+// Cookpad
+#carouselCookpad {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #330000;
+    text-decoration: none;
+  }
+  .cs-logo.cookpad {
+    background: url('../images/logos/cookpad-logo.svg')left center no-repeat;
+    width: 144px;
+    height: 40px;
+    background-size: 100%;
+  }
+  .color-block {
+    background: #FF9933;
+    background-position: center;
+    background-size: cover;
+  }
+  h2 {
+    max-width: 80vw;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-cookpad-desktop.png');
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-cookpad-desktop-2.png');
+  }
+}
+
+//OATBook
+#carouselOATBook {
+  a {
+    color: #fff;
+  }
+  h2 {
+    color: #a4610b;
+  }
+  a:hover {
+    color: #541a1a;
+    text-decoration: none;
+  }
+  .color-block {
+    background: #FDB813;
+    background-position: center;
+    background-size: cover;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-oatbook-desktop.png');
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-oatbook-desktop.png');
+  }
+}
+
+// Science Museum
+#carouselScienceMuseum {
+  .color-block {
+    background: #F36D00;
+  }
+}
+
+// RecliningWorm
+#carouselRecliningWorm {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #541a1a;
+    text-decoration: none;
+  }
+  .cs-logo.recliningworm {
+    background: url('../images/logos/recliningworm-white-logo.svg')left top no-repeat;
+    width: 130px;
+    height: 54px;
+    background-size: 100%;
+  }
+  .color-block {
+    background: purple;
+    background-position: center;
+    background-size: cover;
+  }
+  #slide-1.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-desktop.png');
+  }
+  #slide-2.color-block {
+    background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-desktop.png');
+  }
+}

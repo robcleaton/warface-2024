@@ -1,0 +1,259 @@
+// Clients
+
+// Home client carousel
+  .brand-wheel {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+
+    --animationspeed: 45s;
+    --animationdelay: calc(var(--animationspeed) / 2);
+  }
+
+  .brand-wheel::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .brand-wheel::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+    right: 0;
+  }
+
+  .brand-slide {
+    flex-shrink: 0;
+    position: absolute;
+    animation-name: slidelogo;
+    animation-duration: var(--animationspeed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .brand-slide.delay {
+    transform: translateX(100%);
+    animation-name: slidelogo2;
+  }
+
+  .brand-wheel:hover .brand-slide {
+    animation-play-state: paused;
+  }
+
+  .logo-div {
+    display: inline-flex;
+    align-self: center;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    margin: 0 40px;
+    width: 220px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .logo-div.sainsburys {
+    background: url('../images/logos/sainsburys-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 144px;
+  }
+  .logo-div.trainline {
+    background: url('../images/logos/tl-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 28px;
+    width: 130px;
+  }
+  .logo-div.GOVUK {
+    background: url('../images/logos/govuk-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 172px;
+  }
+  .logo-div.justeat {
+    background: url('../images/logos/justeat-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 172px;
+  }
+  .logo-div.science-museum {
+    background: url('../images/logos/sciencemuseum-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 164px;
+  }
+  .logo-div.carwow {
+    background: url('../images/logos/carwow-black-logo.svg')no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 182px;
+  }
+  .logo-div.FIFA {
+    background: url('../images/logos/fifa-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 44px;
+    width: 144px;
+  }
+  .logo-div.cookpad {
+    background: url('../images/logos/cookpad-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 160px;
+  }
+  .logo-div.homebase {
+    background: url('../images/logos/homebase-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 194px;
+  }
+  .logo-div.nectar {
+    background: url('../images/logos/nectar-black-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 76px;
+    width: 80px;
+  }
+
+  @keyframes slidelogo {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes slidelogo2 {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+// Client graphics
+.clients img {
+  width: 100%;
+}
+.clients .col-4 {
+  height: 80px;
+  width: 160px;
+  white-space: nowrap;
+  text-align: center; margin: 1em 0;
+}
+.clients .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.clients img {
+    vertical-align: middle;
+    max-height: 40px;
+    max-width: 160px;
+}
+.clients {
+  .helper {
+    opacity: 0.8;
+    max-width: 200px;
+  }
+  .carwow {
+    background: url('../images/logos/carwow-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 100%;
+  }
+  .cookpad {
+    background: url('../images/logos/cookpad-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 80%;
+  }
+  .elsevier {
+    background: url('../images/logos/elsevier-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 30%;
+  }
+  .experian {
+    background: url('../images/logos/experian-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 70%;
+  }
+  .fifa {
+    background: url('../images/logos/fifa-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 60%;
+  }
+  .figma {
+    background: url('../images/logos/figma-wordmark-black.svg')center center no-repeat;
+    width: 100%;
+    background-size: 65%;
+  }
+  .gov {
+    background: url('../images/logos/govuk-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 90%;
+  }
+  .homebase {
+    background: url('../images/logos/homebase-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 80%;
+  }
+  .isobar {
+    background: url('../images/logos/isobar-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 68%;
+  }
+  .justeat {
+    background: url('../images/logos/justeat-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 80%;
+  }
+  .lloyds {
+    background: url('../images/logos/lloyds-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 50%;
+  }
+  .nectar {
+    background: url('../images/logos/nectar-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 44%;
+  }
+  .publicis {
+    background: url('../images/logos/PS-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 64%;
+  }
+  .rbs {
+    background: url('../images/logos/rbs-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 70%;
+  }
+  .sainsburys {
+    background: url('../images/logos/sainsburys-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 78%;
+  }
+  .science-museum {
+    background: url('../images/logos/sciencemuseum-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 60%;
+  }
+  .tesco {
+    background: url('../images/logos/tesco-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 60%;
+  }
+  .trainline {
+    background: url('../images/logos/tl-black-logo.svg')center center no-repeat;
+    width: 100%;
+    background-size: 68%;
+  }
+}

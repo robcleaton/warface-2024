@@ -1,0 +1,63 @@
+.scroll-container {
+  overflow: auto;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.card {
+  transition: .4s;
+  min-width: 28vw;
+  border: none;
+  border-radius: 16px;
+}
+.card a {
+  color: black;
+}
+.card:hover {
+  -ms-transform: scale(0.98); /* IE 9 */
+  -webkit-transform: scale(0.98); /* Safari 3-8 */
+  transform: scale(0.98);
+  background: #ff9283;
+}
+.card .card-img-top {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.card:hover .card-title {
+  color: blue;
+}
+.card ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.small-tags li {
+  font-size: 14px;
+  margin-right: 8px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 2px 12px;
+  transition: .3s;
+}
+.small-tags li:hover {
+  background: black;
+  color: white;
+  border: none;
+}
+
+h3 {
+  font-family: 'Beni';
+  font-size: 56px;
+  line-height: 39px;
+  letter-spacing: 0px;
+}

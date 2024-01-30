@@ -1,0 +1,52 @@
+// Quote, recomendation carousel
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-image: none;
+}
+
+.block {
+  background: black;
+  width: 100%;
+
+  .carousel-inner {
+    padding: 4vh 0vw;
+  }
+  h3:before {
+    content: "\201C";
+  }
+  h3:after {
+    content: "\201D";
+  }
+  h3 {
+    color: #ffc436;
+    font-size: 13vw;
+    font-family: 'Beni';
+    line-height: 8.9vw;
+    letter-spacing: -0.0vw;
+    word-spacing: -0.8vw;
+  }
+  p.lead {
+    color: #a396a3;
+    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  a {
+    color: white;
+  }
+  .carousel {
+    height: 100%;
+  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  border: none;
+  width: 45%;
+  background: none;
+}
+.carousel-control-next:hover {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>👉</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+.carousel-control-prev:hover {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>👈</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}

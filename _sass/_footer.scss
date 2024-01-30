@@ -1,0 +1,83 @@
+// footer
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  z-index: 50;
+  opacity: 0;
+  margin-bottom: 24px;
+
+  h2 {
+    font-family: 'Beni';
+    font-size: clamp(16px, 22vw, 328px);
+    line-height: clamp(16px, 14.4vw, 232px);
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    a {
+      font-weight: normal;
+      color: #ff4915;
+    }
+    li a {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .clients {
+    padding: 12px 24px 68px 24px;
+  }
+  .contact {
+    padding-top: 8vh;
+    max-width: 76vw;
+  }
+  a {
+    color: #ff4915;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .list-inline {
+    text-align: center;
+  }
+}
+
+
+.blog-posts {
+  padding: 2vh;
+
+  h2 {
+    color: #000000;
+  }
+  .card {
+    width: 100%;
+    float: left;
+    margin-bottom: 12px;
+    border: 0px;
+    border: 2px;
+
+    img {
+      height: 240px;
+      object-fit: cover;
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+    a {
+      color: #ffc436;
+      font-size: 40px;
+      line-height: 28px;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Site structure
+@import
+        "resets",
+        "typography",
+        "colour",
+        "clients",
+        "home",
+        "quote-carousel",
+        "case-study",
+        "cards",
+        "scroll",
+        "case-study-carousels",
+        "blog-cards",
+        "footer",
+        "dark-mode",
+        "media"
+;
+
+a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+::selection {
+  background-color: rgba(185,70,70,0.2);
+  color: #0d4d33;
+}
+
+.navbar {
+  padding: 0px;
+}

@@ -1,0 +1,145 @@
+
+@font-face {
+  font-family: 'Beni';
+  src: url(../fonts/Beni/BeniBlack.ttf);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--black);
+}
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: 'Beni', 'Cinderblock';
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Beni';
+  text-transform: uppercase;
+  color: #181617;
+}
+.display-1 {
+  font-size: 30vw;
+  line-height: 19.8vw;
+  letter-spacing: -0.2vw;
+}
+.display-2 {
+  font-size: 28vw;
+  line-height: 26vw;
+}
+.display-3 {
+  font-size: 25vw;
+  line-height: 21vw;
+}
+.display-4 {
+  font-size: 24vw;
+  line-height: 19vw;
+}
+.display-5 {
+  font-size: 23vw;
+  line-height: 18vw;
+}
+.display-6 {
+  font-size: 22vw;
+  line-height: 16vw;
+}
+
+h1 {
+  font-size: 20vw;
+  line-height: 13.1vw;
+}
+h2 {
+  font-size: 18vw;
+  line-height: 12vw;
+  letter-spacing: -0.12vw;
+  word-spacing: -2.1vw;
+}
+h3 {
+  font-size: 16vw;
+  line-height: 10.6vw;
+  letter-spacing: -0.12vw;
+  word-spacing: -2.1vw;
+}
+h4 {
+  font-size: 15vw;
+  line-height: 9.8vw;
+  letter-spacing: -0.12vw;
+  word-spacing: -2.1vw;
+}
+h5 {
+  font-size: 13vw;
+  line-height: 8.6vw;
+  letter-spacing: -0.12vw;
+  word-spacing: -2.1vw;
+}
+h6 {
+  font-size: 5vw;
+  line-height: 3.6vw;
+  }
+p.lead {
+  font-size: 24px;
+  max-width: 60%;
+}
+b {
+  color: #505050;
+}
+
+// Glyphs
+.blockquote {
+  padding: 20px;
+  p {
+    font-family: Beni;
+    font-size: 64px;
+    line-height: 48px;
+  }
+  p:before {
+    content:"\201C";
+  }
+  p:after {
+    content:"\201D";
+  }
+  .blockquote-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .blockquote-footer::before {
+    content:"\002A";
+    font-family: Beni;
+    font-size: 84px;
+    line-height: 58px;
+    height: 34px;
+  }
+}
+
+.apostrophe:before {
+  content:"\2019";
+}
+
+// h3, .card-body h5  {
+//   font-family: 'SerifGothic';
+//   font-size: 3.2rem;
+//   text-transform: uppercase;
+// }
+
+
+// body, p {
+//   font-family: 'Open Sans', sans-serif;
+//   font-weight: 300;
+//   font-size: 1rem;
+// }
+// p.lead {
+//   font-size: 1.8rem;
+//   line-height: 2.4rem;
+// }
+// .color-block {
+//   h2 {
+//     text-align: left !important;
+//   }
+//   h4 {
+//     margin-top: 0px;
+//   }
+// }
+// blockquote {
+//   color: black;
+//   font-style: 1.8rem;
+//   padding: 20px;
+// }
