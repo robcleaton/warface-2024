@@ -23,13 +23,6 @@ nav {
     display: none;
   }
 
-  .navbar-toggler-icon.list {
-    background: url('../images/icons/list-light.svg') center center no-repeat;
-  }
-  .navbar-toggler-icon.theme-light {
-    background: url('../images/icons/theme-light.svg') center center no-repeat;
-  }
-
   ul li {
     display: inline-block;
     margin-left: 16px;
@@ -40,7 +33,6 @@ nav {
 }
 
 a.navbar-brand {
-  background: url('../images/warface-logo.svg') center center no-repeat;
   background-size: cover;
   display: inline-block;
   z-index: 500;

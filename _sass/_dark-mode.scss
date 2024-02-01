@@ -6,100 +6,18 @@
     --white: #000000;
   }
 
+  @import "theme-dark";
 
   body {
     --text-color: yellow;
     --bkg-color: #121212;
   }
+
+
   body.light-theme {
+    @import "theme-light";
+
     --text-color: blue;
     --bkg-color: #fff;
-
-    .navbar-toggler-icon.list {
-      background: url('../images/icons/list-light.svg') center center no-repeat !important;
-    }
-    .navbar-toggler-icon.theme-light {
-      background: url('../images/icons/theme-light.svg') center center no-repeat !important;
-    }
-  }
-
-
-
-  // Navbar
-  a.navbar-brand {
-    background: url('../images/warface-logo-white.svg') center center no-repeat;
-  }
-
-
-
-  .intro .design-studio {
-    background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
-    background-size: contain;
-    position: relative;
-    width: 100%;
-    padding-top: 62%;
-  }
-
-
-  // Clients
-  .logo-div.sainsburys {
-    background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 48px;
-    width: 144px;
-  }
-  .logo-div.trainline {
-    background: url('../images/logos/tl-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 28px;
-    width: 130px;
-  }
-  .logo-div.GOVUK {
-    background: url('../images/logos/govuk-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 48px;
-    width: 172px;
-  }
-  .logo-div.justeat {
-    background: url('../images/logos/justeat-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 48px;
-    width: 172px;
-  }
-  .logo-div.science-museum {
-    background: url('../images/logos/sciencemuseum-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 62px;
-    width: 164px;
-  }
-  .logo-div.carwow {
-    background: url('../images/logos/carwow-white-logo.svg')no-repeat;
-    background-size: contain;
-    height: 24px;
-    width: 182px;
-  }
-  .logo-div.FIFA {
-    background: url('../images/logos/fifa-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 44px;
-    width: 144px;
-  }
-  .logo-div.cookpad {
-    background: url('../images/logos/cookpad-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 62px;
-    width: 160px;
-  }
-  .logo-div.homebase {
-    background: url('../images/logos/homebase-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 62px;
-    width: 194px;
-  }
-  .logo-div.nectar {
-    background: url('../images/logos/nectar-white-logo.svg')center no-repeat;
-    background-size: contain;
-    height: 76px;
-    width: 80px;
   }
 }

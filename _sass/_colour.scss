@@ -14,27 +14,26 @@
   --black: #000000;
 }
 
-html, body {
-  background: var(--bkg-color);
-}
 
-body {
-  --text-color: blue;
-  --bkg-color: #fff;
-}
+@import "theme-light";
 
-h1, h2, h3, h4, h5, p {
-  color: var(--text-color);
-}
+  html, body {
+    background: var(--bkg-color);
+  }
+
+  body {
+    --text-color: blue;
+    --bkg-color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, p {
+    color: var(--text-color);
+  }
+
 
 body.dark-theme {
+  @import "theme-dark";
+
   --text-color: yellow;
   --bkg-color: #121212;
-
-  .navbar-toggler-icon.list {
-    background: url('../images/icons/list-dark.svg') center center no-repeat !important;
-  }
-  .navbar-toggler-icon.theme-light {
-    background: url('../images/icons/theme-dark.svg') center center no-repeat !important;
-  }
 }
