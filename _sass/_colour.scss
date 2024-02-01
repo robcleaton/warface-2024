@@ -1,6 +1,40 @@
 :root {
   --warface: #ffc436;
-  --black: #000000;
+
   --white: #ffffff;
   --grey-50: #212121;
+  --grey-100: #F3F4F6;
+  --grey-200: #D0D0D0;
+  --grey-300: #B2B2B2;
+  --grey-400: #949494;
+  --grey-500: #777777;
+  --grey-600: #595959;
+  --grey-700: #3C3C3C;
+  --grey-800: #1E1E1E;
+  --black: #000000;
+}
+
+html, body {
+  background: var(--bkg-color);
+}
+
+body {
+  --text-color: blue;
+  --bkg-color: #fff;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: var(--text-color);
+}
+
+body.dark-theme {
+  --text-color: yellow;
+  --bkg-color: #121212;
+
+  .navbar-toggler-icon.list {
+    background: url('../images/icons/list-dark.svg') center center no-repeat !important;
+  }
+  .navbar-toggler-icon.theme-light {
+    background: url('../images/icons/theme-dark.svg') center center no-repeat !important;
+  }
 }

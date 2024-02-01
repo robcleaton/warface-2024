@@ -2,25 +2,35 @@
   :root {
     --warface: #203520;
     --black: yellow;
-    --white: #000000;
     --grey-50: #212121;
+    --white: #000000;
   }
 
 
-  h1, .blockquote p {
-    color: var(--black);
+  body {
+    --text-color: yellow;
+    --bkg-color: #121212;
   }
+  body.light-theme {
+    --text-color: blue;
+    --bkg-color: #fff;
+
+    .navbar-toggler-icon.list {
+      background: url('../images/icons/list-light.svg') center center no-repeat !important;
+    }
+    .navbar-toggler-icon.theme-light {
+      background: url('../images/icons/theme-light.svg') center center no-repeat !important;
+    }
+  }
+
+
 
   // Navbar
   a.navbar-brand {
     background: url('../images/warface-logo-white.svg') center center no-repeat;
   }
-  .navbar-toggler-icon.list {
-    background: url('../images/icons/list.svg') center center no-repeat;
-  }
-  .navbar-toggler-icon.theme-light {
-    background: url('../images/icons/theme-light.svg') center center no-repeat;
-  }
+
+
 
   .intro .design-studio {
     background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
