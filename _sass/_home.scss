@@ -93,7 +93,7 @@ a.navbar-brand:hover {
   background: var(--grey-50);
   position: relative;
   z-index: 100;
-  margin-top: 84vh;
+  margin-top: clamp(600px, 84vh, 780px);
   margin-bottom: 94vw;
   color: grey;
 

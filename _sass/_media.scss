@@ -37,8 +37,6 @@
 // Tablet
 @media only screen and (min-width: 601px) {
 
-  .sheet {
-  }
   .project-card {
     border-radius: 25px;
     padding: 40px;
@@ -52,6 +50,10 @@
 
   .navbar {
     padding: 0.5rem 0px;
+  }
+  .sheet {
+    margin-top: 96vh;
+    margin-bottom: clamp(558px, 56vw, 772px);
   }
 
   .sheet .project-card-group {
@@ -124,8 +126,17 @@
   a {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='80' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>☺️</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
-  .sheet {
-    margin-top: 96vh;
+
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+  }
+  nav.navbar {
+    .container-fluid {
+      flex-direction: row-reverse;
+    }
+    .navbar-collapse {
+      background: none;
+    }
   }
   .navbar-nav .scrollmenu {
     display: none;
