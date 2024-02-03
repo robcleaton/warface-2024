@@ -9,7 +9,7 @@
   @import "theme-dark";
 
   body {
-    --text-color: yellow;
+    --text-color: white;
     --bkg-color: #121212;
   }
 
@@ -17,7 +17,7 @@
   body.light-theme {
     @import "theme-light";
 
-    --text-color: blue;
+    --text-color: black;
     --bkg-color: #fff;
   }
 }

@@ -1,0 +1,32 @@
+---
+title: Dark mode
+layout: default
+permalink: /js-colour
+---
+
+<style>
+  footer {
+    opacity: 100%;
+  }
+
+  :root{
+    --myVariable : yellow; 
+  }
+
+  div {
+    background-color: var(--myVariable);
+  }
+</style>
+
+<div class="container">
+  <a href="/">Home</a>
+  <h1>{{ page.title }}</h1>
+  <h2>Hey there! This is just a title</h2>
+  <h3>Hey there! This is just a title</h3>
+  <h4>Hey there! This is just a title</h4>
+  <h5>Hey there! This is just a title</h5>
+  <p>I am just a boring text, existing here solely for the purpose of this demo</p>
+  <p>And I am just another one like the one above me, because two is better than having only one</p>
+</div>
+
+{% include footer.html %}
