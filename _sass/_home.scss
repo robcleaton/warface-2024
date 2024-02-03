@@ -17,12 +17,6 @@ nav {
   top: 0;
   width: 100%;
 
-  a.navbar-brand {
-    position: fixed;
-    left: 20px;
-    display: none;
-  }
-
   ul li {
     display: inline-block;
     margin-left: 16px;
@@ -32,18 +26,6 @@ nav {
   }
 }
 
-a.navbar-brand {
-  background-size: cover;
-  display: inline-block;
-  z-index: 500;
-  top: 20px;
-  width: 72px;
-  height: 46px;
-  transition: .6s;
-}
-a.navbar-brand:hover {
-   opacity: 0.6;
-}
 .navbar-collapse {
   background: var(--black);
 }
@@ -56,7 +38,7 @@ a.navbar-brand:hover {
 
   .container {
     padding: 40px;
-    padding-top: 124px;
+    padding-top: clamp(124px, 20vw, 140px);
     display: flex;
     flex-direction: column;
     gap: 8px;
