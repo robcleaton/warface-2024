@@ -1,23 +1,14 @@
 @media (prefers-color-scheme: dark) {
-  :root {
-    --warface: #203520;
-    --black: yellow;
-    --grey-50: #212121;
-    --white: #000000;
-  }
 
   @import "theme-dark";
-
-  body {
-    --text-color: white;
-    --bkg-color: #121212;
-  }
+    // body {
+    //   --bkg-color: black;
+    // }
 
 
   body.light-theme {
     @import "theme-light";
 
-    --text-color: black;
-    --bkg-color: #fff;
+    // --bkg-color: #fff;
   }
 }

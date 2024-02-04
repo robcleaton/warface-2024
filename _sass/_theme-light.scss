@@ -1,4 +1,12 @@
 
+
+h1, h2, h3, h4, h5, p {
+  color: var(--black);
+}
+.sheet {
+  background: var(--grey-800);
+}
+
 .navbar-toggler-icon.theme-light {
   background: url('../images/icons/theme-black.svg') center center no-repeat !important;
 }

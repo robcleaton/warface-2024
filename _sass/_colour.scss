@@ -14,26 +14,15 @@
   --black: #000000;
 }
 
-
 @import "theme-light";
-
-  html, body {
-    background: var(--bkg-color);
-  }
-
-  body {
-    --text-color: blue;
-    --bkg-color: #fff;
-  }
-
-  h1, h2, h3, h4, h5, p {
-    color: var(--text-color);
-  }
-
+  // body {
+  //   --bkg-color: #fff;
+  // }
 
 body.dark-theme {
   @import "theme-dark";
-
-  --text-color: yellow;
-  --bkg-color: #121212;
+    // body {
+    //   //--text-color: white;
+    //   --bkg-color: black;
+    // }
 }
