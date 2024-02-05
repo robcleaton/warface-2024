@@ -20,14 +20,19 @@ nav {
   ul li {
     display: inline-block;
     margin-left: 16px;
-    a {
-      color: var(--black);
-    }
+  }
+  a {
+    color: var(--white);
   }
 }
 
 .navbar-collapse {
   background: var(--black);
+  padding-top: 12px;
+
+  .social {
+    padding: 4vh 16px 1vh 16px;
+  }
 }
 
 .intro {

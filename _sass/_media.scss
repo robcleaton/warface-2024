@@ -128,14 +128,25 @@
   }
 
   .navbar-expand-lg .navbar-collapse {
-    flex-direction: row-reverse;
   }
   nav.navbar {
+    padding: 20px;
+
     .container-fluid {
-      flex-direction: row-reverse;
     }
     .navbar-collapse {
       background: none;
+      padding-top: 0px;
+
+      .social {
+        padding: 0px;
+        display: flex;
+        justify-content: right;
+        width: 100%;
+      }
+    }
+    h2 a {
+      display: none;
     }
   }
   .navbar-nav .scrollmenu {
