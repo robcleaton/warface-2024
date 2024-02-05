@@ -64,6 +64,16 @@
     gap: 16px;
   }
 
+  .blockquote {
+    padding: 5vw;
+    p {
+      font-size: 100px;
+      line-height: 72px;
+      width: clamp(100px, 92%, 1130px);
+      word-spacing: -4px;
+    }
+  }
+
   h1 {
     font-size: 6rem;
     letter-spacing: -0.1rem;
@@ -126,6 +136,9 @@
   html {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='79' height='95' viewport='0 0 100 100' style='fill:black;font-size:47px;'><text y='50%'>🪖</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
+  body {
+    font-size: 1.2rem;
+  }
   a {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='80' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>☺️</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
@@ -154,14 +167,23 @@
   .navbar-nav .scrollmenu {
     display: none;
   }
-  body {
-    font-size: 1.2rem;
+  .blockquote {
+    padding: 5vw;
+    p {
+      font-size: 144px;
+      line-height: 100px;
+      width: clamp(100px, 92%, 1130px);
+      word-spacing: -9px;
+    }
   }
+
   .intro {
     margin-top: -580px;
 
     p.lead {
-      max-width: 80%;
+      font-size: 18px;
+      max-width: 100%;
+      padding-top: 16px;
     }
   }
 

@@ -24,15 +24,44 @@ title: Home
     }
   </style>
 
-    {% include intro.html %}
+  {% include intro.html %}
 
   <div class="container-fluid sheet">
-    <blockquote class="blockquote">
-      <p>Rob<span class="apostrophe"></span>s been instrumental to redefining the design systems approach at Sainsbury<span class="apostrophe"></span>s.</p>
-      <figcaption class="blockquote-footer">
-        <a href="#" target="_blank">Beverley Sullivan</a><cite title="Source Title">Head of Design Systems and DesignOps at Sainsbury's</cite>
-      </figcaption>
-    </blockquote>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>Rob<span class="apostrophe"></span>s been instrumental to redefining the design systems approach at Sainsbury<span class="apostrophe"></span>s.</p>
+            <figcaption class="blockquote-footer">
+              <a href="#" target="_blank">Beverley Sullivan</a><cite title="Source Title">Head of Design Systems and DesignOps at Sainsbury's</cite>
+            </figcaption>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>Rob<span class="apostrophe"></span>s been instrumental to redefining the design systems approach at Sainsbury<span class="apostrophe"></span>s.</p>
+            <figcaption class="blockquote-footer">
+              <a href="#" target="_blank">Beverley Sullivan</a><cite title="Source Title">Head of Design Systems and DesignOps at Sainsbury's</cite>
+            </figcaption>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
 
     {% include project-cards.html %}
 
