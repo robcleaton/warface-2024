@@ -51,8 +51,11 @@
   .navbar {
     padding: 0.5rem 0px;
   }
+  .intro {
+    margin-top: -484px;
+  }
   .sheet {
-    margin-top: 96vh;
+    margin-top: clamp(558px, 120vw, 97vh);
     margin-bottom: clamp(558px, 56vw, 772px);
   }
 
@@ -132,21 +135,20 @@
   nav.navbar {
     padding: 20px;
 
-    .container-fluid {
-    }
     .navbar-collapse {
       background: none;
       padding-top: 0px;
 
       .social {
         padding: 0px;
+        padding-right: 72px;
         display: flex;
         justify-content: right;
         width: 100%;
       }
     }
-    h2 a {
-      display: none;
+    .theme {
+      position: absolute;
     }
   }
   .navbar-nav .scrollmenu {
@@ -154,6 +156,13 @@
   }
   body {
     font-size: 1.2rem;
+  }
+  .intro {
+    margin-top: -580px;
+
+    p.lead {
+      max-width: 80%;
+    }
   }
 
   .color-block .center-align {
