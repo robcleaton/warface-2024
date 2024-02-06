@@ -28,11 +28,18 @@ nav {
   a {
     color: var(--white);
   }
+  .btn {
+    z-index: 100;
+  }
 }
 
 .navbar-collapse {
-  background: var(--black);
-  padding-top: 12px;
+  background: var(--grey-800);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 24px;
+  padding-top: 80px;
 
   .social {
     padding: 4vh 16px 1vh 16px;

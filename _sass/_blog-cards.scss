@@ -18,10 +18,37 @@
   min-width: 28vw;
   border: none;
   border-radius: 16px;
+
+  .card-title a {
+    color: var(--black);
+    font-family: 'IBM Plex Mono';
+    text-transform: none;
+    font-size: 28px;
+    word-spacing: -8px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+  .small-tags li {
+    font-size: 14px;
+    margin: 24px 8px 0px 0px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding: 2px 12px;
+    transition: .3s;
+  }
+  .small-tags li:hover {
+    background: black;
+    color: white;
+    border: none;
+  }
 }
-.card a {
-  color: black;
-}
+
 .card:hover {
   -ms-transform: scale(0.98); /* IE 9 */
   -webkit-transform: scale(0.98); /* Safari 3-8 */
@@ -31,33 +58,4 @@
 .card .card-img-top {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-}
-.card:hover .card-title {
-  color: blue;
-}
-.card ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-}
-.small-tags li {
-  font-size: 14px;
-  margin-right: 8px;
-  border: 1px solid grey;
-  border-radius: 12px;
-  padding: 2px 12px;
-  transition: .3s;
-}
-.small-tags li:hover {
-  background: black;
-  color: white;
-  border: none;
-}
-
-h3 {
-  font-family: 'Beni';
-  font-size: 56px;
-  line-height: 39px;
-  letter-spacing: 0px;
 }
