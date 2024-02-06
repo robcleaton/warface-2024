@@ -159,6 +159,10 @@
         justify-content: right;
         width: 100%;
       }
+
+      a:hover {
+        color: var(--black);
+      }
     }
     .theme {
       position: absolute;
