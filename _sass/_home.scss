@@ -4,10 +4,6 @@ nav.navbar {
   position: fixed;
   z-index: 500;
   padding-top: 18px;
-
-  .container-fluid {
-    justify-content: right;
-  }
 }
 nav {
   padding: 24px;
@@ -17,6 +13,11 @@ nav {
   top: 0;
   width: 100%;
 
+  .container-fluid {
+    flex-direction: row-reverse;
+    height: 48px;
+  }
+
   ul li {
     display: inline-block;
     margin-left: 16px;
@@ -25,11 +26,26 @@ nav {
       font-size: 20px;
     }
   }
+  .logo-sm {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 48px;
+    width: 48px;
+  }
   a {
     color: var(--white);
   }
-  .btn {
-    z-index: 100;
+  .primary-nav {
+    margin-right: 20px;
+  }
+  .primary-nav .btn {
+    height: 44px;
+    width: 44px;
+    padding: 0px;
+  }
+  .primary-nav .btn:hover {
+    background-color: pink;
   }
 }
 
@@ -43,6 +59,10 @@ nav {
 
   .social {
     padding: 4vh 16px 1vh 16px;
+
+    ul {
+      margin-top: 20px;
+    }
   }
   a:hover {
     color: pink;
@@ -85,6 +105,7 @@ nav {
     margin: auto;
   }
 }
+
 
 .block {
   padding: 8vh 5vw 11vh 5vw;

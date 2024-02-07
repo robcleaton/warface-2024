@@ -146,26 +146,22 @@
   .navbar-expand-lg .navbar-collapse {
   }
   nav.navbar {
-    padding: 20px;
 
     .navbar-collapse {
       background: none;
-      padding-top: 0px;
+      padding: 0px;
+      position: relative;
 
+      ul {
+        margin: 0px;
+        margin-left: 68px;
+      }
       .social {
         padding: 0px;
-        padding-right: 72px;
         display: flex;
         justify-content: right;
         width: 100%;
       }
-
-      a:hover {
-        color: var(--black);
-      }
-    }
-    .theme {
-      position: absolute;
     }
   }
   .navbar-nav .scrollmenu {
