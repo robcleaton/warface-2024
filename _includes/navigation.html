@@ -3,9 +3,9 @@
   <div class="container-fluid">
     <!-- pixi inserts itself by default -->
     <!-- <button id="toggleBlur" data-amount="0">Toggle Orb Blur</button>-->
-    <a class="navbar-brand logo-sm zindex-100" href="/" aria-label="Warface"></a>
+    <a class="navbar-brand logo-sm" href="/" aria-label="Warface"></a>
 
-    <ul class="primary-nav zindex-100 mb-0">
+    <ul class="primary-nav mb-0">
       <li>
         <button class="btn btn-toggle theme" type="button" aria-label="Theme">
             <span class="navbar-toggler-icon theme-light"></span>
@@ -18,7 +18,24 @@
       </li>
     </ul>
 
+
+
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <a class="navbar-brand logo-sm d-lg-none" href="/" aria-label="Warface"></a>
+
+      <ul class="primary-nav mb-0 mr-0">
+        <!-- <li>
+          <button class="btn btn-toggle theme" type="button" aria-label="Theme">
+              <span class="navbar-toggler-icon theme-light"></span>
+          </button>
+        </li> -->
+        <li class="d-lg-none">
+          <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon list"></span>
+          </button>
+        </li>
+      </ul>
+
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="values">Values</a>

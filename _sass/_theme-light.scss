@@ -11,6 +11,21 @@ h1, h2, h3, h4, h5, p, .blockquote-footer {
     color: var(--white);
   }
   .collapsing, .show {
+    a.navbar-brand {
+      background: url('../images/warface-logo-white.svg') center center no-repeat;
+    }
+    .primary-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    // .navbar-toggler-icon.theme-light {
+    //   background: url('../images/icons/theme-white.svg') center center no-repeat !important;
+    // }
+    .navbar-toggler-icon.list {
+      background: url('../images/icons/list-white.svg') center center no-repeat !important;
+    }
+
     a {
       color: var(--white);
     }
