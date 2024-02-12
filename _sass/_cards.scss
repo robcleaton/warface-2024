@@ -14,12 +14,16 @@
     word-spacing: -1.8vw;
     letter-spacing: -0.1vw;
     line-height: 10.6vw;
-    font-size: 27vw;
-    line-height: 17.8vw;
+    font-size: 18vw;
+    line-height: 12.2vw;
   }
   h2 a {
     color: black;
     text-decoration: none;
+  }
+  p {
+    font-family: var(--mono);
+    font-size: 20px;
   }
 
   .client {

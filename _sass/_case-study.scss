@@ -1,6 +1,14 @@
 
 .case-study .sheet {
   background: #cecece;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+    a {
+      font-weight: bold;
+    }
 }
 
 // Sainsburys
@@ -10,6 +18,11 @@
     }
   }
 // Trainline
-  .trainline a {
-    color: pink;
+  .trainline {
+    footer a {
+      color: #043c2f;
+    }
+    a {
+      color: #48D5B5;
+    }
   }

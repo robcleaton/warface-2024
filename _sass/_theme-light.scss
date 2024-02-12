@@ -1,5 +1,5 @@
 
-h1, h2, h3, h4, h5, p, .blockquote-footer {
+body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--black);
 }
 
@@ -32,6 +32,9 @@ h1, h2, h3, h4, h5, p, .blockquote-footer {
     a:hover {
       color: var(--warface);
     }
+  }
+  .primary-nav .btn:hover {
+    background-color: green;
   }
 }
 

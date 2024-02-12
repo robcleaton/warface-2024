@@ -82,7 +82,7 @@
     /* transition-duration: 6s; */
   }
   .image-block {
-    margin: 40px 0px;
+    margin: 40px auto;
   }
   .color-block {
     padding: 0px 10px;
@@ -143,8 +143,23 @@
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='80' viewport='0 0 100 100' style='fill:black;font-size:44px;'><text y='50%'>☺️</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
 
-  .navbar-expand-lg .navbar-collapse {
+  h2 {
+    font-size: 17vh;
+    line-height: 11.6vh;
   }
+  h3 {
+    font-size: 16vh;
+    line-height: 10.6vh;
+  }
+  h4 {
+    font-size: 15vh;
+    line-height: 10.4vh;
+  }
+  h5 {
+    font-size: 12vh;
+    line-height: 9.8vh;
+  }
+
   nav.navbar {
 
     .navbar-collapse {
@@ -200,6 +215,9 @@
     }
   }
 
+  .case-study .sheet {
+    padding-bottom: 80px;
+  }
 
   #slide-1.color-block, #slide-2.color-block {
     background-repeat: no-repeat;

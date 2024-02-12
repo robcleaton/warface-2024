@@ -1,3 +1,7 @@
+:root {
+  --brand: 'Bleni';
+  --mono: "IBM Plex Mono";
+}
 
 @font-face {
   font-family: 'Beni';
@@ -48,28 +52,20 @@ h1 {
   line-height: 13.1vw;
 }
 h2 {
-  font-size: 18vw;
-  line-height: 12vw;
-  letter-spacing: -0.12vw;
-  word-spacing: -2.1vw;
+  font-size: 9vh;
+  line-height: 6.4vh;
 }
 h3 {
   font-size: 16vw;
-  line-height: 10.6vw;
-  letter-spacing: -0.12vw;
-  word-spacing: -2.1vw;
+  line-height: 8.8vw;
 }
 h4 {
   font-size: 15vw;
-  line-height: 9.8vw;
-  letter-spacing: -0.12vw;
-  word-spacing: -2.1vw;
+  line-height: 11vw;
 }
 h5 {
   font-size: 13vw;
   line-height: 8.6vw;
-  letter-spacing: -0.12vw;
-  word-spacing: -2.1vw;
 }
 h6 {
   font-size: 5vw;
@@ -77,7 +73,6 @@ h6 {
   }
 p.lead {
   font-size: 24px;
-  max-width: 60%;
 }
 b {
   color: #505050;

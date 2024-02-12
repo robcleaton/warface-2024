@@ -38,14 +38,12 @@ nav {
   }
   .primary-nav {
     margin-right: 20px;
+    padding-left: 0px;
   }
   .primary-nav .btn {
     height: 44px;
     width: 44px;
     padding: 0px;
-  }
-  .primary-nav .btn:hover {
-    background-color: pink;
   }
 }
 
@@ -54,15 +52,21 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 24px;
-  padding-top: 80px;
+  padding: 20px;
 
+  ul.navbar-nav {
+    margin-top: 80px;
+  }
   .social {
     padding: 4vh 16px 1vh 16px;
 
     ul {
       margin-top: 20px;
     }
+  }
+  h2 a {
+    font-size: 18vw;
+    line-height: 12.6vw;
   }
 }
 
@@ -96,7 +100,7 @@ nav {
   p.lead {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'IBM Plex Mono';
+    font-family: var(--mono);
     text-align: center;
     max-width: 380px;
     margin: auto;
