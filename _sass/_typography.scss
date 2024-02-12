@@ -1,5 +1,5 @@
 :root {
-  --brand: 'Bleni';
+  --brand: "Beni";
   --mono: "IBM Plex Mono";
 }
 
@@ -95,13 +95,17 @@ b {
   .blockquote-footer {
     display: flex;
     flex-direction: column;
+    font-family: var(--mono);
   }
   .blockquote-footer::before {
     content:"\002A";
-    font-family: Beni;
+    font-family: var(--brand);
     font-size: 84px;
     line-height: 58px;
     height: 34px;
+  }
+  a {
+    color: var(--warface);
   }
 }
 

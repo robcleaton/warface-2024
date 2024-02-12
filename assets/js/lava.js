@@ -121,11 +121,3 @@ for (let i = 0; i < orbs.length; i++) {
   }
 }
 });
-
-// remove the blur so you can see how the orbs move
-document.getElementById("toggleBlur").addEventListener("click", (e) => {
-let currentAmount = blurFilter2.blur;
-let newAmount = parseInt(e.target.dataset.amount);
-blurFilter2.blur = newAmount;
-e.target.dataset.amount = currentAmount;
-});
