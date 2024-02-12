@@ -1,10 +1,25 @@
 
-h1, h2, h3, h4, h5, p, .blockquote-footer, nav a {
+h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--white);
 }
-a:hover {
-  color: var(--black);
+
+.navbar {
+  a {
+    color: var(--white);
+  }
+  a:hover {
+    color: var(--black);
+  }
+  .collapsing, .show {
+    a {
+      color: var(--white);
+    }
+    a:hover {
+      color: var(--warface);
+    }
+  }
 }
+
 .sheet {
   background: var(--grey-800);
 }

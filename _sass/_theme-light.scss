@@ -1,12 +1,23 @@
 
-h1, h2, h3, h4, h5, p, .blockquote-footer, nav a {
+h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--black);
 }
-a:hover {
-  color: var(--white);
-}
-.sheet {
-  background: var(--grey-800);
+
+.navbar {
+  a {
+    color: var(--black);
+  }
+  a:hover {
+    color: var(--white);
+  }
+  .collapsing, .show {
+    a {
+      color: var(--white);
+    }
+    a:hover {
+      color: var(--warface);
+    }
+  }
 }
 
 .navbar-toggler-icon.theme-light {
@@ -15,6 +26,13 @@ a:hover {
 .navbar-toggler-icon.list {
   background: url('../images/icons/list-black.svg') center center no-repeat !important;
 }
+
+
+
+.sheet {
+  background: var(--grey-800);
+}
+
 
 // Navbar
 a.navbar-brand {
