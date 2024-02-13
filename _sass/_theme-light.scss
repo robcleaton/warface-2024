@@ -3,6 +3,7 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--black);
 }
 
+// Navigation
 .navbar {
   a {
     color: var(--black);
@@ -19,9 +20,6 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
       top: 20px;
       right: 20px;
     }
-    // .navbar-toggler-icon.theme-light {
-    //   background: url('../images/icons/theme-white.svg') center center no-repeat !important;
-    // }
     .navbar-toggler-icon.list {
       background: url('../images/icons/list-white.svg') center center no-repeat !important;
     }
@@ -46,7 +44,7 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
 }
 
 
-
+// Page content
 .sheet {
   background: var(--grey-800);
 }
@@ -125,4 +123,10 @@ a.navbar-brand {
   background-size: contain;
   height: 76px;
   width: 80px;
+}
+.logo-div.lloydsBank {
+  background: url('../images/logos/lloyds-black-logo.svg')center no-repeat;
+  background-size: contain;
+  height: 76px;
+  width: 140px;
 }

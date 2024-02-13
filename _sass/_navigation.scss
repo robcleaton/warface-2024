@@ -1,0 +1,90 @@
+// Navigation
+
+nav.navbar {
+  position: fixed;
+  z-index: 500;
+  padding-top: 18px;
+}
+nav {
+  padding: 24px;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .container-fluid {
+    flex-direction: row-reverse;
+    height: 48px;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-left: 16px;
+
+    .nav-link {
+      font-size: 20px;
+    }
+  }
+  .logo-sm {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 48px;
+    width: 48px;
+  }
+  a {
+    color: var(--white);
+  }
+  .primary-nav {
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  .primary-nav .btn {
+    height: 44px;
+    width: 44px;
+    padding: 0px;
+  }
+}
+
+body.dark-theme.subpage .navbar a:hover {
+  color: var(--warface);
+}
+body.dark-theme .navbar .social a:hover {
+  color: var(--black);
+}
+body.dark-theme .navbar .social {
+  li {
+    margin: 0px;
+    margin-right: 4px;
+    }
+  a {
+      padding: 9px 12px;
+      border-radius: 4px;
+    }
+}
+
+
+// Mobile nav
+.navbar-collapse {
+  background: var(--grey-800);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+
+  ul.navbar-nav {
+    margin-top: 80px;
+  }
+  .social {
+    padding: 4vh 16px 1vh 16px;
+
+    ul {
+      margin-top: 20px;
+    }
+  }
+  h2 a {
+    font-size: 18vw;
+    line-height: 12.6vw;
+  }
+}

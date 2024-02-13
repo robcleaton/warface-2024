@@ -110,6 +110,13 @@
       transform: translate(0, 0%);
     }
   }
+  .sheet.sub {
+    padding-bottom: 12vh;
+    .row {
+      padding: 5vw;
+    }
+  }
+
   #carouselRecliningWorm {
     #slide-1.color-block {
       background-image: url('../images/projects/banners/case-study-cards/cs-card-recliningworm-mobile.png');
@@ -159,6 +166,12 @@
     font-size: 12vh;
     line-height: 9.8vh;
   }
+  .sheet.sub {
+    p.lead {
+      max-width: 72%;
+    }
+  }
+
 
   nav.navbar {
 

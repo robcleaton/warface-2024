@@ -3,6 +3,7 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--white);
 }
 
+// Navigation
 .navbar {
   a {
     color: var(--white);
@@ -18,11 +19,17 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
       color: var(--warface);
     }
   }
-  .primary-nav .btn:hover {
-    background-color: pink;
+  .primary-nav .btn:hover, .social a:hover {
+    background: var(--warface);
   }
 }
 
+.subpage .navbar a:hover {
+  color: var(--warface);
+}
+
+
+// Page content
 .sheet {
   background: var(--grey-800);
 }
@@ -107,4 +114,10 @@ a.navbar-brand {
   background-size: contain;
   height: 76px;
   width: 80px;
+}
+.logo-div.lloydsBank {
+  background: url('../images/logos/lloyds-white-logo.svg')center no-repeat;
+  background-size: contain;
+  height: 76px;
+  width: 140px;
 }

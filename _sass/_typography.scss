@@ -72,7 +72,9 @@ h6 {
   line-height: 3.6vw;
   }
 p.lead {
-  font-size: 24px;
+  font-family: var(--mono);
+  font-size: 20px;
+  margin-top: 20px;
 }
 b {
   color: #505050;
