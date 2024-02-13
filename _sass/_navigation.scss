@@ -47,9 +47,7 @@ nav {
   }
 }
 
-body.dark-theme.subpage .navbar a:hover {
-  color: var(--warface);
-}
+
 body.dark-theme .navbar .social a:hover {
   color: var(--black);
 }
@@ -86,5 +84,9 @@ body.dark-theme .navbar .social {
   h2 a {
     font-size: 18vw;
     line-height: 12.6vw;
+    padding: 0px !important;
+  }
+  h2 a:hover {
+    background: none !important;
   }
 }
