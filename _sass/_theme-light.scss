@@ -11,6 +11,9 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   a:hover {
     color: var(--white);
   }
+  .social .list-inline-item a:hover {
+    color: var(--white);
+  }
   .collapsing, .show {
     a.navbar-brand {
       background: url('../images/warface-logo-white.svg') center center no-repeat;
@@ -19,6 +22,9 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
       position: absolute;
       top: 20px;
       right: 20px;
+    }
+    .primary-nav .btn:hover, .social a:hover {
+      color: var(--white);
     }
     .navbar-toggler-icon.list {
       background: url('../images/icons/list-white.svg') center center no-repeat !important;
@@ -30,9 +36,6 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
     a:hover {
       color: var(--warface);
     }
-  }
-  .primary-nav .btn:hover {
-    background-color: green;
   }
 }
 

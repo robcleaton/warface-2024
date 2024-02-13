@@ -1,6 +1,13 @@
 {% include header.html %}
 
-<body class="subpage">
-  {% include navigation.html %}
+<style>
+  .navbar-nav {
+    a:hover {
+      color: var(--warface) !important;
+    }
+  }
+  </style>
 
-  {{ content }}
+{% include navigation.html %}
+
+{{ content }}
