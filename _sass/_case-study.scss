@@ -1,24 +1,23 @@
 
+.subpage {
+  .intro {
+    top: 0;
+    margin-top: 0px;
+  }
+}
 .case-study .sheet {
   background: #cecece;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 84vh;
 
-    a {
-      font-weight: bold;
-    }
+  .logo-div {
+    margin: 0px;
+  }
 }
 
-.sheet.sub {
-  margin-top: 0px;
-  padding-top: 11vh;
-  padding-bottom: 4vh;
-
-    p.lead {
-    }
-}
 
 // Sainsburys
   .sainsburys {

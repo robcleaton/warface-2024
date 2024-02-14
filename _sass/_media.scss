@@ -328,6 +328,10 @@
 // Desktop Large
 @media only screen and (min-width: 1350px) {
 
+  .case-study .sheet {
+    padding-top: 80px;
+  }
+
   .cs.carousel .carousel-item {
     height: 100vh;
   }

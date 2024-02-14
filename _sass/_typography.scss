@@ -12,14 +12,13 @@ body {
   color: var(--black);
 }
 .display-1, .display-2, .display-3, .display-4 {
-  font-family: 'Beni', 'Cinderblock';
+  font-family: var(--brand);
   text-transform: uppercase;
   font-weight: inherit;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Beni';
+  font-family: var(--brand);
   text-transform: uppercase;
-  color: #181617;
 }
 .display-1 {
   font-size: 30vw;
@@ -69,8 +68,10 @@ h5 {
   line-height: 8.6vw;
 }
 h6 {
-  font-size: 5vw;
-  line-height: 3.6vw;
+  font-family: var(--mono);
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: none;
   }
 p.lead {
   font-family: var(--mono);

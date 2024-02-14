@@ -39,6 +39,17 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   }
 }
 
+// Project cards
+.project-card {
+  h2 a {
+    color: var(--black);
+  }
+  h2 a:hover {
+    color: var(--white);
+  }
+}
+
+
 .navbar-toggler-icon.theme-light {
   background: url('../images/icons/theme-black.svg') center center no-repeat !important;
 }

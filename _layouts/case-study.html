@@ -9,16 +9,17 @@
   }
 </style>
 
-<div class="{{ page.excerpt }} case-study">
-  <div class="intro">
-    <div class="container-fluid pt-4">
-      <h2>{{ page.title }}</h2>
-    </div>
+<div class="intro">
+  <div class="container-fluid pt-4">
+    <!-- <h2>{{ page.title }}</h2> -->
   </div>
+</div>
+
+<div class="{{ page.excerpt }} case-study">
 
   <div class="container-fluid sheet">
     {{ content }}
   </div>
 
-  {% include footer.html %}
 </div>
+{% include footer.html %}

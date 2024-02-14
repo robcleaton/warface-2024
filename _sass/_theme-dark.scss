@@ -32,6 +32,16 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
 }
 
 
+// Project cards
+.project-card {
+  h2 a {
+    color: var(--white);
+  }
+  h2 a:hover {
+    color: var(--black);
+  }
+}
+
 
 // Page content
 .sheet {
