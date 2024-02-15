@@ -75,7 +75,10 @@ h6 {
   }
 p.lead {
   font-family: var(--mono);
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  word-spacing: -2.8px;
   margin-top: 20px;
 }
 b {

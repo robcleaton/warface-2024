@@ -37,6 +37,12 @@
 // Tablet
 @media only screen and (min-width: 601px) {
 
+  p.lead {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
   .project-card {
     border-radius: 25px;
     padding: 40px;
@@ -60,6 +66,7 @@
   }
   .case-study .sheet {
     margin-top: 86vh;
+    gap: 40px;
   }
 
   .sheet .project-card-group {
