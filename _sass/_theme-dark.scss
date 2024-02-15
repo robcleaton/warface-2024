@@ -31,6 +31,13 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   }
 }
 
+a.navbar-brand {
+  background: url('../images/warface-logo-white.svg') center center no-repeat;
+}
+a.navbar-brand:hover {
+  background: url('../images/warface-logo-black.svg') center center no-repeat;
+}
+
 
 // Project cards
 .project-card {
@@ -39,6 +46,23 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   }
   h2 a:hover {
     color: var(--black);
+  }
+}
+
+// Blog cards
+.blog-carousel {
+  .card {
+    .card-title a {
+      color: var(--black);
+    }
+    .small-tags li {
+      color: var(--grey-400);
+      border: 1px solid var(--grey-200);
+    }
+    .small-tags li:hover {
+      background: var(--black);
+      color: var(--white);
+    }
   }
 }
 
@@ -62,10 +86,7 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   background: url('../images/icons/list-white.svg') center center no-repeat !important;
 }
 
-// Navbar
-a.navbar-brand {
-  background: url('../images/warface-logo-white.svg') center center no-repeat;
-}
+
 
 .intro .design-studio {
   background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;

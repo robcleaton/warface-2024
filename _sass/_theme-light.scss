@@ -55,6 +55,15 @@ a:hover {
   }
 }
 
+// Blog cards
+.blog-carousel {
+  .card {
+    .card-title a {
+      color: var(--black);
+    }
+  }
+}
+
 
 .navbar-toggler-icon.theme-light {
   background: url('../images/icons/theme-black.svg') center center no-repeat !important;

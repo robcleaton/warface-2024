@@ -33,6 +33,9 @@ nav {
     height: 48px;
     width: 48px;
   }
+  .logo-sm:hover {
+    background-color: red;
+  }
   a {
     color: var(--white);
   }
@@ -46,7 +49,6 @@ nav {
     padding: 0px;
   }
 }
-
 
 .navbar .social a:hover {
   color: var(--black);

@@ -13,39 +13,42 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-.card {
-  transition: .4s;
-  min-width: 28vw;
-  border: none;
-  border-radius: 16px;
-
-  .card-title a {
-    color: var(--black);
-    font-family: var(--mono);
-    font-weight: 400;
-    text-transform: none;
-    font-size: 28px;
-    word-spacing: -8px;
-    line-height: 18px;
-  }
-  ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-  }
-  .small-tags li {
-    font-size: 14px;
-    margin: 24px 8px 0px 0px;
-    border: 1px solid grey;
-    border-radius: 12px;
-    padding: 2px 12px;
-    transition: .3s;
-  }
-  .small-tags li:hover {
-    background: black;
-    color: white;
+.blog-carousel {
+  .card {
+    transition: .4s;
+    min-width: 28vw;
     border: none;
+    border-radius: 16px;
+
+    .card-title a {
+      font-family: var(--mono);
+      font-weight: 400;
+      text-transform: none;
+      font-size: 28px;
+      word-spacing: -8px;
+      line-height: 18px;
+    }
+    img {
+      height: 240px;
+      object-fit: cover;
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+    }
+    .small-tags li {
+      font-size: 14px;
+      margin: 24px 8px 0px 0px;
+      border-radius: 12px;
+      padding: 2px 12px;
+      transition: .3s;
+    }
+    .small-tags li:hover {
+      color: white;
+      border: none;
+    }
   }
 }
 

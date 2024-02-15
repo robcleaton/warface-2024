@@ -48,34 +48,3 @@ footer {
     text-align: center;
   }
 }
-
-
-.blog-posts {
-  padding: 2vh;
-
-  h2 {
-    color: #000000;
-  }
-  .card {
-    width: 100%;
-    float: left;
-    margin-bottom: 12px;
-    border: 0px;
-    border: 2px;
-
-    img {
-      height: 240px;
-      object-fit: cover;
-      border-top-right-radius: 2px;
-      border-top-left-radius: 2px;
-    }
-    a {
-      color: #ffc436;
-      font-size: 40px;
-      line-height: 28px;
-    }
-    a:hover {
-      color: black;
-    }
-  }
-}
