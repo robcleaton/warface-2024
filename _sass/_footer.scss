@@ -10,7 +10,7 @@ footer {
   margin-bottom: 24px;
 
   h2 {
-    font-family: 'Beni';
+    font-family: var(--brand);
     font-size: clamp(16px, 22vw, 328px);
     line-height: clamp(16px, 14.4vw, 232px);
     margin-bottom: 16px;
@@ -18,7 +18,6 @@ footer {
 
     a {
       font-weight: normal;
-      color: #ff4915;
     }
     li a {
       font-size: 1rem;
@@ -39,7 +38,7 @@ footer {
     color: #ff4915;
   }
   a:hover {
-    color: white;
+    color: var(--white);
     text-decoration: none;
   }
   p {

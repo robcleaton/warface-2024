@@ -2,6 +2,12 @@
 body, h1, h2, h3, h4, h5, p, .blockquote-footer {
   color: var(--black);
 }
+a {
+  color: var(--warface);
+}
+a:hover {
+  color: var(--warface);
+}
 
 // Navigation
 .navbar {
@@ -61,6 +67,13 @@ body, h1, h2, h3, h4, h5, p, .blockquote-footer {
 // Page content
 .sheet {
   background: var(--grey-800);
+
+  a {
+    color: var(--warface);
+  }
+  a:hover {
+    color: var(--warface);
+  }
 }
 
 

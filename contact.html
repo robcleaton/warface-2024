@@ -1,11 +1,38 @@
 ---
 title: Contact
-layout: content
+layout: contact
 permalink: /contact
 ---
 
-<div class="container">
-  <h1>{{ page.title }}</h1>
-</div>
+<!-- <style>
+  html, body {
+    background: var(--grey-800);
+  }
+  canvas {
+    display: none;
+  }
+</style> -->
+<style>
+  .sheet {
+    background-color: transparent !important;
+  }
+</style>
 
-{% include footer.html %}
+<div class="container-fluid sheet sub" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0px;">
+  <div class="row">
+    <div class="col-xl-10">
+      <h4>Interested to start a project together?</h4>
+      <h2><a href="mailto:rob@warface.co.uk">Get in touch</a></h2>
+
+      <div class="social">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.instagram.com/warface/" target="_blank"><i class="fa fa-instagram"></i> <span class="d-none">Instagram</span></a></li>
+          <li class="list-inline-item"><a href="https://medium.com/@warface" target="_blank"><i class="fab fa-medium-m"></i> <span class="d-none">Medium</span></a></li>
+          <li class="list-inline-item"><a href="https://dribbble.com/warface" target="_blank"><i class="fa fa-dribbble"></i>  <span class="d-none">Dribbble</span></a></li>
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/robcleaton-mobile-product-designer" target="_blank"><i class="fa fa-linkedin"></i>  <span class="d-none">LinkedIn</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xl-2"></div>
+  </div>
+</div>
