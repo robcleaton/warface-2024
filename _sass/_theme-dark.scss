@@ -1,5 +1,5 @@
 
-body, h1, h2, h3, h4, h5, p, .blockquote-footer {
+body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--white);
 }
 
@@ -62,6 +62,7 @@ a.navbar-brand:hover {
     .small-tags li:hover {
       background: var(--black);
       color: var(--white);
+      border: none;
     }
   }
 }
@@ -70,6 +71,7 @@ a.navbar-brand:hover {
 // Page content
 .sheet {
   background: var(--grey-800);
+  color: var(--white);
 
   a {
     color: var(--warface);

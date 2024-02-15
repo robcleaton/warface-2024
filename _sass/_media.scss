@@ -58,6 +58,9 @@
     margin-top: clamp(558px, 120vw, 97vh);
     margin-bottom: clamp(558px, 56vw, 772px);
   }
+  .case-study .sheet {
+    margin-top: 86vh;
+  }
 
   .sheet .project-card-group {
     padding: 16px;
@@ -159,7 +162,7 @@
   }
   h4 {
     font-size: 8vh;
-    line-height: 10.4vh;
+    line-height: 6.4vh;
   }
   h5 {
     font-size: 6vh;

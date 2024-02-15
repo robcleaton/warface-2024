@@ -1,5 +1,5 @@
 
-body, h1, h2, h3, h4, h5, p, .blockquote-footer {
+body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--black);
 }
 a {
@@ -75,7 +75,8 @@ a:hover {
 
 // Page content
 .sheet {
-  background: var(--grey-800);
+  background: var(--grey-100);
+  color: var(--black);
 
   a {
     color: var(--warface);
