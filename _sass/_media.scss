@@ -37,6 +37,21 @@
 // Tablet
 @media only screen and (min-width: 601px) {
 
+.intro.hero {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0px;
+
+    .container {
+      max-width: 980px;
+      width: 80vh;
+      padding: 3vh 0px;
+    }
+  }
+
   p.lead {
     font-size: 20px;
     line-height: 28px;
