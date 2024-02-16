@@ -213,6 +213,28 @@ a.navbar-brand:hover {
   }
 }
 
+.cookpad {
+  footer {
+    a {
+      color: var(--cookpad-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--cookpad-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
 .trainline {
   footer {
     a {

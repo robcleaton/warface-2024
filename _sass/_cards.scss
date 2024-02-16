@@ -137,7 +137,7 @@
 
 // Cookpad
   .project-card.cookpad {
-    background: #FF9933;
+    background: var(--cookpad-1);
     .client {
       background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
       height: 40px;
@@ -145,11 +145,14 @@
     }
   }
   .project-card.cookpad:hover {
-    background: red;
+    background: #bd6c28;
     .client {
       background: url('../images/logos/cookpad-white-logo.svg') no-repeat;
       height: 40px;
       background-size: contain;
+    }
+    p.lead {
+      color: var(--white);
     }
   }
 
@@ -188,6 +191,9 @@
       background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
       height: 52px;
       background-size: contain;
+    }
+    p.lead {
+      color: var(--white);
     }
   }
 
