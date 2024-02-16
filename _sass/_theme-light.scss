@@ -3,6 +3,11 @@ body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--black);
 }
 
+::selection {
+  background-color: rgba(36,70,0,0.1);
+  color: #668304;
+}
+
 // Navigation
 .navbar {
   a {
@@ -175,6 +180,28 @@ a.navbar-brand {
 
 
 // Case studies
+.sainsburys {
+  footer {
+    a {
+      color: pink;
+    }
+    a:hover {
+      color: var(--sainsburys-2);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--sainburys-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
   .trainline {
     footer {
       a {
@@ -192,9 +219,6 @@ a.navbar-brand {
         }
         a:hover {
           color: var(--white);
-        }
-        .footer {
-          background-color: var(--trainline-1);
         }
       }
     }
@@ -217,9 +241,6 @@ a.navbar-brand {
         }
         a:hover {
           color: var(--black);
-        }
-        .footer {
-          background-color: var(--oatbook-1);
         }
       }
     }

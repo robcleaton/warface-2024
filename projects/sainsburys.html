@@ -6,14 +6,8 @@ permalink: /sainsburys-design-system
 ---
 
 <style>
-  html, body, footer {
-    background: #FF6B18;
-  }
-  footer h2 a, footer a {
-    color: pink !important;
-  }
-  a:hover {
-    color: #541a1a !important;
+  html, body {
+    background: var(--sainsburys-1);
   }
   .intro {
     background: url('assets/images/projects/sainsburys/sainsburys-intro-hero.png') center;
@@ -78,15 +72,21 @@ permalink: /sainsburys-design-system
 </div>
 
 <div class="row">
-  <div class="col-6 col-sm-4">
+  <div class="col">
     <img src="assets/images/projects/sainsburys/sainsburys-logo.png" class="img-fluid" alt="Sainburys logo">
   </div>
-  <div class="col-6 col-sm-4">
+  <div class="col">
     <img src="assets/images/projects/sainsburys/argos-logo.png" class="img-fluid" alt="Argos logo">
   </div>
-  <div class="col-4 col-sm-4">
+  <div class="col">
     <img src="assets/images/projects/sainsburys/nectar-logo.png" class="img-fluid" alt="Nectar logo">
   </div>
+</div>
+
+
+<div class="row">
+  <div class="col-2 col-sm-2">
+  </div>
   <div class="col-4 col-sm-4">
     <img src="assets/images/projects/sainsburys/habitat-logo.png" class="img-fluid" alt="habitat logo">
   </div>
@@ -95,33 +95,8 @@ permalink: /sainsburys-design-system
   </div>
 </div>
 
-<div class="row">
-  <div class="col-2 col-sm-2"></div>
-  <div class="col-4 col-sm-4">
-    <img src="assets/images/projects/sainsburys/habitat-logo.png" class="img-fluid" alt="habitat logo">
-  </div>
-  <div class="col-4 col-sm-4">
-    <img src="assets/images/projects/sainsburys/tu-logo.png" class="img-fluid" alt="Tu logo">
-  </div>
-  <div class="col-2 col-sm-2"></div>
-</div>
 
-
-<div class="row">
-  <div class="col-sm-6">
-    <figure class="figure">
-      <img src="assets/images/projects/sainsburys/luna-library.png" class="figure-img img-fluid rounded" alt="...">
-      <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-  </div>
-  <div class="col-sm-6">
-    <figure class="figure">
-      <img src="assets/images/projects/sainsburys/bolt-storybook-library.png" class="figure-img img-fluid rounded" alt="...">
-      <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-  </div>
-</div>
-
+<!-- Discover -->
 <div class="row">
   <div class="col-lg-2"></div>
   <div class="col-lg-8">
@@ -130,50 +105,123 @@ permalink: /sainsburys-design-system
       <img src="assets/images/projects/sainsburys/double-diamond-discover.png" class="figure-img img-fluid rounded" alt="...">
       <figcaption class="figure-caption">Speak to and spend time with people who are affected by the issues.</figcaption>
     </figure>
-    <p>The first diamond helps people understand, rather than simply assume, what the problem is. It involves speaking to and spending time with people who are affected by the issues.</p>
+    <p class="lead">A project with such a huge scope has to start somewhere. The discovery was lead by talking with other designers, understand how they're working, what conditions are they up against, their existing knowledge of design systems, their skill level with tools like Figma and be open to hearing as much feedback as possible.</p>
+
+    <p>It's understanable for products to eventually feel the wear and tear of working in fast agile environments, features are shipped and delivery deadlines met but sometimes some corners need to be cut, this was starting to show in end-to-end experiences and a difficulty to supporting a unsustainable siloed workig environment.
+
+    <p>Designers have been great at making their own efficiences with local Figma libraries, discussion and audits over these highlighted the level of duplication and inconsistencies by a lack of transparancy and centralised governance.</p>
   </div>
   <div class="col-lg-2"></div>
 </div>
+
+<div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/mulit-brand-multi-product.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Product teams split by brand, product and platform.</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-1"></div>
+</div>
+
+<div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-5">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/product-audits.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Self conducted audits carried out on end-to-end experiences. Online orders to instore kiosks.</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-5">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/mobile-apps-brand.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Product teams need for speed seeing each build their product libraries for their own efficiences.</figcaption>
+    </figure>
+  </div>
+  <div class="col-lg-1"></div>
+</div>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <h5>Different company cultures</h5>
+    <p>An interesting discovery that come from the different design systems and libraries in place is how it has influenced or been influenced by the working cultures.</p>
+    <p><strong>Argos Bolt Storybook library</strong>
+    <br/>Used on Argos brands (Habitat & Tu) it's a dev first component library, its widely adopted and maintined through development. There is no Figma library counterpart, limited to web only components and being dev first means designers playing catchup or starting from scratch each time.</p>
+    <p><strong>Sainbury's Luna</strong>
+    <br/>Used across the Sainsbury’s brand and a growing alignment with a Figma UI library. Luna recognises the broadness of a design system with patterns and guidelines and heavly influenced by accessibility. There has been a small adoption in design and limited adoption in development</p>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-sm-5">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/bolt-storybook-library.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Argos Storybook component library. Dev lead UI library</figcaption>
+    </figure>
+  </div>
+  <div class="col-sm-5">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/luna-library.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Sainsbury's Luna Design System. Values the broadness of design systems and desire for accessibilty.</figcaption>
+    </figure>
+  </div>
+  <div class="col-1"></div>
+</div>
+
 
 
 <!-- Define -->
 <div class="row">
-  <div class="col-lg-2">
-  </div>
+  <div class="col-lg-2"></div>
   <div class="col-lg-8">
-    <div>
-      <h5>Define</h5>
-      <figure class="figure">
-        <img src="assets/images/projects/sainsburys/double-diamond-define.png" class="figure-img img-fluid rounded" alt="...">
-        <figcaption class="figure-caption">Define the challenge from the insight gathered from discovery.</figcaption>
-      </figure>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut accumsan lectus, at varius ex. Mauris vitae felis ut justo vestibulum tempus vitae a arcu. Proin ultrices nulla lectus, id fermentum libero tincidunt nec. Fusce elementum nec enim vitae consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi at mauris et justo commodo facilisis. Proin tincidunt tempor tristique. Proin pulvinar nisl sit amet nibh suscipit venenatis. Aenean arcu ipsum, faucibus at iaculis a, gravida in lacus. Aenean non interdum dolor, a suscipit est.</p>
+    <h5>Define</h5>
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/double-diamond-define.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Define the challenge from the insight gathered from discovery.</figcaption>
+    </figure>
+    <h6>What is a design system?</h6>
+    <p class="lead">A common misconsception is that a design system is a UI library.</p>
+    <p>A desired approach was to build a single source of truth that each discipline can beneift from, bringing pariety between design and development and reduce workload duplication.</p>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
 
-      <p>Mauris ultricies eu lorem a cursus. Curabitur congue mauris eu metus vehicula, at egestas dolor volutpat. Nulla sollicitudin mauris lacus, fermentum iaculis lorem placerat a. Mauris sagittis nunc congue leo euismod malesuada. Fusce interdum lacinia posuere. Fusce sapien libero, varius et dolor et, faucibus consequat tortor. Nulla facilisi.</p>
-    </div>
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <figure class="figure">
+      <img src="assets/images/projects/sainsburys/design-system-product.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Communicating the broadness of Design systems and breaking away from the idea of they are just UI libraies.</figcaption>
+    </figure>
+    <h6>Bolt vs Luna</h6>
+    <p class="lead">Sainsbury's have made good lead way with both products but each has their faults. For us to move forwards we wanted to build on what would be most scalable and desirable. Bolt is more established in the development community but used inconsistently and lacks guidance and design input. Luna is design lead, offers stronger guidance a huge drive of raising standards of accessibilty but less mature in its usage.</p>
+    <p>A desired approach was to build a single source of truth that each discipline can beneift from, bringing pariety between design and development and reduce workload duplication.</p>
   </div>
-  <div class="col-lg-2">
-  </div>
+  <div class="col-lg-2"></div>
 </div>
 
 
 <div class="row">
   <div class="col-lg-2"></div>
   <div class="col-lg-8">
-    <h5>Deliver</h5>
     <figure class="figure">
-      <img src="assets/images/projects/sainsburys/double-diamond-deliver.png" class="figure-img img-fluid rounded" alt="...">
-      <figcaption class="figure-caption">Test out and reject ideas or develop ideas that will work.</figcaption>
+      <img src="assets/images/projects/sainsburys/figma-tokens.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Figma tokens closed the gap between design and development even further, our UI libraries could now use the same variants that are used in code.</figcaption>
     </figure>
+    <h6>Figma UI libraies using live code</h6>
+    <p class="lead">Sainsbury's have made good lead way with both products but each has their faults. For us to move forwards we wanted to build on what would be most scalable and desirable. Bolt is more established in the development community but used inconsistently and lacks guidance and design input. Luna is design lead, offers stronger guidance a huge drive of raising standards of accessibilty but less mature in its usage.</p>
+    <p>A desired approach was to build a single source of truth that each discipline can beneift from, bringing pariety between design and development and reduce workload duplication.</p>
+
   </div>
   <div class="col-lg-2"></div>
 </div>
 
 
-
-
-
-<!-- Impact -->
+<!-- Develop -->
 <div class="row">
   <div class="col-lg-2">
   </div>
@@ -192,7 +240,7 @@ permalink: /sainsburys-design-system
 </div>
 
 
-<!-- Impact -->
+<!-- Deliver -->
 <div class="row">
   <div class="col-lg-2">
   </div>
@@ -208,4 +256,62 @@ permalink: /sainsburys-design-system
   </div>
   <div class="col-lg-2">
   </div>
+</div>
+
+
+<!-- Conclusion -->
+<div class="row">
+  <div class="col-lg-2">
+  </div>
+  <div class="col-lg-8">
+    <h5>Conclusion</h5>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut accumsan lectus, at varius ex. Mauris vitae felis ut justo vestibulum tempus vitae a arcu. Proin ultrices nulla lectus, id fermentum libero tincidunt nec. Fusce elementum nec enim vitae consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi at mauris et justo commodo facilisis. Proin tincidunt tempor tristique. Proin pulvinar nisl sit amet nibh suscipit venenatis. Aenean arcu ipsum, faucibus at iaculis a, gravida in lacus. Aenean non interdum dolor, a suscipit est.</p>
+
+    <p>Mauris ultricies eu lorem a cursus. Curabitur congue mauris eu metus vehicula, at egestas dolor volutpat. Nulla sollicitudin mauris lacus, fermentum iaculis lorem placerat a. Mauris sagittis nunc congue leo euismod malesuada. Fusce interdum lacinia posuere. Fusce sapien libero, varius et dolor et, faucibus consequat tortor. Nulla facilisi.</p>
+  </div>
+  <div class="col-lg-2">
+  </div>
+</div>
+
+
+<!-- Recommendations -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <blockquote class="blockquote">
+        <p>Rob<span class="apostrophe"></span>s been instrumental to redefining the design systems approach at Sainsbury<span class="apostrophe"></span>s.</p>
+        <figcaption class="blockquote-footer">
+          <a href="https://www.linkedin.com/in/beverleyannesullivan/" target="_blank">Beverley Sullivan</a><cite title="Source Title">Head of Design Systems and DesignOps at Sainsbury's</cite>
+        </figcaption>
+      </blockquote>
+    </div>
+
+    <div class="carousel-item">
+      <blockquote class="blockquote">
+        <p>Rob is a fantastic leader who has embraced and motivated change here at Sainsbury<span class="apostrophe"></span>s.</p>
+        <figcaption class="blockquote-footer">
+          <a href="https://www.linkedin.com/in/brynanderson/" target="_blank">Bryn Anderson</a><cite title="Source Title">Senior accessibilty specialist at Sainsbury's</cite>
+        </figcaption>
+      </blockquote>
+    </div>
+
+    <div class="carousel-item">
+      <blockquote class="blockquote">
+        <p>Rob demonstrates design leadership every day in our team, and is never too busy to give me guidance when I’ve needed it.</p>
+        <figcaption class="blockquote-footer">
+          <a href="https://www.linkedin.com/in/frances-szweda-467639aa/" target="_blank">Frances Szweda</a><cite title="Source Title">Designer at Sainsbury's</cite>
+        </figcaption>
+      </blockquote>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </button>
 </div>

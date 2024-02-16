@@ -2,24 +2,25 @@
 permalink: /404.html
 layout: default
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+<style>
+  footer {
+    display: none;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  .container.error {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container error">
+  <h1 class="display-2">404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p class="lead">Page not found ☺</p>
 </div>
+
+{% include footer.html %}
