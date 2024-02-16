@@ -2,12 +2,6 @@
 body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--black);
 }
-a {
-  color: var(--warface);
-}
-a:hover {
-  color: var(--warface);
-}
 
 // Navigation
 .navbar {
@@ -178,3 +172,55 @@ a.navbar-brand {
   height: 76px;
   width: 140px;
 }
+
+
+// Case studies
+  .trainline {
+    footer {
+      a {
+        color: var(--trainline-2);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+
+    .case-study {
+      .sheet {
+        a {
+          color: var(--trainline-1);
+        }
+        a:hover {
+          color: var(--white);
+        }
+        .footer {
+          background-color: var(--trainline-1);
+        }
+      }
+    }
+  }
+
+  .oatbook {
+    footer {
+      a {
+        color: var(--oatbook-2);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+
+    .case-study {
+      .sheet {
+        a {
+          color: var(--oatbook-1);
+        }
+        a:hover {
+          color: var(--black);
+        }
+        .footer {
+          background-color: var(--oatbook-1);
+        }
+      }
+    }
+  }

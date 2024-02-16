@@ -175,27 +175,52 @@ a.navbar-brand:hover {
 
 
 // Case studies
-.trainline {
-  footer {
-    a {
-      color: var(--trainline-2);
-    }
-    a:hover {
-      color: var(--white);
-    }
-  }
-
-  .case-study {
-    .sheet {
+  .trainline {
+    footer {
       a {
-        color: var(--trainline-1);
+        color: var(--trainline-2);
       }
       a:hover {
         color: var(--white);
       }
-      .footer {
-        background-color: var(--trainline-1);
+    }
+
+    .case-study {
+      .sheet {
+        a {
+          color: var(--trainline-1);
+        }
+        a:hover {
+          color: var(--white);
+        }
+        .footer {
+          background-color: var(--trainline-1);
+        }
       }
     }
   }
-}
+
+  .oatbook {
+    footer {
+      a {
+        color: var(--oatbook-2);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+
+    .case-study {
+      .sheet {
+        a {
+          color: var(--oatbook-1);
+        }
+        a:hover {
+          color: var(--white);
+        }
+        .footer {
+          background-color: var(--oatbook-1);
+        }
+      }
+    }
+  }

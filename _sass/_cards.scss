@@ -24,6 +24,7 @@
     font-family: var(--mono);
     font-size: 16px;
     line-height: 20px;
+    margin: 0px;
   }
 
   .client {
@@ -93,10 +94,13 @@
     }
   }
   .project-card.trainline:hover {
-    background: blue;
+    background: var(--trainline-3);
     .client {
       background: url('../images/logos/tl-white-logo.svg') no-repeat;
       background-size: contain;
+    }
+    p.lead {
+      color: var(--white);
     }
   }
 
@@ -119,17 +123,17 @@
   }
 
 // JustEat
-.project-card.justeat {
-  background: #FD8024;
-  .client {
-    background: url('../images/logos/justeat-black-logo.svg') no-repeat;
-    height: 32px;
-    background-size: contain;
+  .project-card.justeat {
+    background: #FD8024;
+    .client {
+      background: url('../images/logos/justeat-black-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
   }
-}
-.project-card.justeat:hover {
-  background: pink;
-}
+  .project-card.justeat:hover {
+    background: pink;
+  }
 
 // Cookpad
   .project-card.cookpad {
@@ -192,5 +196,5 @@
     background: #FDB813;
   }
   .project-card.oatbook:hover {
-    background: black;
+    background: #e93d13;
   }
