@@ -61,6 +61,17 @@ a:hover {
     .card-title a {
       color: var(--black);
     }
+    .small-tags li:hover {
+      background: var(--black);
+      color: var(--white) !important;
+      border: none;
+    }
+  }
+  .card:hover {
+    .small-tags li {
+      color: var(--black);
+      border: 1px solid var(--black);
+    }
   }
 }
 

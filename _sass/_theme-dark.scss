@@ -65,6 +65,13 @@ a.navbar-brand:hover {
       border: none;
     }
   }
+
+  .card:hover {
+    .small-tags li {
+      color: var(--black);
+      border: 1px solid var(--black);
+    }
+  }
 }
 
 
@@ -164,4 +171,31 @@ a.navbar-brand:hover {
   background-size: contain;
   height: 76px;
   width: 140px;
+}
+
+
+// Case studies
+.trainline {
+  footer {
+    a {
+      color: var(--trainline-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--trainline-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+      .footer {
+        background-color: var(--trainline-1);
+      }
+    }
+  }
 }

@@ -1,30 +1,29 @@
 {% include header.html %}
-
-<body class="subpage">
-  {% include navigation.html %}
-
 <style>
   canvas {
     display: none;
   }
 </style>
 
-<div class="intro">
-  <div class="container-fluid pt-4">
-    <!-- <h2>{{ page.title }}</h2> -->
-  </div>
-</div>
+  <body class="subpage {{ page.excerpt }}">
+    {% include navigation.html %}
 
-<div class="{{ page.excerpt }} case-study">
-
-  <div class="container-fluid sheet">
-    {{ content }}
-
-    <div class="row blog-posts">
-      {% include blog-posts.html %}
+  <div class="intro">
+    <div class="container-fluid pt-4">
+      <!-- <h2>{{ page.title }}</h2> -->
     </div>
   </div>
 
-</div>
+  <div class="case-study">
 
-{% include footer.html %}
+    <div class="container-fluid sheet">
+      {{ content }}
+
+      <div class="row blog-posts">
+        {% include blog-posts.html %}
+      </div>
+    </div>
+
+  </div>
+
+  {% include footer.html %}
