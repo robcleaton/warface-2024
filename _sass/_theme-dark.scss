@@ -53,6 +53,17 @@ a.navbar-brand:hover {
     color: var(--black);
   }
 }
+.project-card.trainline:hover {
+  h2 a:hover {
+    color: pink;
+  }
+}
+.project-card.sainsburys:hover {
+  h2 a:hover {
+    color: var(--sainsburys-2);
+  }
+}
+
 
 // Blog cards
 .blog-carousel {
@@ -202,45 +213,67 @@ a.navbar-brand:hover {
   }
 }
 
-  .trainline {
-    footer {
+.trainline {
+  footer {
+    a {
+      color: var(--trainline-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+  .case-study {
+    .sheet {
       a {
-        color: var(--trainline-2);
+        color: var(--trainline-1);
       }
       a:hover {
         color: var(--white);
       }
     }
-    .case-study {
-      .sheet {
-        a {
-          color: var(--trainline-1);
-        }
-        a:hover {
-          color: var(--white);
-        }
-      }
+  }
+}
+
+.oatbook {
+  footer {
+    a {
+      color: var(--oatbook-2);
+    }
+    a:hover {
+      color: var(--white);
     }
   }
 
-  .oatbook {
-    footer {
+  .case-study {
+    .sheet {
       a {
-        color: var(--oatbook-2);
+        color: var(--oatbook-1);
       }
       a:hover {
         color: var(--white);
       }
     }
+  }
+}
 
-    .case-study {
-      .sheet {
-        a {
-          color: var(--oatbook-1);
-        }
-        a:hover {
-          color: var(--white);
-        }
+.recliningworm {
+  footer {
+    a {
+      color: var(--recliningworm-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--recliningworm-1);
+      }
+      a:hover {
+        color: var(--white);
       }
     }
   }
+}

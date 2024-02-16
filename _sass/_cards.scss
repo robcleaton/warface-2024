@@ -175,7 +175,7 @@
 
 // RecliningWorm
   .project-card.recliningworm {
-    background: purple;
+    background: var(--recliningworm-1);
     .client {
       background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
       height: 52px;
@@ -183,7 +183,7 @@
     }
   }
   .project-card.recliningworm:hover {
-    background: purple;
+    background: #542188;
     .client {
       background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
       height: 52px;

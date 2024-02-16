@@ -99,6 +99,10 @@
     }
   }
 
+  .scroll-container {
+    flex-direction: row !important;
+  }
+
 
   .image-block {
     margin: 40px auto;
