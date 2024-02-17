@@ -124,7 +124,7 @@
 
 // JustEat
   .project-card.justeat {
-    background: #FD8024;
+    background: var(--justeat-1);
     .client {
       background: url('../images/logos/justeat-black-logo.svg') no-repeat;
       height: 32px;
@@ -132,7 +132,7 @@
     }
   }
   .project-card.justeat:hover {
-    background: pink;
+    background: #f14d12;
   }
 
 // Cookpad

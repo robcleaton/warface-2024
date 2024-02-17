@@ -230,6 +230,27 @@ a.navbar-brand {
   }
 }
 
+.just-eat {
+  footer {
+    a {
+      color: var(--justeat-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+  .case-study {
+    .sheet {
+      a {
+        color: var(--justeat-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
 .oatbook {
   footer {
     a {
