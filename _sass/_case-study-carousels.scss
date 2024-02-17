@@ -1,78 +1,85 @@
 // Case study carousels appear on the homepage
-.cs.carousel {
-  .carousel-item {
-    height: 90vh;
-  }
-  .color-block {
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-  h2 {
-    font-family: 'Cinderblock';
-    font-size: clamp(144px, 18vw, 328px);
-    letter-spacing: 0.2vw;
-    line-height: clamp(106px, 13.1vw, 236px);
-    margin-top: -2.2vw;
-    margin-bottom: 24px;
-  }
-  .center-align {
-    width: clamp(560px, 80vw, 1300px);
-  }
+// .cs.carousel {
+//   .carousel-item {
+//     height: 90vh;
+//   }
+//   .color-block {
+//     height: 100%;
+//     background-position: center;
+//     background-size: cover;
+//   }
+//   h2 {
+//     font-size: clamp(144px, 18vw, 328px);
+//     letter-spacing: 0.2vw;
+//     line-height: clamp(106px, 13.1vw, 236px);
+//     margin-top: -2.2vw;
+//     margin-bottom: 24px;
+//   }
+//   .center-align {
+//     width: clamp(560px, 80vw, 1300px);
+//   }
+// }
 
-  .roundel {
-    .etsy {
-      background: url('../images/graphics/etsy-shop.svg')center center no-repeat;
-      background-size: 34%;
-      height: clamp(200px, 20vw, 1000px);
-      width: clamp(200px, 20vw, 1000px);
-      z-index: 10;
-      rotate: 12deg;
-      right: 4%;
-      top: 14%;
-      position: absolute;
-    }
-    .lovie {
-      background: url('../images/graphics/LovieAward.png')center center no-repeat;
-      background-size: 40%;
-      height: clamp(200px, 20vw, 1000px);
-      width: clamp(200px, 20vw, 1000px);
-      z-index: 10;
-      rotate: 12deg;
-      right: 4%;
-      top: 14%;
-      position: absolute;
-    }
-    .award-roundel {
-      background: url('../images/graphics/award-roundel.svg')center center no-repeat;
-      background-size: 100%;
-      height: clamp(200px, 20vw, 1000px);
-      width: clamp(200px, 20vw, 1000px);
-      position: absolute;
-      right: 4%;
-      top: 14%;
-      transform: translate(0px, -140px);
-      -webkit-animation: spin 50s infinite linear;
-      z-index: 2;
-    }
-    @-webkit-keyframes spin {
-      0%  {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(360deg);}
-    }
-  }
+.roundel {
+  position: relative;
+  right: -16px;
 
-  .iOS-device {
-    background: url('../images/projects/banners/case-study-cards/ios-device.png')left top no-repeat;
-    position: absolute;
-    bottom: 0px;
-    right: 4.1vw;
-    height: 94%;
-    width: 29vw;
-    background-size: 100%;
+  .lovie {
+    background: url('../images/graphics/lovie-award-winner.svg')center center no-repeat;
+    background-size: 48%;
+    height: clamp(140px, 20vw, 1000px);
+    width: clamp(140px, 20vw, 1000px);
     z-index: 10;
+    rotate: 8deg;
+    right: 4%;
+    top: 14%;
+    position: absolute;
   }
-
+  .app-store {
+    background: url('../images/graphics/app-store-best-of.svg')center center no-repeat;
+    background-size: 58%;
+    height: clamp(140px, 20vw, 1000px);
+    width: clamp(140px, 20vw, 1000px);
+    z-index: 10;
+    rotate: 8deg;
+    right: 4%;
+    top: 14%;
+    position: absolute;
+  }
+  .award-roundel {
+    background: url('../images/graphics/award-roundel-sm.svg')center center no-repeat;
+    background-size: 100%;
+    height: clamp(140px, 20vw, 1000px);
+    width: clamp(140px, 20vw, 1000px);
+    position: absolute;
+    right: 4%;
+    top: 14%;
+    transform: translate(0px, -140px);
+    -webkit-animation: spin 50s infinite linear;
+    z-index: 2;
+  }
+  @-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+  }
 }
+
+.rotate{
+ animation: loading 3s linear infinite;
+ height: 100px;
+ width: 100px;
+ background: red;
+
+ @keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ }
+}
+
 
 
 // Sainsburys
