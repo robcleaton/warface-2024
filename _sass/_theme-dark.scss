@@ -262,6 +262,28 @@ a.navbar-brand:hover {
   }
 }
 
+.carwow {
+  footer {
+    a {
+      color: var(--carwow-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--recliningworm-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
 .just-eat {
   footer {
     a {

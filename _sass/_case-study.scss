@@ -31,11 +31,11 @@
 // Trainline
 .trainline {
   .intro {
-    background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center;
-    height: 100vh;
-    background-size: cover;
-    top: 0;
-    margin-top: 0px;
+    // background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center;
+    // height: 100vh;
+    // background-size: cover;
+    // top: 0;
+    // margin-top: 0px;
 
     background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center 30% no-repeat;
     height: 100%;
@@ -43,5 +43,14 @@
     top: 0;
     margin-top: 0px;
     background-color: #21304F;
+  }
+}
+.oatbook {
+  .intro {
+    background: url('/assets/images/projects/oatbook/image-asset.png') center 30% no-repeat;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    margin-top: 0px;
   }
 }

@@ -10,7 +10,12 @@ body, html {
   margin-left: 0px;
   margin-right: 0px;
 }
-
+.img-fluid {
+  width: 100%;
+}
+figure {
+  width: 100%;
+}
 .zindex-100 {
   z-index: 100;
 }
