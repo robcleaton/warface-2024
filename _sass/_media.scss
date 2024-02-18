@@ -244,9 +244,37 @@
     }
   }
 
+  .roundel.cs {
+    position: relative;
+    right: -12%;
+    top: -16px;
+
+    .app-store {
+      height: clamp(140px, 20vw, 260px);
+      width: clamp(140px, 20vw, 260px);
+    }
+    .lovie {
+      height: clamp(140px, 20vw, 260px);
+      width: clamp(140px, 20vw, 260px);
+
+    }
+    .award-roundel {
+      background-size: 100%;
+      height: clamp(140px, 20vw, 260px);
+      width: clamp(140px, 20vw, 260px);
+      right: 3.9%;
+      top: 12%;
+    }
+  }
+
+  .case-study .sheet {
+    padding-bottom: 80px;
+  }
+
   .color-block .center-align {
     top: 50%;
   }
+
   .cs.carousel {
     .center-align {
       margin-top: -20px;
@@ -257,9 +285,7 @@
     }
   }
 
-  .case-study .sheet {
-    padding-bottom: 80px;
-  }
+
 
   #slide-1.color-block, #slide-2.color-block {
     background-repeat: no-repeat;
