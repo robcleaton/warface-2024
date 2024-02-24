@@ -1,9 +1,17 @@
 @media (prefers-color-scheme: dark) {
 
   @import "theme-dark";
-    
+  canvas {
+    filter: saturate(0);
+    opacity: 60%;
+  }
 
   body.light-theme {
     @import "theme-light";
+
+    canvas {
+      filter: saturate(1);
+      opacity: 100%
+    }
   }
 }

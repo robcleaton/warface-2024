@@ -203,7 +203,6 @@
 
 
   nav.navbar {
-
     .navbar-collapse {
       background: none;
       padding: 0px;
@@ -242,6 +241,9 @@
       max-width: 100%;
       padding-top: 16px;
     }
+  }
+  .project-card h2 {
+    max-width: 72%;
   }
 
   .roundel.cs {

@@ -1,92 +1,110 @@
+html, body {
+  background: var(--white);
+}
 
 body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
-  color: var(--black);
+  color: var(--white);
 }
 
 ::selection {
-  background-color: rgba(36,70,0,0.1);
-  color: #668304;
+  background-color: rgba(36,70,0,0.3);
+  color: #ff581a;
 }
 
 // Navigation
 .navbar {
   a {
-    color: var(--black);
+    color: var(--white);
   }
   a:hover {
-    color: var(--white);
+    color: var(--black);
   }
   .social .list-inline-item a:hover {
-    color: var(--white);
+    color: var(--black);
   }
   .collapsing, .show {
-    a.navbar-brand {
-      background: url('../images/warface-logo-white.svg') center center no-repeat;
-    }
-    .primary-nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    .primary-nav .btn:hover, .social a:hover {
-      color: var(--white);
-    }
-    .navbar-toggler-icon.list {
-      background: url('../images/icons/list-white.svg') center center no-repeat !important;
-    }
-
     a {
       color: var(--white);
     }
-    a:hover {
+    a:hover, h2 a:hover {
       color: var(--warface);
     }
+    .social .list-inline-item a:hover {
+      color: var(--black);
+    }
+  }
+  .primary-nav .btn:hover, .social a:hover {
+    color: var(--black);
+    background: var(--warface);
   }
 }
+
+a.navbar-brand {
+  background: url('../images/warface-logo-white.svg') center center no-repeat;
+}
+a.navbar-brand:hover {
+  background: url('../images/warface-logo-black.svg') center center no-repeat;
+}
+
 
 // Project cards
 .project-card {
   h2 a {
-    color: var(--black);
+    color: var(--white);
   }
   h2 a:hover {
+    color: var(--black);
+  }
+  p.lead {
     color: var(--white);
   }
 }
+.project-card.trainline:hover {
+  h2 a:hover {
+    color: pink;
+  }
+}
+.project-card.sainsburys:hover {
+  h2 a:hover {
+    color: var(--sainsburys-2);
+  }
+}
+
 
 // Blog cards
 .blog-carousel {
   .card {
+    background: var(--white);
+
     .card-title a {
       color: var(--black);
     }
+    .small-tags li {
+      color: var(--grey-400);
+      border: 1px solid var(--grey-200);
+    }
     .small-tags li:hover {
       background: var(--black);
-      color: var(--white) !important;
+      color: var(--white);
       border: none;
     }
   }
+
   .card:hover {
+    background: var(--warface);
+
     .small-tags li {
       color: var(--black);
-      border: 1px solid var(--black);
+      border: 1px solid var(--grey-400);
     }
   }
-}
-
-
-.navbar-toggler-icon.theme-light {
-  background: url('../images/icons/theme-black.svg') center center no-repeat !important;
-}
-.navbar-toggler-icon.list {
-  background: url('../images/icons/list-black.svg') center center no-repeat !important;
 }
 
 
 // Page content
 .sheet {
-  background: var(--grey-100);
-  color: var(--black);
+  background: var(--grey-800);
+  color: var(--white);
 
   a {
     color: var(--warface);
@@ -96,111 +114,157 @@ body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   }
 }
 
-
-// Navbar
-a.navbar-brand {
-  background: url('../images/warface-logo-black.svg') center center no-repeat;
+.navbar-toggler-icon.theme-light {
+  background: url('../images/icons/theme-white.svg') center center no-repeat !important;
 }
-
-.intro .design-studio {
-  background: url('../images/graphics/text-DesignStudio-black.svg') center center no-repeat;
-  background-size: contain;
-  position: relative;
-  width: 100%;
-  padding-top: 62%;
-}
-
-// Clients
-.logo-div.sainsburys {
-  background: url('../images/logos/sainsburys-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 48px;
-  width: 144px;
-}
-.logo-div.trainline {
-  background: url('../images/logos/tl-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 28px;
-  width: 130px;
-}
-.logo-div.GOVUK {
-  background: url('../images/logos/govuk-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 48px;
-  width: 172px;
-}
-.logo-div.justeat {
-  background: url('../images/logos/justeat-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 48px;
-  width: 172px;
-}
-.logo-div.science-museum {
-  background: url('../images/logos/sciencemuseum-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 62px;
-  width: 164px;
-}
-.logo-div.carwow {
-  background: url('../images/logos/carwow-black-logo.svg')no-repeat;
-  background-size: contain;
-  height: 24px;
-  width: 182px;
-}
-.logo-div.FIFA {
-  background: url('../images/logos/fifa-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 44px;
-  width: 144px;
-}
-.logo-div.cookpad {
-  background: url('../images/logos/cookpad-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 62px;
-  width: 160px;
-}
-.logo-div.homebase {
-  background: url('../images/logos/homebase-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 62px;
-  width: 194px;
-}
-.logo-div.nectar {
-  background: url('../images/logos/nectar-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 76px;
-  width: 80px;
-}
-.logo-div.lloydsBank {
-  background: url('../images/logos/lloyds-black-logo.svg')center no-repeat;
-  background-size: contain;
-  height: 76px;
-  width: 140px;
-}
-.logo-div.recliningworm {
-  background: url('../images/logos/recliningworm-logo-black.svg')center no-repeat;
-  background-size: contain;
-  height: 58px;
-  width: 144px;
+.navbar-toggler-icon.list {
+  background: url('../images/icons/list-white.svg') center center no-repeat !important;
 }
 
 
+
+.intro {
+  a.navbar-brand {
+    background: url('../images/warface-logo-white.svg') center center no-repeat;
+  }
+  .design-studio {
+    background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    padding-top: 62%;
+  }
+  p.lead {
+    color: var(--white);
+  }
+  // Clients
+  .logo-div.sainsburys {
+    background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 144px;
+  }
+  .logo-div.trainline {
+    background: url('../images/logos/tl-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 28px;
+    width: 130px;
+  }
+  .logo-div.GOVUK {
+    background: url('../images/logos/govuk-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 172px;
+  }
+  .logo-div.justeat {
+    background: url('../images/logos/justeat-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 172px;
+  }
+  .logo-div.science-museum {
+    background: url('../images/logos/sciencemuseum-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 164px;
+  }
+  .logo-div.carwow {
+    background: url('../images/logos/carwow-white-logo.svg')no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 182px;
+  }
+  .logo-div.FIFA {
+    background: url('../images/logos/fifa-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 44px;
+    width: 144px;
+  }
+  .logo-div.cookpad {
+    background: url('../images/logos/cookpad-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 160px;
+  }
+  .logo-div.homebase {
+    background: url('../images/logos/homebase-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 62px;
+    width: 194px;
+  }
+  .logo-div.nectar {
+    background: url('../images/logos/nectar-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 76px;
+    width: 80px;
+  }
+  .logo-div.lloydsBank {
+    background: url('../images/logos/lloyds-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 76px;
+    width: 140px;
+  }
+  .logo-div.recliningworm {
+    background: url('../images/logos/recliningworm-logo-white.svg')center no-repeat;
+    background-size: contain;
+    height: 58px;
+    width: 144px;
+  }
+}
+
+footer {
+  a {
+    color: #ff4915;
+  }
+  a:hover {
+    color: var(--white);
+  }
+}
 
 // Case studies
 .sainsburys {
+  .logo-div.sainsburys {
+    background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 144px;
+  }
+  // footer {
+  //   h2 a, a {
+  //     color: pink;
+  //   }
+  //   a:hover {
+  //     color: var(--sainsburys-2);
+  //   }
+  // }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--sainsburys-1);
+      }
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+
+.cookpad {
   footer {
     a {
-      color: pink;
+      color: var(--cookpad-2);
     }
     a:hover {
-      color: var(--sainsburys-2);
+      color: var(--white);
     }
   }
 
   .case-study {
     .sheet {
       a {
-        color: var(--sainburys-1);
+        color: var(--cookpad-1);
       }
       a:hover {
         color: var(--white);
@@ -224,7 +288,29 @@ a.navbar-brand {
         color: var(--trainline-1);
       }
       a:hover {
-        color: var(--black);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.carwow {
+  footer {
+    a {
+      color: var(--carwow-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--recliningworm-1);
+      }
+      a:hover {
+        color: var(--white);
       }
     }
   }
@@ -267,7 +353,29 @@ a.navbar-brand {
         color: var(--oatbook-1);
       }
       a:hover {
-        color: var(--black);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.recliningworm {
+  footer {
+    a {
+      color: var(--recliningworm-2);
+    }
+    a:hover {
+      color: var(--white);
+    }
+  }
+
+  .case-study {
+    .sheet {
+      a {
+        color: var(--recliningworm-1);
+      }
+      a:hover {
+        color: var(--white);
       }
     }
   }
