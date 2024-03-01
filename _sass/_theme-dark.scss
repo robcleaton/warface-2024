@@ -206,7 +206,7 @@ body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   }
 }
 
-footer {
+footer.home {
   a {
     color: var(--grey-800);
   }
@@ -218,7 +218,7 @@ footer {
 // Case studies
 .sainsburys {
   footer {
-    h2 a, a {
+    a {
       color: pink;
     }
     a:hover {

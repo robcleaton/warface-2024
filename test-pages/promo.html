@@ -1,54 +1,57 @@
-<footer class="outro">
+---
+title: Promo
+layout: testing
+permalink: /promo
+---
+<style>
+html, body {
+  background: orange;
+}
+footer, nav.navbar {
+  display: none !important;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  width: auto;
+  display: flex;
+  gap: 60px;
 
-  <div class="container-fluid">
-    <h2><a href="mailto:rob@warface.co.uk">Let<span class="apostrophe"></span>s work <br/>together</a></h2>
-    <p><a href="mailto:rob@warface.co.uk">rob@warface.co.uk</a></p>
-
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="https://www.instagram.com/warface/" target="_blank"><i class="fa fa-instagram"></i> <span class="d-none d-md-inline">Instagram</span></a></li>
-      <li class="list-inline-item"><a href="https://medium.com/@warface" target="_blank"><i class="fab fa-medium-m"></i> <span class="d-none d-md-inline">Medium</span></a></li>
-      <li class="list-inline-item"><a href="https://dribbble.com/warface" target="_blank"><i class="fa fa-dribbble"></i>  <span class="d-none d-md-inline">Dribbble</span></a></li>
-      <li class="list-inline-item"><a href="https://www.linkedin.com/in/robcleaton-mobile-product-designer" target="_blank"><i class="fa fa-linkedin"></i>  <span class="d-none d-md-inline">LinkedIn</span></a></li>
-    </ul>
-    <p><a data-toggle="tooltip" data-placement="top" title="Don't copy the copywrite">&copy; {{ site.time | date: '%Y' }} warface</a></p>
-  </div>
-
-</footer>
-
-<!-- Dark Mode -->
-<script>
-  const btn = document.querySelector(".btn-toggle");
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-  const currentTheme = localStorage.getItem("theme");
-  if (currentTheme == "dark") {
-    document.body.classList.toggle("dark-theme");
-  } else if (currentTheme == "light") {
-    document.body.classList.toggle("light-theme");
+  a.navbar-brand {
+    background: url('../assets/images/warface-logo-white.svg') center center no-repeat;
+    height: 140px;
+    width: 160px;
   }
+  .logo-div {
+    margin: 0px;
+  }
+  .logo-div.sainsburys {
+    background: url('../assets/images/logos/sainsburys-white-logo.svg')center no-repeat !important;
+    height: 160px;
+    width: 240px;
+  }
+}
 
-  btn.addEventListener("click", function () {
-    if (prefersDarkScheme.matches) {
-      document.body.classList.toggle("light-theme");
-      var theme = document.body.classList.contains("light-theme")
-        ? "light"
-        : "dark";
-    } else {
-      document.body.classList.toggle("dark-theme");
-      var theme = document.body.classList.contains("dark-theme")
-        ? "dark"
-        : "light";
-    }
-    localStorage.setItem("theme", theme);
-  });
-</script>
+canvas {
+  filter: hue-rotate(-8deg) !important;
+}
+</style>
 
 
-<!-- Lava -->
+<div class="container zindex-200">
+  <a class="navbar-brand" href="/"></a>
+  <div class="logo-div sainsburys"></div>
+</div>
+
+
 <script>
   // Create a PixiJS application of type cavas with specify background color and make it resizes to the iframe window
   const app = new PIXI.Application({
-  background: "#ffc436",
+  background: "#FF8F28",
   resizeTo: window
   });
 
@@ -64,7 +67,7 @@
   app.stage.addChild(container);
 
   // Make a nice color pallete for our random orbs
-  const colors = ["0x779438", "0xFF7A00", "0xFEB237", "0xFFB05B"];
+  const colors = ["0xFF6726", "0xFF7A00", "0xE54500", "0xC52F00"];
   const blurFilter2 = new PIXI.BlurFilter();
 
   // Helper Functions
@@ -169,4 +172,5 @@
     }
   }
   });
+
 </script>

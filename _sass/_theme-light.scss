@@ -212,7 +212,7 @@ a.navbar-brand:hover {
   }
 }
 
-footer {
+footer.home {
   a {
     color: #ff4915;
   }
@@ -229,22 +229,22 @@ footer {
     height: 48px;
     width: 144px;
   }
-  // footer {
-  //   h2 a, a {
-  //     color: pink;
-  //   }
-  //   a:hover {
-  //     color: var(--sainsburys-2);
-  //   }
-  // }
+  footer {
+    a {
+      color: var(--sainsburys-2);
+    }
+    a:hover {
+      color: var(--sainsburys-2);
+    }
 
-  .case-study {
-    .sheet {
-      a {
-        color: var(--sainsburys-1);
-      }
-      a:hover {
-        color: var(--white);
+    .case-study {
+      .sheet {
+        a {
+          color: var(--sainsburys-1);
+        }
+        a:hover {
+          color: var(--white);
+        }
       }
     }
   }
