@@ -49,8 +49,17 @@ nav {
   }
 }
 
-.navbar .social a:hover {
-  color: var(--black);
+.navbar {
+  .social a:hover {
+    color: var(--black);
+  }
+  .collapsing, .show {
+    .primary-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
 }
 .navbar .social {
   li {
