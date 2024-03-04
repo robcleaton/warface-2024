@@ -3,6 +3,8 @@
   @import "theme-dark";
   canvas {
     filter: saturate(0);
+    -webkit-backdrop-filter: saturate(20%);
+    backdrop-filter: saturate(20%);
     opacity: 60%;
   }
 
@@ -11,6 +13,8 @@
 
     canvas {
       filter: saturate(1);
+      -webkit-backdrop-filter: saturate(100%);
+      backdrop-filter: saturate(100%);
       opacity: 100%
     }
   }
