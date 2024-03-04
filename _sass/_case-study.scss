@@ -23,25 +23,42 @@
 
 // Sainsburys
   .sainsburys {
+    .logo-div.sainsburys {
+      background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 48px;
+      width: 144px;
+    }
   }
 
 // Trainline
-.trainline {
-  .logo-div.trainline {
-    background: url(../images/logos/tl-white-logo.svg) center no-repeat;
-    background-size: contain;
-    height: 28px;
-    width: 130px;
+  .trainline {
+    .logo-div.trainline {
+      background: url(../images/logos/tl-white-logo.svg) center no-repeat;
+      background-size: contain;
+      height: 28px;
+      width: 130px;
+    }
+    .intro {
+      background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center 30% no-repeat;
+      height: 100%;
+      background-size: contain;
+      top: 0;
+      margin-top: 0px;
+      background-color: #21304F;
+    }
   }
-  .intro {
-    background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center 30% no-repeat;
-    height: 100%;
-    background-size: contain;
-    top: 0;
-    margin-top: 0px;
-    background-color: #21304F;
+
+// Just Eat
+  .justeat {
+    .logo-div.justeat {
+      background: url('../images/logos/justeat-white-logo.svg') center no-repeat;
+      background-size: contain;
+      height: 48px;
+      width: 172px;
+    }
   }
-}
+
 .carwow {
   .intro {
     background: url('/assets/images/projects/carwow/carwow-intro.png') center 30% no-repeat;
