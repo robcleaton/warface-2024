@@ -2,20 +2,17 @@
 
   @import "theme-dark";
   canvas {
-    filter: saturate(0);
-    -webkit-backdrop-filter: saturate(20%);
-    backdrop-filter: saturate(20%);
-    opacity: 60%;
+    filter: grayscale(1);
+    // opacity: 60%;
   }
 
   body.light-theme {
     @import "theme-light";
 
     canvas {
-      filter: saturate(1);
-      -webkit-backdrop-filter: saturate(100%);
-      backdrop-filter: saturate(100%);
-      opacity: 100%
+      filter: grayscale(0);
+      // filter: saturate(1);
+      // opacity: 100%
     }
   }
 }
