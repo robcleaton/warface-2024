@@ -27,6 +27,12 @@
 
 // Trainline
 .trainline {
+  .logo-div.trainline {
+    background: url(../images/logos/tl-white-logo.svg) center no-repeat;
+    background-size: contain;
+    height: 28px;
+    width: 130px;
+  }
   .intro {
     background: url('/assets/images/projects/trainline/trainline-mobile-apps.jpg') center 30% no-repeat;
     height: 100%;
