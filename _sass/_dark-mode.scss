@@ -2,7 +2,7 @@
 
   @import "theme-dark";
   canvas {
-    filter: grayscale(100%) invert(100%) !important;
+    filter: grayscale(100%) invert(100%);
   }
 
   body.light-theme {
