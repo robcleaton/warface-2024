@@ -2,6 +2,7 @@
 
   @import "theme-dark";
   canvas {
+    -webkit-filter: grayscale(100%) invert(100%);
     filter: grayscale(100%) invert(100%);
   }
 
@@ -9,6 +10,7 @@
     @import "theme-light";
 
     canvas {
+      -webkit-filter: grayscale(0%) invert(0%);
       filter: grayscale(0%) invert(0%);
       // filter: saturate(1);
     }
