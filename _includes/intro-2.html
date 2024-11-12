@@ -1,14 +1,53 @@
 <style>
-  p.lead {
-    text-align: left;
+  .container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+
+  .animated-text {
+    position: absolute;
+    bottom: -50px; /* Start position (below the view) */
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    animation: moveUp 3s ease-in-out forwards; /* Animation properties */
+  }
+  .animated-text-2 {
+    position: absolute;
+    bottom: -50px; /* Start position (below the view) */
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    animation: moveUp 3s ease-in-out forwards; /* Animation properties */
+  }
+
+  /* Keyframes to define the animation */
+  @keyframes moveUp {
+    0% {
+      bottom: -50px; /* Start below the container */
+    }
+    100% {
+      bottom: 50px; /* End above the container */
+    }
   }
 </style>
 
 <div class="intro hero">
   <div class="container-flex">
+    <p class="lead">Portfolio of Rob Cleaton.</p>
     <h1>Design Systems, Mobile apps, Design thinking, Design strategy and UI/UX.</h1>
-    <p class="lead">Rob Cleaton.</p>
   </div>
 
-  {% include clients-carousel.html %}
+<body>
+  <div class="container">
+    <div class="animated-text">Portfolio of Rob Cleaton.</div>
+    <div class="animated-text-2">Design Systems.</div>
+  </div>
+</body>
+
 </div>
