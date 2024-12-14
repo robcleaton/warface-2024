@@ -19,7 +19,8 @@ body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
     color: var(--white);
   }
   a:hover {
-    color: var(--black);
+    color: var(--warface);
+    border-radius: 8px;
   }
   .social .list-inline-item a:hover {
     color: var(--black);
@@ -232,6 +233,11 @@ footer.home {
     color: var(--white);
   }
 }
+footer {
+  p {
+    color: var(--white);
+  }
+}
 
 // Case studies
 .case-study {
@@ -301,11 +307,8 @@ footer.home {
   }
   .case-study {
     .sheet {
-      a {
+      a, a:hover {
         color: var(--trainline-1);
-      }
-      a:hover {
-        color: var(--white);
       }
     }
   }
