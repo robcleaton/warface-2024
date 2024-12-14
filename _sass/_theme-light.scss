@@ -19,8 +19,9 @@ body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
     color: var(--white);
   }
   a:hover {
-    color: var(--warface);
+    color: var(--black);
     border-radius: 8px;
+    background: var(--warface);
   }
   .social .list-inline-item a:hover {
     color: var(--black);
@@ -88,8 +89,8 @@ a.navbar-brand:hover {
     }
     .small-tags li:hover {
       background: var(--black);
-      color: var(--white);
-      border: none;
+      color: var(--white) !important;
+      border: 1px solid var(--grey-900);
     }
   }
 
@@ -97,8 +98,8 @@ a.navbar-brand:hover {
     background: var(--warface);
 
     .small-tags li {
-      color: var(--grey-500);
-      border: 1px solid var(--grey-400);
+      color: var(--grey-600);
+      border: 1px solid var(--grey-600);
     }
   }
 }

@@ -20,13 +20,17 @@
     border: none;
     border-radius: 16px;
 
-    .card-title a {
+    .card-title {
       font-family: var(--mono);
       font-weight: 400;
       text-transform: none;
-      font-size: 28px;
+      font-size: 24px;
       word-spacing: -8px;
-      line-height: 18px;
+      line-height: 36px;
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
     img {
       height: 240px;
