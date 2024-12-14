@@ -8,7 +8,7 @@
   src: url(../fonts/Beni/BeniBlack.ttf);
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--mono), sans-serif;
   color: var(--black);
 }
 .display-1, .display-2, .display-3, .display-4 {
@@ -80,6 +80,13 @@ p.lead {
   letter-spacing: -0.1px;
   word-spacing: -2.8px;
   margin-top: 20px;
+
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 b {
   color: #505050;
@@ -90,6 +97,7 @@ ul.bullet-list {
 
 // Glyphs
 .blockquote {
+  font-size: 1rem;
   padding: 20px;
   p {
     font-family: Beni;

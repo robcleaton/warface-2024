@@ -4,11 +4,13 @@ html, body {
 
 body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--white);
+  color: var(--warface);
 }
 
 ::selection {
   background-color: rgba(36,70,0,0.3);
   color: #ff581a;
+  color: (var--coral);
 }
 
 // Navigation
@@ -112,6 +114,16 @@ a.navbar-brand:hover {
   a:hover {
     color: var(--warface);
   }
+  p.lead {
+    a {
+      color: var(--coral);
+    }
+  }
+  .social {
+    a:hover {
+      color: var(--coral);
+    }
+  }
 }
 
 .navbar-toggler-icon.theme-light {
@@ -135,7 +147,7 @@ a.navbar-brand:hover {
     padding-top: 62%;
   }
   p.lead {
-    color: var(--white);
+    color: var(--grey-800);
   }
   // Clients
   .logo-div.sainsburys {
@@ -222,6 +234,11 @@ footer.home {
 }
 
 // Case studies
+.case-study {
+    p.lead, p {
+    color: var(--white);
+  }
+}
 .sainsburys {
   .logo-div.sainsburys {
     background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;

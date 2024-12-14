@@ -1,53 +1,60 @@
 <style>
-  .container {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-    border: 1px solid #000;
+  .intro.hero {
+    transform: translate(-50%, -46%);
   }
+.intro {
+  h1 {
+    font-size: 17vh;
+    line-height: 11.3vh;
+  }
+  p.lead {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 28px;
+    display: none;
+  }
+}
 
-  .animated-text {
-    position: absolute;
-    bottom: -50px; /* Start position (below the view) */
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    animation: moveUp 3s ease-in-out forwards; /* Animation properties */
-  }
-  .animated-text-2 {
-    position: absolute;
-    bottom: -50px; /* Start position (below the view) */
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    animation: moveUp 3s ease-in-out forwards; /* Animation properties */
-  }
+@media only screen and (max-width: 600px) {
+  .intro.hero {
+      transform: translate(0%, 0%);
+    }
 
-  /* Keyframes to define the animation */
-  @keyframes moveUp {
-    0% {
-      bottom: -50px; /* Start below the container */
+  .intro {
+      p.lead {
+        font-size: 19px;
+      }
+
+      h1 {
+        font-size: 22vw;
+        line-height: 14.1vw;
+        font-family: 'Beni';
+      }
+      <!-- h1 {
+        font-size: 8vw;
+        line-height: 10vw;
+        font-family: 'IBM Plex Mono';
+        text-transform: none;
+      } -->
     }
-    100% {
-      bottom: 50px; /* End above the container */
-    }
-  }
+}
+
 </style>
 
 <div class="intro hero">
-  <div class="container-flex">
-    <p class="lead">Portfolio of Rob Cleaton.</p>
-    <h1>Design Systems, Mobile apps, Design thinking, Design strategy and UI/UX.</h1>
+  <div class="container-flex" style="margin-bottom: 60px;">
+    <div class="row">
+      <div class="col-xl-1">
+      </div>
+      <div class="col-xl-9">
+        <p class="lead">Works of Rob Cleaton</p>
+        <h1>Works of Rob Cleaton. 18 years experience leading teams & designing award winning experiences.</h1>
+      </div>
+      <div class="col-xl-2">
+      </div>
+    </div>
   </div>
 
-<body>
-  <div class="container">
-    <div class="animated-text">Portfolio of Rob Cleaton.</div>
-    <div class="animated-text-2">Design Systems.</div>
-  </div>
-</body>
+  {% include clients-carousel.html %}
 
 </div>
