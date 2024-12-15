@@ -154,25 +154,32 @@
   // Cookpad
     .project-card.cookpad {
       background: var(--cookpad-1);
-      .client {
-        background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
-        height: 40px;
-        background-size: contain;
-      }
+        .client {
+          background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
+          height: 40px;
+          background-size: contain;
+        }
+        h2 a, p.lead {
+          color: #5f340b;
+        }
+        ul.project-tags li {
+          border: 1px solid #5f340b;
+          color: #5f340b;
+        }
     }
     .project-card.cookpad:hover {
-      // background: #bd6c28;
-      .client {
-        background: url('../images/logos/cookpad-white-logo.svg') no-repeat;
-        height: 40px;
-        background-size: contain;
-      }
-      h2 a:hover {
-        color: var(--white);
-      }
-      p.lead {
-        color: var(--white);
-      }
+      background: #ffbf7f;
+        h2 a {
+          color: #734214;
+        }
+        h2 a:hover {
+          color: #5f340b;
+        }
+        ul.project-tags li:hover {
+          background: #5f340b;
+          border: 1px solid #5f340b;
+          color: #ffbf7f;
+        }
     }
 
   // OATBook
