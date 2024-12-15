@@ -100,11 +100,6 @@
     }
   }
 
-  .scroll-container {
-    flex-direction: row !important;
-  }
-
-
   .image-block {
     margin: 40px auto;
   }
@@ -151,6 +146,10 @@
   }
 
 
+  .blog-carousel .scroll-container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .blog-posts {
     padding: 40px 6vw;
@@ -244,6 +243,14 @@
       padding-top: 16px;
     }
   }
+
+// Clients
+  // Sainsburys
+    .project-card.sainsburys {
+      background-image: none;
+      background-size: contain;
+    }
+
   .project-card h2 {
     max-width: 90%;
   }
@@ -289,7 +296,10 @@
     }
   }
 
-
+  .blog-carousel .scroll-container {
+    display: flex;
+    flex-direction: row;
+  }
 
   #slide-1.color-block, #slide-2.color-block {
     background-repeat: no-repeat;

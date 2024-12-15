@@ -1,12 +1,11 @@
 // Project cards
-
 .project-card {
   width: 100%;
-  padding-bottom: 62px;
   transition: .4s;
   padding: 20px 16px;
   border-radius: 16px;
-  min-height: 44vh;
+  // padding-top: 28vh;
+  // min-height: 44vh;
 
   h2 {
     max-width: 90%;
@@ -19,6 +18,7 @@
   }
   h2 a {
     text-decoration: none;
+    color: var(--white);
   }
   p {
     font-family: var(--mono);
@@ -67,141 +67,183 @@
 
 // Clients
 
-// Sainsburys
-  .project-card.sainsburys {
-    background: #FF6B18;
-    .client {
-      background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
-      height: 32px;
-      background-size: contain;
-    }
-  }
-  .project-card.sainsburys:hover {
-    background: #fe4141;
-    .client {
-      background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
-      background-size: contain;
-    }
-  }
+  // Sainsburys
+    .project-card.sainsburys {
+      background-color: var(--sainsburys-1);
+      // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
+      // background-size: contain;
 
-// Trainline
-  .project-card.trainline {
-    background: #48D5B5;
+      .client {
+        background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
+        height: 32px;
+        background-size: contain;
+      }
+    }
+    .project-card.sainsburys:hover {
+      background: var(--sainsburys-3);
+        .client {
+          background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
+          background-size: contain;
+        }
+        h2 a:hover {
+          color: var(--sainsburys-1);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--sainsburys-1);
+          color: var(--white);
+        }
+    }
 
-    .client {
-      background: url('../images/logos/tl-black-logo.svg') no-repeat;
-      height: 32px;
-      background-size: contain;
-    }
-  }
-  .project-card.trainline:hover {
-    background: var(--trainline-3);
-    .client {
-      background: url('../images/logos/tl-white-logo.svg') no-repeat;
-      background-size: contain;
-    }
-    p.lead {
-      color: var(--white);
-    }
-  }
+  // Trainline
+    .project-card.trainline {
+      background: var(--trainline-1);
 
-// Carwow
-  .project-card.carwow {
-    background: #33e9f2;
-
-    .client {
-      background: url('../images/logos/carwow-black-logo.svg') no-repeat;
-      height: 24px;
-      background-size: contain;
+      .client {
+        background: url('../images/logos/tl-black-logo.svg') no-repeat;
+        height: 32px;
+        background-size: contain;
+      }
+      h2 a, p.lead {
+        text-decoration: none;
+        color: var(--trainline-2);
+      }
     }
-  }
-  .project-card.carwow:hover {
-    background: blue;
-    .client {
-      background: url('../images/logos/carwow-white-logo.svg') no-repeat;
-      background-size: contain;
+    .project-card.trainline:hover {
+      background: var(--trainline-3);
+        .client {
+          background: url('../images/logos/tl-white-logo.svg') no-repeat;
+          background-size: contain;
+        }
+        h2 a, p.lead {
+          color: var(--trainline-1);
+        }
+        h2 a:hover {
+          color: var(--white);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--trainline-1);
+          color: var(--white);
+        }
     }
-  }
-
-// JustEat
-  .project-card.justeat {
-    background: var(--justeat-1);
-    .client {
-      background: url('../images/logos/justeat-black-logo.svg') no-repeat;
-      height: 32px;
-      background-size: contain;
-    }
-  }
-  .project-card.justeat:hover {
-    background: #f14d12;
-  }
-
-// Cookpad
-  .project-card.cookpad {
-    background: var(--cookpad-1);
-    .client {
-      background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
-      height: 40px;
-      background-size: contain;
-    }
-  }
-  .project-card.cookpad:hover {
-    background: #bd6c28;
-    .client {
-      background: url('../images/logos/cookpad-white-logo.svg') no-repeat;
-      height: 40px;
-      background-size: contain;
-    }
-    p.lead {
-      color: var(--white);
-    }
-  }
-
-// BackBeat
-  .project-card.backbeat {
-    background: coral;
-    .client {
-      background: url('../images/logos/backbeat-black.svg') no-repeat;
-      height: 52px;
-      background-size: contain;
-    }
-  }
-  .project-card.backbeat:hover {
-    background: blue;
-    .client {
-      background: url('../images/logos/backbeat-white.svg') no-repeat;
-      height: 52px;
-      background-size: contain;
-    }
-  }
 
 
+  // JustEat
+    .project-card.justeat {
+      background: var(--justeat-1);
+      .client {
+        background: url('../images/logos/justeat-black-logo.svg') no-repeat;
+        height: 32px;
+        background-size: contain;
+      }
+    }
+    .project-card.justeat:hover {
+      background: var(--justeat-2);
+        .client {
+          background: url('../images/logos/justeat-white-logo.svg') no-repeat;
+          background-size: contain;
+        }
+        h2 a:hover {
+          color: var(--justeat-3);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--justeat-3);
+          color: var(--white);
+        }
+    }
 
-// RecliningWorm
-  .project-card.recliningworm {
-    background: var(--recliningworm-1);
-    .client {
-      background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
-      height: 52px;
-      background-size: contain;
+  // Cookpad
+    .project-card.cookpad {
+      background: var(--cookpad-1);
+      .client {
+        background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
+        height: 40px;
+        background-size: contain;
+      }
     }
-  }
-  .project-card.recliningworm:hover {
-    background: #542188;
-    .client {
-      background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
-      height: 52px;
-      background-size: contain;
+    .project-card.cookpad:hover {
+      // background: #bd6c28;
+      .client {
+        background: url('../images/logos/cookpad-white-logo.svg') no-repeat;
+        height: 40px;
+        background-size: contain;
+      }
+      h2 a:hover {
+        color: var(--white);
+      }
+      p.lead {
+        color: var(--white);
+      }
     }
-    p.lead {
-      color: var(--white);
-    }
-  }
 
-// OATBook
-  .project-card.oatbook {
-    background: #FDB813;
-  }
-  .project-card.oatbook:hover {
-    background: #e93d13;
-  }
+  // OATBook
+    .project-card.oatbook {
+      background: var(--oatbook-1);
+
+        h2 a, p.lead {
+          color: #2a2a2a;
+        }
+        ul.project-tags li {
+          border: 1px solid #2a2a2a;
+          color: var(--oatbook-3);
+        }
+    }
+    .project-card.oatbook:hover {
+      // background: #fae9cb;
+        h2 a:hover {
+          color: var(--white);
+          color: #383838;
+        }
+        ul.project-tags li:hover {
+          background-color: var(--oatbook-3);
+          color: var(--white);
+        }
+    }
+
+
+  // BackBeat
+    .project-card.backbeat {
+      background: coral;
+      .client {
+        background: url('../images/logos/backbeat-black.svg') no-repeat;
+        height: 52px;
+        background-size: contain;
+      }
+    }
+    .project-card.backbeat:hover {
+      background: blue;
+      .client {
+        background: url('../images/logos/backbeat-white.svg') no-repeat;
+        height: 52px;
+        background-size: contain;
+      }
+    }
+
+
+
+  // RecliningWorm
+    .project-card.recliningworm {
+      background: var(--recliningworm-1);
+      .client {
+        background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
+        height: 52px;
+        background-size: contain;
+      }
+    }
+    .project-card.recliningworm:hover {
+      background: #542188;
+        .client {
+          background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
+          height: 52px;
+          background-size: contain;
+        }
+        h2 a:hover {
+          color: var(--trainline-1);
+        }
+        p.lead {
+          color: var(--white);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--trainline-1);
+          color: var(--white);
+        }
+    }

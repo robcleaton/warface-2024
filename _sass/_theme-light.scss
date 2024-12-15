@@ -53,24 +53,9 @@ a.navbar-brand:hover {
 
 // Project cards
 .project-card {
-  h2 a {
-    color: var(--white);
-  }
-  h2 a:hover {
-    color: var(--black);
-  }
+
   p.lead {
     color: var(--white);
-  }
-}
-.project-card.trainline:hover {
-  h2 a:hover {
-    color: pink;
-  }
-}
-.project-card.sainsburys:hover {
-  h2 a:hover {
-    color: var(--sainsburys-2);
   }
 }
 
