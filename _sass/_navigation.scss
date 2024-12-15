@@ -1,5 +1,4 @@
 // Navigation
-
 nav.navbar {
   position: fixed;
   z-index: 500;
@@ -81,22 +80,26 @@ nav {
   width: 100%;
   padding: 20px;
 
-  ul.navbar-nav {
-    margin-top: 80px;
-  }
-  .social {
-    padding: 4vh 16px 1vh 16px;
-
-    ul {
-      margin-top: 20px;
+    ul.navbar-nav {
+      margin-top: 80px;
     }
-  }
-  h2 a {
-    font-size: 18vw;
-    line-height: 12.6vw;
-    padding: 0px !important;
-  }
-  h2 a:hover {
+    .social {
+      padding: 4vh 16px 1vh 16px;
+      ul {
+        margin-top: 20px;
+      }
+    }
+    h2 a {
+      font-size: 18vw;
+      line-height: 12.6vw;
+      padding: 0px !important;
+    }
+    h2 a:hover {
+      background: none !important;
+    }
+}
+.navbar-collapse.show {
+  .nav-link:hover {
     background: none !important;
   }
 }

@@ -85,8 +85,11 @@
           background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
           background-size: contain;
         }
-        h2 a:hover {
+        h2 a, p.lead {
           color: var(--sainsburys-1);
+        }
+        h2 a:hover {
+          color: var(--white);
         }
         ul.project-tags li:hover {
           background-color: var(--sainsburys-1);
@@ -160,25 +163,25 @@
           background-size: contain;
         }
         h2 a, p.lead {
-          color: #5f340b;
+          color: var(--cookpad-2);
         }
         ul.project-tags li {
-          border: 1px solid #5f340b;
-          color: #5f340b;
+          border: 1px solid var(--cookpad-2);
+          color: var(--cookpad-2);
         }
     }
     .project-card.cookpad:hover {
-      background: #ffbf7f;
+      background: var(--cookpad-3);
         h2 a {
           color: #734214;
         }
         h2 a:hover {
-          color: #5f340b;
+          color: var(--cookpad-2);
         }
         ul.project-tags li:hover {
-          background: #5f340b;
-          border: 1px solid #5f340b;
-          color: #ffbf7f;
+          background: var(--cookpad-2);
+          border: 1px solid var(--cookpad-2);
+          color: var(--cookpad-3);
         }
     }
 
