@@ -99,6 +99,9 @@ nav {
     }
 }
 .navbar-collapse.show {
+  a.navbar-brand {
+    background: url('../images/warface-logo-white.svg') center center no-repeat;
+  }
   .nav-link:hover {
     background: none !important;
   }

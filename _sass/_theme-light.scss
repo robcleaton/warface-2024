@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 // Navigation
 .navbar {
   a {
-    color: var(--white);
+    color: var(--black);
   }
   a:hover {
     color: var(--black);
@@ -42,10 +42,10 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 }
 
 a.navbar-brand {
-  background: url('../images/warface-logo-white.svg') center center no-repeat;
+  background: url('../images/warface-logo-black.svg') center center no-repeat;
 }
 a.navbar-brand:hover {
-  background: url('../images/warface-logo-black.svg') center center no-repeat;
+  background: url('../images/warface-logo-white.svg') center center no-repeat;
 }
 
 
