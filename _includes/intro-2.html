@@ -1,41 +1,43 @@
 <style>
-  .intro.hero {
-    transform: translate(-50%, -46%);
-  }
+.intro.hero {
+  transform: translate(-50%, -46%);
+}
 .intro {
   h1 {
-    font-size: 17vh;
-    line-height: 11.3vh;
+      font-size: 18vh;
+    font-size: clamp(140px, 13vw, 192px);
+      line-height: 12.2vh;
+    line-height: clamp(94px, 8.7vw, 128px);
+    color: var(--grey-800);
+    word-spacing: -6px;
   }
   p.lead {
     text-align: left;
     margin-left: 0px;
-    font-size: 28px;
-    display: none;
+    font-size: 1.9vh;
+    width: clamp(320px, 100%, 540px);
+    line-height: 2.8vh;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .intro.hero {
-      transform: translate(0%, 0%);
+      transform: translate(0%, 18%);
     }
 
   .intro {
       p.lead {
-        font-size: 19px;
+        font-size: 16px;
+        line-height: 24px;
+        <!-- width: 90%;
+        max-width: 100%; -->
       }
-
       h1 {
-        font-size: 22vw;
-        line-height: 14.1vw;
+        font-size: 21vw;
+        line-height: 14.2vw;
         font-family: 'Beni';
+        word-spacing: -6px;
       }
-      <!-- h1 {
-        font-size: 8vw;
-        line-height: 10vw;
-        font-family: 'IBM Plex Mono';
-        text-transform: none;
-      } -->
     }
 }
 
@@ -47,8 +49,8 @@
       <div class="col-xl-1">
       </div>
       <div class="col-xl-9">
-        <p class="lead">Works of Rob Cleaton</p>
-        <h1>Works of Rob Cleaton. 18 years experience leading teams & designing award winning experiences.</h1>
+        <h1>Crafting <br>Innovative & User Centric Product Experiences.</h1>
+        <p class="lead">Works of Rob Cleaton. 18 years experience speacilising in mobile product design and design systems.</p>
       </div>
       <div class="col-xl-2">
       </div>

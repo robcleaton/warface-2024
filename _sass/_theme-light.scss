@@ -2,15 +2,13 @@ html, body {
   background: var(--white);
 }
 
-body, h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
-  color: var(--white);
+h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
   color: var(--warface);
 }
 
 ::selection {
-  background-color: rgba(36,70,0,0.3);
-  color: #ff581a;
-  color: (var--coral);
+  background-color: rgba(0,0,0,0.1);
+  color: var(--coral);
 }
 
 // Navigation
@@ -138,73 +136,73 @@ a.navbar-brand:hover {
   }
   // Clients
   .logo-div.sainsburys {
-    background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
+    background: url('../images/logos/sainsburys-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 48px;
     width: 144px;
   }
   .logo-div.trainline {
-    background: url('../images/logos/tl-white-logo.svg')center no-repeat;
+    background: url('../images/logos/tl-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 28px;
     width: 130px;
   }
   .logo-div.GOVUK {
-    background: url('../images/logos/govuk-white-logo.svg')center no-repeat;
+    background: url('../images/logos/govuk-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 48px;
     width: 172px;
   }
   .logo-div.justeat {
-    background: url('../images/logos/justeat-white-logo.svg')center no-repeat;
+    background: url('../images/logos/justeat-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 48px;
     width: 172px;
   }
   .logo-div.science-museum {
-    background: url('../images/logos/sciencemuseum-white-logo.svg')center no-repeat;
+    background: url('../images/logos/sciencemuseum-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 62px;
     width: 164px;
   }
   .logo-div.carwow {
-    background: url('../images/logos/carwow-white-logo.svg')no-repeat;
+    background: url('../images/logos/carwow-black-logo.svg')no-repeat;
     background-size: contain;
     height: 24px;
     width: 182px;
   }
   .logo-div.FIFA {
-    background: url('../images/logos/fifa-white-logo.svg')center no-repeat;
+    background: url('../images/logos/fifa-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 44px;
     width: 144px;
   }
   .logo-div.cookpad {
-    background: url('../images/logos/cookpad-white-logo.svg')center no-repeat;
+    background: url('../images/logos/cookpad-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 62px;
     width: 160px;
   }
   .logo-div.homebase {
-    background: url('../images/logos/homebase-white-logo.svg')center no-repeat;
+    background: url('../images/logos/homebase-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 62px;
     width: 194px;
   }
   .logo-div.nectar {
-    background: url('../images/logos/nectar-white-logo.svg')center no-repeat;
+    background: url('../images/logos/nectar-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 76px;
     width: 80px;
   }
   .logo-div.lloydsBank {
-    background: url('../images/logos/lloyds-white-logo.svg')center no-repeat;
+    background: url('../images/logos/lloyds-black-logo.svg')center no-repeat;
     background-size: contain;
     height: 76px;
     width: 140px;
   }
   .logo-div.recliningworm {
-    background: url('../images/logos/recliningworm-logo-white.svg')center no-repeat;
+    background: url('../images/logos/recliningworm-logo-black.svg')center no-repeat;
     background-size: contain;
     height: 58px;
     width: 144px;
