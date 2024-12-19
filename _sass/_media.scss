@@ -1,5 +1,18 @@
 // Mobile
 @media only screen and (max-width: 600px) {
+  .intro {
+      h1 {
+        font-size: 22.4vw;
+        line-height: 15.2vw;
+        font-family: 'Beni';
+        word-spacing: -6px;
+      }
+      p.lead {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
   .sheet .project-card-group {
 
     .project-card {
@@ -22,14 +35,13 @@
 
   .block {
     padding: 5vw;
-
-    h3 {
-      font-size: 19vw;
-      line-height: 12.9vw;
-    }
-    p.lead {
-      max-width: 100%;
-    }
+      h3 {
+        font-size: 19vw;
+        line-height: 12.9vw;
+      }
+      p.lead {
+        max-width: 100%;
+      }
   }
 
 }
@@ -40,8 +52,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -46%);
+    transform: translate(-50%, -46%);
     margin: 0px;
 
     .container {

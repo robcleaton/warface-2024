@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 }
 
 ::selection {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,48,12,0.65);
   color: var(--coral);
 }
 
@@ -43,9 +43,12 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 
 a.navbar-brand {
   background: url('../images/warface-logo-black.svg') center center no-repeat;
+  transition: transform .2s;
 }
 a.navbar-brand:hover {
   background: url('../images/warface-logo-white.svg') center center no-repeat;
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 

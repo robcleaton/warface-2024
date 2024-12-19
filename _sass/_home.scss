@@ -34,20 +34,34 @@ canvas {
     width: 92px;
     height: 66px;
   }
-  .design-studio {
-    background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
-    background-size: contain;
-    position: relative;
-    width: 100%;
-    padding-top: 62%;
+  h1 {
+    font-size: clamp(150px, 13vw, 192px);
+    line-height: clamp(100px, 8.7vw, 128px);
+    color: var(--grey-800);
+    word-spacing: -6px;
   }
   p.lead {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: var(--mono);
-    text-align: center;
-    margin: auto;
+    text-align: left;
+    margin-left: 0px;
+    font-size: 1.9vh;
+    width: clamp(320px, 100%, 640px);
+    line-height: 2.8vh;
+    margin: 0px;
   }
+  // .design-studio {
+  //   background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
+  //   background-size: contain;
+  //   position: relative;
+  //   width: 100%;
+  //   padding-top: 62%;
+  // }
+  // p.lead {
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   font-family: var(--mono);
+  //   text-align: center;
+  //   margin: auto;
+  // }
 }
 
 

@@ -33,7 +33,7 @@
   }
 
   ul.project-tags {
-    font-family: 'IBM Plex Mono';
+    font-family: var(--mono);
     list-style: none;
     padding: 0px;
     display: flex;
