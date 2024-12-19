@@ -9,12 +9,11 @@
 
   h2 {
     max-width: 90%;
-    font-size: clamp(16px, 16vw, 328px);
+    font-size: clamp(16px, 16vw, 300px);
     word-spacing: -1.8vw;
     letter-spacing: -0.1vw;
-    line-height: 10.6vw;
-    font-size: 18vw;
     line-height: 12.2vw;
+    line-height: clamp(16px, 10.8vw, 204px);
   }
   h2 a {
     text-decoration: none;
@@ -69,9 +68,10 @@
 
   // Sainsburys
     .project-card.sainsburys {
-      background-color: var(--sainsburys-1);
+      // background-image: linear-gradient(to bottom right, var(--sainsburys-1), var(--sainsburys-2));
       // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
       // background-size: contain;
+      background-color: var(--sainsburys-1);
 
       .client {
         background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;

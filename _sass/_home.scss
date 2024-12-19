@@ -39,29 +39,27 @@ canvas {
     line-height: clamp(100px, 8.7vw, 128px);
     color: var(--grey-800);
     word-spacing: -6px;
+    animation: 'fadeUpIn' 2s;
+    -webkit-animation: 'fadeUpIn' 2s;
+    position: relative;
   }
   p.lead {
+    opacity: 0;
     text-align: left;
     margin-left: 0px;
     font-size: 1.9vh;
     width: clamp(320px, 100%, 640px);
     line-height: 2.8vh;
     margin: 0px;
+    animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
+    -webkit-animation: 'fadeUpIn' 2s forwards;
+    position: relative;
+    animation-delay: 0.6s;
   }
-  // .design-studio {
-  //   background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
-  //   background-size: contain;
-  //   position: relative;
-  //   width: 100%;
-  //   padding-top: 62%;
-  // }
-  // p.lead {
-  //   font-size: 16px;
-  //   line-height: 24px;
-  //   font-family: var(--mono);
-  //   text-align: center;
-  //   margin: auto;
-  // }
+  @-webkit-keyframes fadeUpIn /* Safari and Chrome */ {
+    from { opacity:0; top: 20px; }
+    to { opacity:1; top: 0px; }
+  }
 }
 
 

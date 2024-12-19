@@ -60,6 +60,9 @@
       width: 80vh;
       padding: 3vh 0px;
     }
+    p.lead {
+      padding-top: 16px;
+    }
   }
 
   p.lead {
@@ -71,6 +74,7 @@
   .project-card {
     border-radius: 25px;
     padding: 40px;
+    // padding-top: 50vh;
   }
   .card-body h5 {
     font-size: 56px;
@@ -251,14 +255,13 @@
     p.lead {
       font-size: 18px;
       max-width: 100%;
-      padding-top: 16px;
     }
   }
 
 // Clients
   // Sainsburys
     .project-card.sainsburys {
-      background-image: none;
+      // background-image: none;
       background-size: contain;
     }
 
@@ -408,6 +411,9 @@
 // Desktop Large
 @media only screen and (min-width: 1350px) {
 
+  .project-card {
+    padding-top: 40px;
+  }
   .case-study .sheet {
     padding-top: 80px;
   }
