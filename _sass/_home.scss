@@ -60,6 +60,16 @@ canvas {
     from { opacity:0; top: 20px; }
     to { opacity:1; top: 0px; }
   }
+
+  .brand-wheel {
+    opacity: 0;
+    -webkit-animation: 'fadeIn' 6s forwards;
+    animation-delay: 2s;
+  }
+  @-webkit-keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+  }
 }
 
 

@@ -12,6 +12,32 @@ nav {
   top: 0;
   width: 100%;
 
+  a {
+    color: var(--black);
+  }
+  a:hover {
+     color: var(--black);
+     border-radius: 8px;
+     background: var(--warface);
+   }
+
+   a.navbar-brand {
+     background: url('../images/warface-logo-black.svg') center center no-repeat;
+     transition: transform .2s;
+   }
+   a.navbar-brand:hover {
+     background: url('../images/warface-logo-white.svg') center center no-repeat;
+     transform: scale(1.1);
+     transition: all 0.3s;
+   }
+   .logo-sm {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     height: 48px;
+     width: 48px;
+   }
+
   .container-fluid {
     flex-direction: row-reverse;
     height: 48px;
@@ -23,20 +49,28 @@ nav {
 
     .nav-link {
       font-size: 20px;
+      // color: var(--black);
     }
   }
-  .logo-sm {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    height: 48px;
-    width: 48px;
+  .social {
+    li {
+      margin: 0px;
+      margin-right: 4px;
+    }
+    a {
+      padding: 9px 12px;
+      border-radius: 4px;
+    }
   }
-  .logo-sm:hover {
+
+  .collapsing, .show {
+    .primary-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
-  a {
-    color: var(--white);
-  }
+
   .primary-nav {
     margin-right: 20px;
     padding-left: 0px;
@@ -48,61 +82,39 @@ nav {
   }
 }
 
-.navbar {
-  .social a:hover {
-    color: var(--black);
-  }
-  .collapsing, .show {
-    .primary-nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-  }
-}
-.navbar .social {
-  li {
-    margin: 0px;
-    margin-right: 4px;
-    }
-  a {
-      padding: 9px 12px;
-      border-radius: 4px;
-    }
-}
-
-
 // Mobile nav
-.navbar-collapse {
-  background: var(--grey-800);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 20px;
+@media only screen and (max-width: 991px) {
+  #navbarNavDropdown {
+    background: var(--grey-800);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
 
-    ul.navbar-nav {
-      margin-top: 80px;
+    a:hover {
+      background: none;
+      color: var(--warface);
     }
-    .social {
-      padding: 4vh 16px 1vh 16px;
-      ul {
-        margin-top: 20px;
+
+      ul.navbar-nav {
+        margin-top: 80px;
       }
-    }
-    h2 a {
-      font-size: 18vw;
-      line-height: 12.6vw;
-      padding: 0px !important;
-    }
-    h2 a:hover {
-      background: none !important;
-    }
+      .social {
+        padding: 4vh 16px 1vh 16px;
+        ul {
+          margin-top: 20px;
+        }
+      }
+      h2 a {
+        font-size: 18vw;
+        line-height: 12.6vw;
+        padding: 0px !important;
+      }
+  }
 }
-.navbar-collapse.show {
+
+.navbar-collapse {
   a.navbar-brand {
     background: url('../images/warface-logo-white.svg') center center no-repeat;
-  }
-  .nav-link:hover {
-    background: none !important;
   }
 }

@@ -12,44 +12,34 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 }
 
 // Navigation
-.navbar {
-  a {
-    color: var(--black);
-  }
-  a:hover {
-    color: var(--black);
-    border-radius: 8px;
-    background: var(--warface);
-  }
-  .social .list-inline-item a:hover {
-    color: var(--black);
-  }
-  .collapsing, .show {
-    a {
-      color: var(--white);
-    }
-    a:hover, h2 a:hover {
-      color: var(--warface);
-    }
-    .social .list-inline-item a:hover {
-      color: var(--black);
-    }
-  }
-  .primary-nav .btn:hover, .social a:hover {
-    color: var(--black);
-    background: var(--warface);
-  }
-}
-
-a.navbar-brand {
-  background: url('../images/warface-logo-black.svg') center center no-repeat;
-  transition: transform .2s;
-}
-a.navbar-brand:hover {
-  background: url('../images/warface-logo-white.svg') center center no-repeat;
-  transform: scale(1.1);
-  transition: all 0.3s;
-}
+// .navbar {
+  // a {
+  //   color: var(--black);
+  // }
+//   a:hover {
+//     color: var(--black);
+//     border-radius: 8px;
+//     background: var(--warface);
+//   }
+//   .social .list-inline-item a:hover {
+//     color: var(--black);
+//   }
+//   .collapsing, .show {
+//     a {
+//       color: var(--white);
+//     }
+//     a:hover, h2 a:hover {
+//       color: var(--warface);
+//     }
+//     .social .list-inline-item a:hover {
+//       color: var(--black);
+//     }
+//   }
+//   .primary-nav .btn:hover, .social a:hover {
+//     color: var(--black);
+//     background: var(--warface);
+//   }
+// }
 
 
 // Project cards

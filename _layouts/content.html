@@ -1,9 +1,18 @@
 {% include header.html %}
 
 <style>
-  body.light-theme a.navbar-brand:hover {
-    background: url("../assets/images/warface-logo-white.svg") center center no-repeat;
+  .brand-wheel {
+    opacity: 0;
+    -webkit-animation: 'fadeIn' 3s forwards;
   }
+  nav {
+    a.navbar-brand {
+      background: url('assets/images/warface-logo-white.svg') center center no-repeat;
+      transition: transform .2s;
+    }
+    a {
+      color: var(--white);
+    }
   .sheet {
     padding-bottom: 3vh;
   }
