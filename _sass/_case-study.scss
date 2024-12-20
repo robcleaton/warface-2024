@@ -1,3 +1,31 @@
+.sheet {
+  h1 {
+    animation: "fadeUpIn" 2s;
+    -webkit-animation: "fadeUpIn" 2s;
+    position: relative;
+  }
+  p.lead {
+    opacity: 0;
+    animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
+    -webkit-animation: 'fadeUpIn' 2s forwards;
+    position: relative;
+    animation-delay: 0.6s;
+  }
+  .animation-content {
+    opacity: 0;
+    animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
+    -webkit-animation: 'fadeUpIn' 2s forwards;
+    position: relative;
+    animation-delay: 0.9s;
+  }
+  .animation-4th {
+    opacity: 0;
+    animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
+    -webkit-animation: 'fadeUpIn' 2s forwards;
+    position: relative;
+    animation-delay: 1.2s;
+  }
+}
 
 .subpage {
   .intro {
