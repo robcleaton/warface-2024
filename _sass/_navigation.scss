@@ -91,6 +91,10 @@ nav {
     width: 100%;
     padding: 20px;
 
+    a {
+      color: var(--white);
+    }
+
     a:hover {
       background: none;
       color: var(--warface);

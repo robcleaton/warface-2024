@@ -5,6 +5,26 @@ permalink: /about
 ---
 
 <style>
+  .animate {
+    opacity: 0;
+    animation: 'fadeUpIn' 2s forwards;
+    -webkit-animation: 'fadeUpIn' 2s forwards;
+    position: relative;
+    animation-delay: 0s;
+  }
+  /* Selects the second element of div siblings */
+  .animate:nth-child(2) {
+    background-color: red;
+    animation-delay: 0.8s;
+  }
+  .animate:nth-child(3) {
+    background-color: yellow;
+    animation-delay: 1.6s;
+  }
+  .animate:nth-child(4) {
+    background-color: blue;
+    animation-delay: 2s;
+  }
 </style>
 
 <div class="container-fluid sheet sub">
@@ -12,6 +32,20 @@ permalink: /about
     <div class="row">
       <div class="col-xl-1"></div>
       <div class="col-xl-9">
+
+        <!-- <div class="animate">
+          <h1>1.Hello</h1>
+        </div>
+        <div class="animate">
+          <h1>2.Hello</h1>
+        </div>
+        <div class="animate">
+          <h1>3.Hello</h1>
+        </div>
+        <div class="animate">
+          <h1>4.Hello</h1>
+        </div> -->
+
         <h1>Crafting <br>Innovative & User Centric Product Experiences.</h1>
         <p class="lead">Works of Rob Cleaton. 18 years experience speacilising in design leadership, design systems and mobile product design.</p>
 
