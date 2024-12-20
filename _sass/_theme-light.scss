@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 // Page content
 .sheet {
   background: var(--grey-800);
-  color: var(--white);
+  color: var(--warface);
 
   a {
     color: var(--warface);
@@ -112,17 +112,9 @@ h1, h2, h3, h4, h5, h6, p, .blockquote-footer {
 }
 
 
-
 .intro {
   a.navbar-brand {
     background: url('../images/warface-logo-white.svg') center center no-repeat;
-  }
-  .design-studio {
-    background: url('../images/graphics/text-DesignStudio-white.svg') center center no-repeat;
-    background-size: contain;
-    position: relative;
-    width: 100%;
-    padding-top: 62%;
   }
   p.lead {
     color: var(--grey-800);
