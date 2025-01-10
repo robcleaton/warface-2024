@@ -4,7 +4,6 @@
         "navigation",
         "typography",
         "colour",
-        "clients",
         "home",
         "quote-carousel",
         "case-study",
@@ -12,6 +11,7 @@
         "scroll",
         "case-study-carousels",
         "blog-cards",
+        "animate",
         "footer",
         "media"
 ;
@@ -23,4 +23,31 @@ a:hover {
 
 .navbar {
   padding: 0px;
+}
+
+ul.tag-chips {
+  font-family: var(--mono);
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  li {
+    border: 2px solid var(--grey-300);
+    color: var(--grey-300);
+    width: fit-content;
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-size: 16px;
+    transition: .4s;
+
+    &:hover {
+      background: var(--white);
+      border-color: var(--white);
+      color: var(--grey-800);
+    }
+  }
 }

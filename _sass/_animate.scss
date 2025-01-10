@@ -1,0 +1,79 @@
+@import
+        "clients",
+        "work-samples"
+;
+
+.animate {
+  opacity: 0;
+  animation: 'fadeUpIn' 2s forwards;
+  -webkit-animation: 'fadeUpIn' 2s forwards;
+  position: relative;
+  animation-delay: 0s;
+}
+/* Animate in the 2nd, 3rd and 4th div */
+.animate:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.animate:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.animate:nth-child(4) {
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeUpIn /* Safari and Chrome */ {
+  from { opacity:0; top: 20px; }
+  to { opacity:1; top: 0px; }
+}
+
+
+//
+  .brand-wheel {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    --animationspeed: 45s;
+    --animationdelay: calc(var(--animationspeed) / 2);
+  }
+
+  .brand-wheel::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .brand-wheel::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+    right: 0;
+  }
+
+  .brand-slide {
+    flex-shrink: 0;
+    position: absolute;
+    animation-name: slidelogo;
+    animation-duration: var(--animationspeed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .brand-slide.delay {
+    transform: translateX(100%);
+    animation-name: slidelogo2;
+  }
+
+  .brand-wheel:hover .brand-slide {
+    animation-play-state: paused;
+  }

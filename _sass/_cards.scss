@@ -7,6 +7,12 @@
   // padding-top: 28vh;
   // min-height: 44vh;
 
+  &:hover {
+    -ms-transform: scale(0.98); /* IE 9 */
+    -webkit-transform: scale(0.98); /* Safari 3-8 */
+    transform: scale(0.98);
+  }
+
   h2 {
     max-width: 90%;
     font-size: clamp(16px, 16vw, 300px);
@@ -18,6 +24,9 @@
   h2 a {
     text-decoration: none;
     color: var(--white);
+    &:hover {
+      text-decoration: none;
+    }
   }
   p {
     font-family: var(--mono);
@@ -50,17 +59,7 @@
       font-size: 16px;
       transition: .4s;
     }
-    li:hover {
-      background: var(--white);
-      color: var(--black);
-    }
   }
-}
-
-.project-card:hover {
-  -ms-transform: scale(0.98); /* IE 9 */
-  -webkit-transform: scale(0.98); /* Safari 3-8 */
-  transform: scale(0.98);
 }
 
 
@@ -73,29 +72,35 @@
       // background-size: contain;
       background-color: var(--sainsburys-1);
 
+      p.lead {
+        color: var(--white);
+      }
+
       .client {
         background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
         height: 32px;
         background-size: contain;
       }
+
+      &:hover {
+        background: var(--sainsburys-3);
+          .client {
+            background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
+            background-size: contain;
+          }
+          h2 a, p.lead {
+            color: var(--sainsburys-1);
+          }
+          h2 a:hover {
+            color: var(--white);
+          }
+          ul.project-tags li:hover {
+            background-color: var(--sainsburys-1);
+            color: var(--white);
+          }
+        }
     }
-    .project-card.sainsburys:hover {
-      background: var(--sainsburys-3);
-        .client {
-          background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
-          background-size: contain;
-        }
-        h2 a, p.lead {
-          color: var(--sainsburys-1);
-        }
-        h2 a:hover {
-          color: var(--white);
-        }
-        ul.project-tags li:hover {
-          background-color: var(--sainsburys-1);
-          color: var(--white);
-        }
-    }
+
 
   // Trainline
     .project-card.trainline {
@@ -110,49 +115,56 @@
         text-decoration: none;
         color: var(--trainline-2);
       }
+
+      &:hover {
+        background: var(--trainline-3);
+          .client {
+            background: url('../images/logos/tl-white-logo.svg') no-repeat;
+            background-size: contain;
+          }
+          h2 a, p.lead {
+            color: var(--trainline-1);
+          }
+          h2 a:hover {
+            color: var(--white);
+          }
+          ul.project-tags li:hover {
+            background-color: var(--trainline-1);
+            color: var(--white);
+          }
+        }
     }
-    .project-card.trainline:hover {
-      background: var(--trainline-3);
-        .client {
-          background: url('../images/logos/tl-white-logo.svg') no-repeat;
-          background-size: contain;
-        }
-        h2 a, p.lead {
-          color: var(--trainline-1);
-        }
-        h2 a:hover {
-          color: var(--white);
-        }
-        ul.project-tags li:hover {
-          background-color: var(--trainline-1);
-          color: var(--white);
-        }
-    }
+
 
 
   // JustEat
     .project-card.justeat {
       background: var(--justeat-1);
+
       .client {
         background: url('../images/logos/justeat-black-logo.svg') no-repeat;
         height: 32px;
         background-size: contain;
       }
+      p.lead {
+        color: var(--white);
+      }
+      &:hover {
+        background: var(--justeat-2);
+          .client {
+            background: url('../images/logos/justeat-white-logo.svg') no-repeat;
+            background-size: contain;
+          }
+          h2 a:hover {
+            color: var(--justeat-3);
+          }
+          ul.project-tags li:hover {
+            background-color: var(--justeat-3);
+            color: var(--white);
+          }
+        }
     }
-    .project-card.justeat:hover {
-      background: var(--justeat-2);
-        .client {
-          background: url('../images/logos/justeat-white-logo.svg') no-repeat;
-          background-size: contain;
-        }
-        h2 a:hover {
-          color: var(--justeat-3);
-        }
-        ul.project-tags li:hover {
-          background-color: var(--justeat-3);
-          color: var(--white);
-        }
-    }
+
 
   // Cookpad
     .project-card.cookpad {
@@ -169,21 +181,23 @@
           border: 1px solid var(--cookpad-2);
           color: var(--cookpad-2);
         }
+
+        &:hover {
+          background: var(--cookpad-3);
+            h2 a {
+              color: #734214;
+            }
+            h2 a:hover {
+              color: var(--cookpad-2);
+            }
+            ul.project-tags li:hover {
+              background: var(--cookpad-2);
+              border: 1px solid var(--cookpad-2);
+              color: var(--cookpad-3);
+            }
+        }
     }
-    .project-card.cookpad:hover {
-      background: var(--cookpad-3);
-        h2 a {
-          color: #734214;
-        }
-        h2 a:hover {
-          color: var(--cookpad-2);
-        }
-        ul.project-tags li:hover {
-          background: var(--cookpad-2);
-          border: 1px solid var(--cookpad-2);
-          color: var(--cookpad-3);
-        }
-    }
+
 
   // OATBook
     .project-card.oatbook {
@@ -196,16 +210,17 @@
           border: 1px solid #2a2a2a;
           color: var(--oatbook-3);
         }
-    }
-    .project-card.oatbook:hover {
-      // background: #fae9cb;
-        h2 a:hover {
-          color: var(--white);
-          color: #383838;
-        }
-        ul.project-tags li:hover {
-          background-color: var(--oatbook-3);
-          color: var(--white);
+
+        &:hover {
+          // background: #fae9cb;
+            h2 a:hover {
+              color: var(--white);
+              color: #383838;
+            }
+            ul.project-tags li:hover {
+              background-color: var(--oatbook-3);
+              color: var(--white);
+            }
         }
     }
 
@@ -238,22 +253,26 @@
         height: 52px;
         background-size: contain;
       }
-    }
-    .project-card.recliningworm:hover {
-      background: #542188;
-        .client {
-          background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
-          height: 52px;
-          background-size: contain;
-        }
-        h2 a:hover {
-          color: var(--trainline-1);
-        }
-        p.lead {
-          color: var(--white);
-        }
-        ul.project-tags li:hover {
-          background-color: var(--trainline-1);
-          color: var(--white);
-        }
+      p.lead {
+        color: var(--white);
+      }
+
+      &:hover {
+        background: #542188;
+          .client {
+            background: url('../images/logos/recliningworm-logo-white.svg') no-repeat;
+            height: 52px;
+            background-size: contain;
+          }
+          h2 a:hover {
+            color: var(--trainline-1);
+          }
+          p.lead {
+            color: var(--white);
+          }
+          ul.project-tags li:hover {
+            background-color: var(--trainline-1);
+            color: var(--white);
+          }
+      }
     }

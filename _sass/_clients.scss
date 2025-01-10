@@ -1,56 +1,6 @@
 // Clients
 
 // Home client carousel
-  .brand-wheel {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    height: 100px;
-    --animationspeed: 45s;
-    --animationdelay: calc(var(--animationspeed) / 2);
-  }
-
-  .brand-wheel::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 5%;
-    z-index: 2;
-    pointer-events: none;
-  }
-  .brand-wheel::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 5%;
-    z-index: 2;
-    pointer-events: none;
-    right: 0;
-  }
-
-  .brand-slide {
-    flex-shrink: 0;
-    position: absolute;
-    animation-name: slidelogo;
-    animation-duration: var(--animationspeed);
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .brand-slide.delay {
-    transform: translateX(100%);
-    animation-name: slidelogo2;
-  }
-
-  .brand-wheel:hover .brand-slide {
-    animation-play-state: paused;
-  }
-
   .logo-div {
     display: inline-flex;
     align-self: center;
@@ -128,8 +78,21 @@
     height: 76px;
     width: 140px;
   }
+
   .clients-white {
     // Clients
+    .logo-div.argos {
+      background: url('../images/logos/argos-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 48px;
+      width: 144px;
+    }
+    .logo-div.GOVUK {
+      background: url('../images/logos/govuk-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 48px;
+      width: 172px;
+    }
     .logo-div.sainsburys {
       background: url('../images/logos/sainsburys-white-logo.svg')center no-repeat;
       background-size: contain;
@@ -142,17 +105,23 @@
       height: 28px;
       width: 130px;
     }
-    .logo-div.GOVUK {
-      background: url('../images/logos/govuk-white-logo.svg')center no-repeat;
-      background-size: contain;
-      height: 48px;
-      width: 172px;
-    }
     .logo-div.justeat {
       background: url('../images/logos/justeat-white-logo.svg')center no-repeat;
       background-size: contain;
       height: 48px;
       width: 172px;
+    }
+    .logo-div.prolific {
+      background: url('../images/logos/prolific-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 50px;
+      width: 144px;
+    }
+    .logo-div.rbs {
+      background: url('../images/logos/rbs-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 48px;
+      width: 144px;
     }
     .logo-div.science-museum {
       background: url('../images/logos/sciencemuseum-white-logo.svg')center no-repeat;
@@ -202,7 +171,59 @@
       height: 58px;
       width: 144px;
     }
+    .logo-div.experian {
+      background: url('../images/logos/experian-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 58px;
+      width: 144px;
+    }
+    .logo-div.akqa {
+      background: url('../images/logos/akqa-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 50px;
+      width: 144px;
+    }
+    .logo-div.bbh {
+      background: url('../images/logos/bbh-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 58px;
+      width: 144px;
+    }
+    .logo-div.rehab {
+      background: url('../images/logos/rehab-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 58px;
+      width: 144px;
+    }
+    .logo-div.madebymany {
+      background: url('../images/logos/madebymany-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 58px;
+      width: 144px;
+    }
+    .logo-div.publicis-sapient {
+      background: url('../images/logos/publicis-sapient-white-logo.svg')center no-repeat;
+      background-size: contain;
+      height: 58px;
+      width: 144px;
+    }
+  }
 
+//About page
+  .selected-clients {
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2vh 20px;
+
+      .logo-div {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   @keyframes slidelogo {
@@ -336,5 +357,14 @@
     background: url('../images/logos/tl-black-logo.svg')center center no-repeat;
     width: 100%;
     background-size: 68%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-wheel.clients {
+    .logo-div {
+      background-size: 70% !important;
+      margin: 0 16px;
+    }
   }
 }

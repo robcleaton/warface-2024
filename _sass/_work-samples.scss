@@ -1,0 +1,61 @@
+.brand-wheel.work-samples {
+  height: 280px;
+  margin: 80px 0px;
+
+  .work-sample-div {
+    background: var(--warface);
+    border-radius: 12px !important;
+    overflow: hidden;
+    height: 280px;
+    width: 280px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      transform: scale(1);
+      background: none;
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      padding: 0px;
+      border: none;
+      opacity: 0;
+      animation: 'fadeIn' 0.4s forwards;
+      -webkit-animation: 'fadeIn' 2s forwards;
+      position: relative;
+      animation-delay: 1.2s;
+      transition: transform .2s;
+    }
+  }
+  .work-sample-div:hover img {
+    transform: scale(1.06);
+    transition: transform .2s
+  }
+  .work-sample-div:nth-child(2) {
+    background: red;
+  }
+  .work-sample-div:nth-child(3) {
+    background: orange;
+  }
+  .work-sample-div:nth-child(4) {
+    background: yellow;
+  }
+  .work-sample-div:nth-child(5) {
+    background: green;
+  }
+}
+
+
+// Tablet
+@media only screen and (min-width: 991px) {
+  .brand-wheel.work-samples {
+    height: 480px;
+
+    .work-sample-div {
+      height: 480px;
+      width: 480px;
+      margin-left: 40px;
+    }
+  }
+}

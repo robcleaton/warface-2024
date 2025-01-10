@@ -37,6 +37,22 @@
   }
 }
 
+.carousel-indicators {
+  gap: 8px;
+
+  button {
+    background: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 40px;
+    border: 4px solid var(--grey-600);
+  }
+}
+.carousel-indicators button.active {
+  background: var(--warface);
+  border: none;
+}
+
 .carousel-control-next, .carousel-control-prev {
   border: none;
   width: 45%;
