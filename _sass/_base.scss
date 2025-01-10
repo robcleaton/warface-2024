@@ -25,6 +25,10 @@ a:hover {
   padding: 0px;
 }
 
+.table td, .table th {
+  border-color: var(--grey-600);
+}
+
 ul.tag-chips {
   font-family: var(--mono);
   list-style: none;
