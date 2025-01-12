@@ -4,6 +4,12 @@
   background-image: none;
 }
 
+.carousel-item {
+  .blockquote p {
+    color: var(--warface);
+  }
+}
+
 .block {
   background: black;
   width: 100%;

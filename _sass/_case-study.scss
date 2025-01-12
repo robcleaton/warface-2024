@@ -6,7 +6,7 @@
   }
 }
 .sheet {
-  p.lead, td {
+  p.lead, p, td {
     color: var(--grey-400);
   }
   .table {
@@ -77,11 +77,21 @@
   }
 
 // Just Eat
-  .justeat {
+  .just-eat {
     .logo-div.justeat {
       background: url('../images/logos/justeat-white-logo.svg') center no-repeat;
       background-size: contain;
       height: 48px;
+      width: 172px;
+    }
+  }
+
+// RecliningWorm
+  .recliningworm {
+    .logo-div.recliningworm {
+      background: url('../images/logos/recliningworm-white-logo.svg') center no-repeat;
+      background-size: contain;
+      height: 72px;
       width: 172px;
     }
   }
