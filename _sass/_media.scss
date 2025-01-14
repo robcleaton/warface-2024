@@ -7,14 +7,18 @@
         font-family: 'Beni';
         word-spacing: -6px;
       }
-      p.lead {
-        font-size: 16px;
-        line-height: 24px;
-      }
       .container-flex {
         margin-bottom: 28px !important;
       }
     }
+
+  p.lead {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  ul.tag-chips li {
+    font-size: 12px;
+  }
 
   .sheet .project-card-group {
     .project-card {
@@ -93,6 +97,11 @@
   .sheet {
     margin-top: clamp(558px, 120vw, 97vh);
     margin-bottom: clamp(558px, 56vw, 772px);
+
+    a.navbar-brand {
+      height: 80px;
+      width: 100px;
+    }
   }
   .case-study .sheet {
     margin-top: 86vh;
@@ -100,7 +109,7 @@
   }
 
   .sheet .project-card-group {
-    padding: 120px 16px;
+    padding: 80px 16px;
     gap: 16px;
   }
 
@@ -113,6 +122,10 @@
       width: clamp(100px, 92%, 1130px);
       word-spacing: -4px;
     }
+  }
+
+  .img-fluid {
+    margin-top: 28px;
   }
 
   .image-block {
