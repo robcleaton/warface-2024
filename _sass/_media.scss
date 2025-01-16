@@ -50,6 +50,30 @@
       }
   }
 
+  .table-stacked thead {
+    display: none; /* Hide the table headers */
+  }
+
+  .table-stacked tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; /* Add space between rows */
+    // padding: 0.5rem;
+  }
+
+  .table-stacked td {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem 0;
+  }
+
+  .table-stacked td::before {
+    content: attr(data-label); /* Use the data-label attribute for headers */
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+
 }
 
 // Tablet
@@ -227,6 +251,11 @@
   .sheet.sub {
     p.lead {
       max-width: 72%;
+    }
+  }
+  .case-study .sheet.sub {
+    p.lead {
+      max-width: 100%;
     }
   }
 
