@@ -10,7 +10,7 @@
       .container-flex {
         margin-bottom: 28px !important;
       }
-    }
+  }
 
   p.lead {
     font-size: 16px;
@@ -73,6 +73,29 @@
     margin-right: 1rem;
   }
 
+
+  .case-study {
+    .logo-div.sainsburys {
+      height: 28px;
+      width: 100px;
+    }
+    .logo-div.trainline {
+      height: 24px;
+      width: 100px;
+    }
+    .logo-div.justeat {
+      height: 32px;
+      width: 114px;
+    }
+    .logo-div.cookpad {
+      height: 32px;
+      width: 114px;
+    }
+    .logo-div.recliningworm {
+      height: 48px;
+      width: 114px;
+    }
+  }
 
 }
 
