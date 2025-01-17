@@ -88,8 +88,8 @@ p.lead {
     text-decoration: none;
   }
 }
-b {
-  color: #505050;
+b, strong {
+  color: var(--grey-200);
 }
 ul.bullet-list {
   margin-left: 16px;
