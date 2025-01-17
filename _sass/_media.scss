@@ -20,6 +20,9 @@
     font-size: 12px;
   }
 
+  .sheet.sub .row {
+    padding: 16px 0px;
+  }
   .sheet .project-card-group {
     .project-card {
       h2 {
@@ -306,6 +309,7 @@
   }
   .blockquote {
     padding: 5vw;
+    padding-bottom: 4vw;
     p {
       font-size: 144px;
       line-height: 100px;
