@@ -41,6 +41,22 @@
   .project-card.trainline .client {
     height: 22px;
   }
+  .project-card.justeat .client {
+    height: 28px;
+  }
+  .project-card.cookpad .client {
+    height: 32px;
+  }
+  .project-card.lloyds .client {
+    height: 32px;
+  }
+  .project-card.govuk .client {
+    height: 24px;
+  }
+  .project-card.recliningworm .client {
+    height: 52px;
+  }
+
 
   .block {
     padding: 5vw;
@@ -75,7 +91,6 @@
     font-weight: bold;
     margin-right: 1rem;
   }
-
 
   .case-study {
     .logo-div.sainsburys {

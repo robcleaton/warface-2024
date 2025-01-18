@@ -65,42 +65,144 @@
 
 // Clients
 
-  // Sainsburys
-    .project-card.sainsburys {
-      // background-image: linear-gradient(to bottom right, var(--sainsburys-1), var(--sainsburys-2));
-      // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
-      // background-size: contain;
-      background-color: var(--sainsburys-1);
-
-      p.lead {
-        color: var(--white);
-      }
-
+// Cookpad
+  .project-card.cookpad {
+    background: var(--cookpad-1);
       .client {
-        background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
-        height: 32px;
+        background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
+        height: 40px;
         background-size: contain;
+      }
+      h2 a, p.lead {
+        color: var(--cookpad-2);
+      }
+      ul.project-tags li {
+        border: 1px solid var(--cookpad-2);
+        color: var(--cookpad-2);
       }
 
       &:hover {
-        background: var(--sainsburys-3);
+        background: var(--cookpad-3);
+          h2 a {
+            color: #734214;
+          }
+          h2 a:hover {
+            color: var(--cookpad-2);
+          }
+          ul.project-tags li:hover {
+            background: var(--cookpad-2);
+            border: 1px solid var(--cookpad-2);
+            color: var(--cookpad-3);
+          }
+      }
+    }
+
+  // Sainsburys
+  .project-card.sainsburys {
+    // background-image: linear-gradient(to bottom right, var(--sainsburys-1), var(--sainsburys-2));
+    // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
+    // background-size: contain;
+    background-color: var(--sainsburys-1);
+
+    p.lead {
+      color: var(--white);
+    }
+
+    .client {
+      background: url('../images/logos/sainsburys-black-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
+
+    &:hover {
+      background: var(--sainsburys-3);
+        .client {
+          background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
+          background-size: contain;
+        }
+        h2 a, p.lead {
+          color: var(--sainsburys-1);
+        }
+        h2 a:hover {
+          color: var(--white);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--sainsburys-1);
+          color: var(--white);
+        }
+      }
+    }
+
+
+  // GOVUK
+  .project-card.govuk {
+    background: var(--govuk-1);
+
+    .client {
+      background: url('../images/logos/govuk-white-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
+    h2 a, p.lead {
+      text-decoration: none;
+      color: var(--govuk-2);
+    }
+
+    &:hover {
+        h2 a, p.lead {
+          color: var(--grey-100);
+        }
+        h2 a:hover {
+          color: var(--white);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--govuk-2);
+          color: var(--govuk-1);
+        }
+      }
+    }
+
+
+  // Lloyds open banking
+    .project-card.lloyds {
+      background: var(--lloyds-1);
+
+      .client {
+        background: url('../images/logos/lloyds-black-logo.svg') no-repeat;
+        height: 44px;
+        background-size: contain;
+      }
+      h2 a, p.lead {
+        text-decoration: none;
+        color: var(--lloyds-3);
+      }
+      ul.project-tags li {
+        border: 1px solid var(--lloyds-3);
+        color: var(--lloyds-3);
+      }
+
+      &:hover {
+        background: var(--lloyds-3);
           .client {
-            background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
+            background: url('../images/logos/lloyds-white-logo.svg') no-repeat;
             background-size: contain;
           }
           h2 a, p.lead {
-            color: var(--sainsburys-1);
+            color: var(--lloyds-1);
           }
           h2 a:hover {
             color: var(--white);
           }
+          ul.project-tags li {
+            border: 1px solid var(--lloyds-1);
+            color: var(--lloyds-1);
+          }
           ul.project-tags li:hover {
-            background-color: var(--sainsburys-1);
-            color: var(--white);
+            background-color: var(--lloyds-1);
+            color: var(--lloyds-3);
           }
         }
     }
-
 
   // Trainline
     .project-card.trainline {
@@ -165,38 +267,6 @@
         }
     }
 
-
-  // Cookpad
-    .project-card.cookpad {
-      background: var(--cookpad-1);
-        .client {
-          background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
-          height: 40px;
-          background-size: contain;
-        }
-        h2 a, p.lead {
-          color: var(--cookpad-2);
-        }
-        ul.project-tags li {
-          border: 1px solid var(--cookpad-2);
-          color: var(--cookpad-2);
-        }
-
-        &:hover {
-          background: var(--cookpad-3);
-            h2 a {
-              color: #734214;
-            }
-            h2 a:hover {
-              color: var(--cookpad-2);
-            }
-            ul.project-tags li:hover {
-              background: var(--cookpad-2);
-              border: 1px solid var(--cookpad-2);
-              color: var(--cookpad-3);
-            }
-        }
-    }
 
 
   // OATBook
