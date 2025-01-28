@@ -143,8 +143,17 @@
 
   .project-card {
     border-radius: 25px;
-    padding: 40px;
-    // padding-top: 50vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+      ul.project-tags {
+        gap: 8px;
+
+        li {
+          padding: 8px 16px;
+        }
+      }
   }
   .card-body h5 {
     font-size: 56px;
@@ -497,6 +506,7 @@
 
   .project-card {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .case-study .sheet {
     padding-top: 80px;

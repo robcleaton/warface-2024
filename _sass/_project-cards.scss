@@ -3,7 +3,9 @@
   width: 100%;
   transition: .4s;
   padding: 20px 16px;
+  padding-top: 38vw;
   border-radius: 16px;
+
   // padding-top: 28vh;
   // min-height: 44vh;
 
@@ -48,14 +50,14 @@
     margin-top: 16px;
     margin-bottom: 0px;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 4px;
 
     li {
       border: 2px solid var(--white);
       color: white;
       width: fit-content;
       border-radius: 30px;
-      padding: 6px 16px;
+      padding: 4px 12px;
       font-size: 16px;
       transition: .4s;
     }
@@ -67,7 +69,9 @@
 
 // Cookpad
   .project-card.cookpad {
-    background: var(--cookpad-1);
+    background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-mobile.png') 0 0 no-repeat;
+    background-size: contain;
+
       .client {
         background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
         height: 40px;
@@ -82,7 +86,9 @@
       }
 
       &:hover {
-        background: var(--cookpad-3);
+        background: var(--cookpad-3) url('../images/projects/case-study-cards/cs-card-cookpad-mobile-hover.png') 0 0 no-repeat;
+        background-size: contain;
+
           h2 a {
             color: #734214;
           }
@@ -101,8 +107,8 @@
   .project-card.sainsburys {
     // background-image: linear-gradient(to bottom right, var(--sainsburys-1), var(--sainsburys-2));
     // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
-    // background-size: contain;
-    background-color: var(--sainsburys-1);
+    background: var(--sainsburys-1) url('../images/projects/case-study-cards/cs-card-sainsburys-mobile.png') 0 0 no-repeat;
+    background-size: contain;
 
     p.lead {
       color: var(--white);
@@ -115,7 +121,9 @@
     }
 
     &:hover {
-      background: var(--sainsburys-3);
+      background: var(--sainsburys-3) url('../images/projects/case-study-cards/cs-card-sainsburys-mobile-hover.png') 0 0 no-repeat;
+      background-size: contain;
+
         .client {
           background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
           background-size: contain;
@@ -206,7 +214,8 @@
 
   // Trainline
     .project-card.trainline {
-      background: var(--trainline-1);
+      background: var(--trainline-1) url('../images/projects/case-study-cards/cs-card-trainline-mobile.png') 0 0 no-repeat;
+      background-size: contain;
 
       .client {
         background: url('../images/logos/tl-black-logo.svg') no-repeat;
@@ -219,7 +228,9 @@
       }
 
       &:hover {
-        background: var(--trainline-3);
+        background: var(--trainline-3) url('../images/projects/case-study-cards/cs-card-trainline-mobile-hover.png') 0 0 no-repeat;
+        background-size: contain;
+
           .client {
             background: url('../images/logos/tl-white-logo.svg') no-repeat;
             background-size: contain;
@@ -237,11 +248,10 @@
         }
     }
 
-
-
   // JustEat
     .project-card.justeat {
-      background: var(--justeat-1);
+      background: var(--justeat-1) url('../images/projects/case-study-cards/cs-card-justeat-mobile.png') 0 0 no-repeat;
+      background-size: contain;
 
       .client {
         background: url('../images/logos/justeat-black-logo.svg') no-repeat;
@@ -252,7 +262,9 @@
         color: var(--white);
       }
       &:hover {
-        background: var(--justeat-2);
+        background: var(--justeat-2) url('../images/projects/case-study-cards/cs-card-justeat-mobile.png') 0 0 no-repeat;
+        background-size: contain;
+
           .client {
             background: url('../images/logos/justeat-white-logo.svg') no-repeat;
             background-size: contain;
@@ -267,11 +279,10 @@
         }
     }
 
-
-
   // OATBook
     .project-card.oatbook {
-      background: var(--oatbook-1);
+      background: var(--oatbook-1) url('../images/projects/case-study-cards/cs-card-oatbook-mobile.png') 0 0 no-repeat;
+      background-size: contain;
 
         h2 a, p.lead {
           color: #2a2a2a;
@@ -282,7 +293,9 @@
         }
 
         &:hover {
-          // background: #fae9cb;
+          background: #ffc031 url('../images/projects/case-study-cards/cs-card-oatbook-mobile.png') 0 0 no-repeat;
+          background-size: contain;
+
             h2 a:hover {
               color: var(--white);
               color: #383838;
@@ -293,7 +306,6 @@
             }
         }
     }
-
 
   // BackBeat
     .project-card.backbeat {
@@ -313,11 +325,11 @@
       }
     }
 
-
-
   // RecliningWorm
     .project-card.recliningworm {
-      background: var(--recliningworm-1);
+      background: var(--recliningworm-1) url('../images/projects/case-study-cards/cs-card-reclingingworm-mobile.png') 0 0 no-repeat;
+      background-size: contain;
+
       .client {
         background: url('../images/logos/recliningworm-white-logo.svg') no-repeat;
         height: 52px;
@@ -328,7 +340,9 @@
       }
 
       &:hover {
-        background: #542188;
+        background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-mobile.png') 0 0 no-repeat;
+        background-size: contain;
+
           .client {
             background: url('../images/logos/recliningworm-white-logo.svg') no-repeat;
             height: 52px;
@@ -344,5 +358,80 @@
             background-color: var(--trainline-1);
             color: var(--white);
           }
+      }
+    }
+    // Desktop Large
+    @media only screen and (min-width: 1350px) {
+      
+      .project-card.cookpad {
+        background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: var(--cookpad-3) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.sainsburys {
+        background: var(--sainsburys-1) url('../images/projects/case-study-cards/cs-card-sainsburys-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: var(--sainsburys-3) url('../images/projects/case-study-cards/cs-card-sainsburys-desktop-hover.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.trainline {
+        background: var(--trainline-1) url('../images/projects/case-study-cards/cs-card-trainline-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: var(--trainline-3) url('../images/projects/case-study-cards/cs-card-trainline-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.justeat {
+        background: var(--justeat-1) url('../images/projects/case-study-cards/cs-card-justeat-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: var(--justeat-2) url('../images/projects/case-study-cards/cs-card-justeat-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.oatbook {
+        background: var(--oatbook-1) url('../images/projects/case-study-cards/cs-card-oatbook-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: #ffc031 url('../images/projects/case-study-cards/cs-card-oatbook-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.recliningworm {
+        background: var(--recliningworm-1) url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
       }
     }
