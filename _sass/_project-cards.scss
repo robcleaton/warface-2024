@@ -173,7 +173,8 @@
 
   // Lloyds open banking
     .project-card.lloyds {
-      background: var(--lloyds-1);
+      background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-mobile.png') 0 0 no-repeat;
+      background-size: contain;
 
       .client {
         background: url('../images/logos/lloyds-black-logo.svg') no-repeat;
@@ -190,7 +191,9 @@
       }
 
       &:hover {
-        background: var(--lloyds-3);
+        background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-mobile-hover.png') 0 0 no-repeat;
+        background-size: contain;
+
           .client {
             background: url('../images/logos/lloyds-white-logo.svg') no-repeat;
             background-size: contain;
@@ -362,7 +365,7 @@
     }
     // Desktop Large
     @media only screen and (min-width: 1350px) {
-      
+
       .project-card.cookpad {
         background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
         background-size: contain;
@@ -406,6 +409,18 @@
 
         &:hover {
           background: var(--justeat-2) url('../images/projects/case-study-cards/cs-card-justeat-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.lloyds {
+        background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
         }
