@@ -71,6 +71,7 @@
   .project-card.cookpad {
     background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-mobile.png') 0 0 no-repeat;
     background-size: contain;
+    transition: background-image 0.3s ease; /* Smooth transition */
 
       .client {
         background: url('../images/logos/cookpad-black-logo.svg') no-repeat;
@@ -88,6 +89,7 @@
       &:hover {
         background: var(--cookpad-3) url('../images/projects/case-study-cards/cs-card-cookpad-mobile-hover.png') 0 0 no-repeat;
         background-size: contain;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
           h2 a {
             color: #734214;
@@ -109,6 +111,7 @@
     // background-image: url('../images/projects/sainsburys/sainsburys-intro-hero.png');
     background: var(--sainsburys-1) url('../images/projects/case-study-cards/cs-card-sainsburys-mobile.png') 0 0 no-repeat;
     background-size: contain;
+    transition: background-image 0.3s ease; /* Smooth transition */
 
     p.lead {
       color: var(--white);
@@ -123,6 +126,7 @@
     &:hover {
       background: var(--sainsburys-3) url('../images/projects/case-study-cards/cs-card-sainsburys-mobile-hover.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
         .client {
           background: url('../images/logos/sainsburys-white-logo.svg') no-repeat;
@@ -175,6 +179,7 @@
     .project-card.lloyds {
       background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-mobile.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
       .client {
         background: url('../images/logos/lloyds-black-logo.svg') no-repeat;
@@ -193,6 +198,7 @@
       &:hover {
         background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-mobile-hover.png') 0 0 no-repeat;
         background-size: contain;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
           .client {
             background: url('../images/logos/lloyds-white-logo.svg') no-repeat;
@@ -219,6 +225,7 @@
     .project-card.trainline {
       background: var(--trainline-1) url('../images/projects/case-study-cards/cs-card-trainline-mobile.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
       .client {
         background: url('../images/logos/tl-black-logo.svg') no-repeat;
@@ -233,6 +240,7 @@
       &:hover {
         background: var(--trainline-3) url('../images/projects/case-study-cards/cs-card-trainline-mobile-hover.png') 0 0 no-repeat;
         background-size: contain;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
           .client {
             background: url('../images/logos/tl-white-logo.svg') no-repeat;
@@ -255,6 +263,7 @@
     .project-card.justeat {
       background: var(--justeat-1) url('../images/projects/case-study-cards/cs-card-justeat-mobile.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
       .client {
         background: url('../images/logos/justeat-black-logo.svg') no-repeat;
@@ -267,6 +276,7 @@
       &:hover {
         background: var(--justeat-2) url('../images/projects/case-study-cards/cs-card-justeat-mobile.png') 0 0 no-repeat;
         background-size: contain;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
           .client {
             background: url('../images/logos/justeat-white-logo.svg') no-repeat;
@@ -286,6 +296,7 @@
     .project-card.oatbook {
       background: var(--oatbook-1) url('../images/projects/case-study-cards/cs-card-oatbook-mobile.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
         h2 a, p.lead {
           color: #2a2a2a;
@@ -296,8 +307,9 @@
         }
 
         &:hover {
-          background: #ffc031 url('../images/projects/case-study-cards/cs-card-oatbook-mobile.png') 0 0 no-repeat;
+          background: #ffc031 url('../images/projects/case-study-cards/cs-card-oatbook-mobile-hover.png') 0 0 no-repeat;
           background-size: contain;
+          transition: background-image 0.3s ease; /* Smooth transition */
 
             h2 a:hover {
               color: var(--white);
@@ -332,6 +344,7 @@
     .project-card.recliningworm {
       background: var(--recliningworm-1) url('../images/projects/case-study-cards/cs-card-reclingingworm-mobile.png') 0 0 no-repeat;
       background-size: contain;
+      transition: background-image 0.3s ease; /* Smooth transition */
 
       .client {
         background: url('../images/logos/recliningworm-white-logo.svg') no-repeat;
@@ -345,6 +358,7 @@
       &:hover {
         background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-mobile.png') 0 0 no-repeat;
         background-size: contain;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
           .client {
             background: url('../images/logos/recliningworm-white-logo.svg') no-repeat;
@@ -370,11 +384,13 @@
         background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: var(--cookpad-3) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -382,11 +398,13 @@
         background: var(--sainsburys-1) url('../images/projects/case-study-cards/cs-card-sainsburys-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: var(--sainsburys-3) url('../images/projects/case-study-cards/cs-card-sainsburys-desktop-hover.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -394,11 +412,13 @@
         background: var(--trainline-1) url('../images/projects/case-study-cards/cs-card-trainline-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: var(--trainline-3) url('../images/projects/case-study-cards/cs-card-trainline-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -406,11 +426,13 @@
         background: var(--justeat-1) url('../images/projects/case-study-cards/cs-card-justeat-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: var(--justeat-2) url('../images/projects/case-study-cards/cs-card-justeat-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -418,11 +440,13 @@
         background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -430,11 +454,13 @@
         background: var(--oatbook-1) url('../images/projects/case-study-cards/cs-card-oatbook-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: #ffc031 url('../images/projects/case-study-cards/cs-card-oatbook-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
 
@@ -442,11 +468,13 @@
         background: var(--recliningworm-1) url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
         background-size: contain;
         background-position: right;
+        transition: background-image 0.3s ease; /* Smooth transition */
 
         &:hover {
           background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+          transition: background-image 0.3s ease; /* Smooth transition */
         }
       }
     }

@@ -48,7 +48,7 @@ canvas {
     text-align: left;
     margin-left: 0px;
     font-size: 1.9vh;
-    width: clamp(320px, 100%, 640px);
+    width: clamp(320px, 90%, 640px);
     line-height: 2.8vh;
     margin: 0px;
     animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
