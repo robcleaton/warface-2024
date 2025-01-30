@@ -220,22 +220,13 @@ footer {
     height: 48px;
     width: 144px;
   }
-  footer {
-    a {
-      color: var(--sainsburys-2);
-    }
-    a:hover {
-      color: var(--white);
-    }
-
-    .case-study {
-      .sheet {
-        a {
-          color: var(--sainsburys-1);
-        }
-        a:hover {
-          color: var(--white);
-        }
+  .case-study {
+    .sheet {
+      a {
+        color: var(--sainsburys-1);
+      }
+      a:hover {
+        color: var(--white);
       }
     }
   }
@@ -265,14 +256,6 @@ footer {
 }
 
 .trainline {
-  footer {
-    a {
-      color: var(--trainline-2);
-    }
-    a:hover {
-      color: var(--white);
-    }
-  }
   .case-study {
     .sheet {
       a, a:hover {
