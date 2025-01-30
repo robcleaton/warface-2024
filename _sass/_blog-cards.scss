@@ -26,11 +26,12 @@
       text-transform: none;
       font-size: 20px;
       word-spacing: -8px;
-      line-height: 36px;
+      line-height: 32px;
       margin: 0px;
 
       a:hover {
         text-decoration: underline;
+        color: var(--black);
       }
     }
     img {
