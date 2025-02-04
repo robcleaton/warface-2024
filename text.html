@@ -1,0 +1,60 @@
+---
+layout: testing
+title: Rob Cleaton – Product Designer
+excerpt: home
+permalink: /text
+---
+
+<style>
+body {
+ 	margin:0;
+ 	font-family: 'Calibre', sans-serif;
+ 	font-weight: 400;
+  background-color: red
+}
+
+.text-flip {
+  height: 46px;
+  overflow: hidden;
+}
+
+.text-flip span {
+    font-size: 40px;
+    color:#FFFFFF;
+    font-weight: 700;
+    line-height: 46px;
+    display: none;
+}
+
+.text-flip span.text-in-2 {
+	display: block;
+	animation: textIn .5s ease;
+}
+.text-flip span.text-out-2 {
+	animation: textOut 1s ease;
+}
+@keyframes textIn {
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut {
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
+}
+</style>
+
+<p class="text-flip">
+  <span>Design Systems</span>
+  <span>Product design</span>
+  <span>Mobile apps</span>
+  <span>Hello world</span>
+  <span>design leadership</span>
+</p>

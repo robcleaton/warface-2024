@@ -39,8 +39,6 @@ canvas {
     line-height: clamp(100px, 8.7vw, 128px);
     color: var(--grey-800);
     word-spacing: -6px;
-    animation: 'fadeUpIn' 2s;
-    -webkit-animation: 'fadeUpIn' 2s;
     position: relative;
   }
   p.lead {
@@ -51,8 +49,8 @@ canvas {
     width: clamp(320px, 90%, 640px);
     line-height: 2.8vh;
     margin: 0px;
-    animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
-    -webkit-animation: 'fadeUpIn' 2s forwards;
+    // animation: 'fadeUpIn' 2s forwards; /* 'forwards' ensures final state is retained */
+    // -webkit-animation: 'fadeUpIn' 2s forwards;
     position: relative;
     animation-delay: 0.6s;
   }

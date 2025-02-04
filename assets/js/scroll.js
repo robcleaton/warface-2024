@@ -1,70 +1,96 @@
-//Bootstrap tooltip
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+$(document).ready(function () {
+  // Bootstrap tooltip
+  $('[data-bs-toggle="tooltip"]').tooltip();
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    const headerOpacity = 1 - $(window).scrollTop() / $('.intro').height();
+  $(window).scroll(function () {
+    const intro = $(".intro");
+    const outro = $(".outro");
+    const headerIndicator = $("#indicator-header");
+    const footerIndicator = $("#indicator-footer");
 
-    // the indicator elements are red when the header/footer (respectively) are set to display:none
-    // and green when they are set to display:block
+    const scrollTop = $(window).scrollTop();
+    const headerOpacity = 1 - scrollTop / intro.height();
 
-    // header:
-    $("#indicator-header").text("Header opacity: " + headerOpacity.toFixed(2));
-    if(headerOpacity < 0) {
-      $(".intro").css("display", "none");
-      $("#indicator-header").css("background", "rgba(255,100,100,.5)");
+    // Header opacity handling
+    headerIndicator.text("Header opacity: " + headerOpacity.toFixed(2));
+
+    if (headerOpacity < 0) {
+      intro.hide();
+      headerIndicator.css("background", "rgba(255,100,100,.5)");
     } else {
-      $(".intro").css("display", "block");
-      $(".intro").css("opacity", headerOpacity);
-      $("#indicator-header").css("background", "rgba(100,255,100,.5)");
+      intro.show().css("opacity", headerOpacity);
+      headerIndicator.css("background", "rgba(100,255,100,.5)");
     }
 
+    // Footer opacity handling
+    const scrollBottom = $(document).height() - $(window).height() - scrollTop;
+    footerIndicator.text("To bottom: " + ~~scrollBottom);
 
-    // footer:
-    const scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-
-    $("#indicator-footer").text("To bottom: " + ~~scrollBottom);
-
-    if(scrollBottom > $(".outro").height()) {
-      $(".outro").css("display", "none");
-      $("#indicator-footer").css("background", "rgba(255,100,100,.5)");
+    if (scrollBottom > outro.height()) {
+      outro.hide();
+      footerIndicator.css("background", "rgba(255,100,100,.5)");
     } else {
-      $(".outro").css("display", "block");
-      $("#indicator-footer").css("background", "rgba(100,255,100,.5)");
-      const footerOpacity = 1 - scrollBottom/$(".outro").height();
-    $(".outro").css("opacity", footerOpacity);
+      outro.show();
+      footerIndicator.css("background", "rgba(100,255,100,.5)");
+      const footerOpacity = 1 - scrollBottom / outro.height();
+      outro.css("opacity", footerOpacity);
     }
-
   });
+
+  // Animate intro text
+  const titles = document.querySelectorAll(".animate-text > *");
+  if (titles.length > 0) {
+    let index = 0;
+    const textInTimer = 3000;
+    const textOutTimer = 2800;
+
+    function animateIntroText() {
+      titles.forEach(title => title.classList.remove("text-in", "text-out"));
+
+      titles[index].classList.add("text-in");
+
+      setTimeout(() => {
+        titles[index].classList.add("text-out");
+      }, textOutTimer);
+
+      setTimeout(() => {
+        index = (index + 1) % titles.length;
+        animateIntroText();
+      }, textInTimer);
+    }
+
+    animateIntroText();
+  }
 });
 
-// Animage intro text
-const {children: titles} = document.querySelector(".animate-text");
-const txtsLen = titles.length;
-let index = 0;
-const textInTimer = 3000;
-const textOutTimer = 2800;
+// Animate text flip
+window.onload = function () {
+  const flipContainer = document.querySelector(".text-flip");
+  if (flipContainer) {
+    const titles = flipContainer.children;
+    if (titles.length > 0) {
+      let index = 0;
+      const textInTimer = 1000;
+      const textOutTimer = 1000;
 
-function animateText() {
-  for (let i = 0; i < txtsLen; i++) {
-    titles[i].classList.remove("text-in", "text-out");
-  }
-  titles[index].classList.add("text-in");
+      function animateFlipText() {
+        for (let i = 0; i < titles.length; i++) {
+          titles[i].classList.remove("text-in-2", "text-out-2");
+        }
 
-  setTimeout(function () {
-    titles[index].classList.add("text-out");
-  }, textOutTimer);
+        titles[index].classList.add("text-in-2");
 
-  setTimeout(function () {
-    if (index == txtsLen - 1) {
-      index = 0;
-    } else {
-      index++;
+        setTimeout(() => {
+          titles[index].classList.add("text-out-2");
+        }, textOutTimer);
+
+        setTimeout(() => {
+          index = (index + 1) % titles.length;
+          animateFlipText();
+        }, textInTimer);
+      }
+
+      animateFlipText();
     }
-    animateText();
-  }, textInTimer);
-}
-
-window.onload = animateText;
+  }
+};
