@@ -1,0 +1,188 @@
+<style>
+
+  h1 {
+    margin: 0px;
+  }
+  .intro .brand-wheel {
+    margin-top: 60px;
+  }
+
+.intro.hero {
+
+  .Splitcontainer {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    gap: 0px;
+    overflow: hidden;
+    padding-bottom: 4px;
+
+    .line {
+      height: clamp(60px, 15.2vw, 198px);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .line.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .Splitcontainer.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .intro.hero {
+      transform: translate(0%, 20%);
+
+      .container-flex {
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 34vw;
+      }
+      .brand-wheel {
+        margin-top: 0px;
+      }
+    }
+}
+
+@media only screen and (min-width: 601px) {
+  .intro.hero {
+    transform: translate(-50%, -50%);
+
+      .Splitcontainer {
+        .line {
+          height: clamp(100px, 8.7vw, 128px);
+        }
+      }
+
+      p {
+        margin-top: clamp(194px, 24vw, 194px)
+      }
+    }
+  .sheet {
+    margin-top: clamp(888px, 69vw, 85vh);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+
+  .intro.hero {
+    transform: translate(-50%, -50%);
+
+    .Splitcontainer {
+      display: flex;
+      flex-direction: row;
+
+      .line {
+        margin-right: 20px;
+        height: clamp(100px, 8.7vw, 128px);
+      }
+    }
+    p {
+      margin-top: clamp(104px, 9.2vw, 114px)
+    }
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .intro.hero {
+
+    p {
+      margin-top: clamp(114px, 10vw, 128px)
+    }
+  }
+}
+
+</style>
+
+<div class="intro hero">
+  <div class="container-flex">
+
+    <div class="row">
+      <div class="col-xl-1"></div>
+
+      <div class="col-xl-9">
+        <h1 class="animate mb-0">Crafting <br>Innovative</h1>
+        <!-- <h1 class="animate mb-0">Design thinking through making</h1> -->
+        <!-- <h1 class="animate mb-0">Design for <br>change: crafting</h1> -->
+        <!-- <h1 class="animate mb-0">Thinking <br>& making</h1> -->
+        <!-- <h1 class="mb-0">Designing for change, <br> making</h1> -->
+
+        <div class="animate">
+          <div class="Splitcontainer">
+              <h1 class="line">Product</h1>
+              <h1 class="line">Design</h1>
+          </div>
+          <div class="Splitcontainer">
+              <h1 class="line">Design</h1>
+              <h1 class="line">Systems</h1>
+          </div>
+          <div class="Splitcontainer">
+              <h1 class="line">UI/UX</h1>
+              <h1 class="line">Design</h1>
+          </div>
+          <div class="Splitcontainer">
+              <h1 class="line">Product</h1>
+              <h1 class="line">Experiences</h1>
+          </div>
+          <div class="Splitcontainer">
+              <h1 class="line">Mobile</h1>
+              <h1 class="line">Apps</h1>
+          </div>
+        </div>
+
+        <p class="animate lead">Works of Rob Cleaton. 18 years experience, leading, growing and supporting businesses and design teams wherever they are in their design journey.</p>
+        <!-- <p class="animate lead" style="margin-top: 124px">Works of Rob Cleaton. 18 years experience specialising in design leadership, design systems and mobile product design.</p> -->
+        <!-- <p class="animate lead" style="margin-top: 124px">Works of Rob Cleaton. Design for change, thinking though making. 18 years experience.</p> -->
+
+      </div>
+
+      <div class="col-xl-2"></div>
+    </div>
+
+  </div>
+
+  {% include clients-carousel.html %}
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+     const containers =      document.querySelectorAll('.Splitcontainer');
+     let index = 0;
+
+     function showNext() {
+         // Hide all containers and lines
+         containers.forEach(el => {
+             el.classList.remove('active');
+             el.querySelectorAll('.line').forEach(line => line.classList.remove('show'));
+         });
+
+         // Show the next container
+         const currentContainer = containers[index];
+         currentContainer.classList.add('active');
+
+         // Animate lines separately with a small delay
+         const lines = currentContainer.querySelectorAll('.line');
+         lines.forEach((line, i) => {
+             setTimeout(() => {
+                 line.classList.add('show');
+             }, i * 500); // Delay for each line
+         });
+
+         // Move to the next container in cycle
+         index = (index + 1) % containers.length;
+     }
+
+     showNext(); // Show first container immediately
+     setInterval(showNext, 3000); // Change every 3 seconds
+ });
+</script>
