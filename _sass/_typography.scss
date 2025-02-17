@@ -42,14 +42,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 18vw;
 }
 .display-6 {
-  font-size: 22vw;
-  line-height: 16vw;
+  font-size: 14vw;
+  line-height: 9.4vw;
 }
 
 h1 {
-  font-size: 18vw;
-  line-height: 12.9vw;
-}
+  font-size: 14vw;
+  line-height: 9.4vw;}
 h2 {
   font-size: 9vh;
   line-height: 6.4vh;
@@ -87,6 +86,13 @@ p.lead {
   a:hover {
     text-decoration: none;
   }
+}
+.eyebrow {
+  display: flex;
+  font-size: clamp(16px, 3vw, 20px);
+  line-height: 24px;
+  font-family: var(--mono);
+  letter-spacing: 2px;
 }
 b, strong {
   color: var(--grey-200);
@@ -152,7 +158,10 @@ ul.tag-chips {
     color: var(--warface);
   }
 }
-
+.stat:after {
+  content:"%";
+  font-size: clamp(20px, 11vw, 80px);
+}
 .apostrophe:before {
   content:"\2019";
 }
