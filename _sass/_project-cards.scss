@@ -67,7 +67,7 @@
 
 // Clients
 
-// Cookpad
+  // Cookpad
   .project-card.cookpad {
     background: var(--cookpad-1) url('../images/projects/case-study-cards/cs-card-cookpad-mobile.png') 0 0 no-repeat;
     background-size: contain;
@@ -100,6 +100,22 @@
             border: 1px solid var(--cookpad-2);
             color: var(--cookpad-3);
           }
+      }
+    }
+
+  // Cookpad – MISE
+  .project-card.cookpad.mise {
+    display: none;
+    background: #F8F6F3 url('../images/projects/case-study-cards/cs-card-cookpad-mise-desktop.png') 0 0 no-repeat;
+    background-size: cover;
+
+      h2 a {
+        color: var(--cookpad-1);
+      }
+
+      &:hover {
+        background: #F8F6F3 url('../images/projects/case-study-cards/cs-card-cookpad-mise-desktop.png') 0 0 no-repeat;
+        background-size: cover;
       }
     }
 
@@ -172,47 +188,92 @@
 
 
   // Lloyds open banking
-    .project-card.lloyds {
-      background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-mobile.png') 0 0 no-repeat;
+  .project-card.lloyds {
+    background: var(--lloyds-1) url('../images/projects/case-study-cards/cs-card-lloyds-mobile.png') 0 0 no-repeat;
+    background-size: contain;
+
+    .client {
+      background: url('../images/logos/lloyds-black-logo.svg') no-repeat;
+      height: 44px;
+      background-size: contain;
+    }
+    h2 a, p.lead {
+      text-decoration: none;
+      color: var(--lloyds-3);
+    }
+    ul.project-tags li {
+      border: 1px solid var(--lloyds-3);
+      color: var(--lloyds-3);
+    }
+
+    &:hover {
+      background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-mobile-hover.png') 0 0 no-repeat;
       background-size: contain;
 
-      .client {
-        background: url('../images/logos/lloyds-black-logo.svg') no-repeat;
-        height: 44px;
-        background-size: contain;
-      }
-      h2 a, p.lead {
-        text-decoration: none;
-        color: var(--lloyds-3);
-      }
-      ul.project-tags li {
-        border: 1px solid var(--lloyds-3);
-        color: var(--lloyds-3);
-      }
-
-      &:hover {
-        background: var(--lloyds-3) url('../images/projects/case-study-cards/cs-card-lloyds-mobile-hover.png') 0 0 no-repeat;
-        background-size: contain;
-
-          .client {
-            background: url('../images/logos/lloyds-white-logo.svg') no-repeat;
-            background-size: contain;
-          }
-          h2 a, p.lead {
-            color: var(--lloyds-1);
-          }
-          h2 a:hover {
-            color: var(--white);
-          }
-          ul.project-tags li {
-            border: 1px solid var(--lloyds-1);
-            color: var(--lloyds-1);
-          }
-          ul.project-tags li:hover {
-            background-color: var(--lloyds-1);
-            color: var(--lloyds-3);
-          }
+        .client {
+          background: url('../images/logos/lloyds-white-logo.svg') no-repeat;
+          background-size: contain;
         }
+        h2 a, p.lead {
+          color: var(--lloyds-1);
+        }
+        h2 a:hover {
+          color: var(--white);
+        }
+        ul.project-tags li {
+          border: 1px solid var(--lloyds-1);
+          color: var(--lloyds-1);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--lloyds-1);
+          color: var(--lloyds-3);
+        }
+      }
+    }
+
+  // Matillion
+  .project-card.matillion {
+    display: none;
+    background: var(--matillion-1) url('../images/projects/case-study-cards/cs-card-matillion-mobile.png') 0 0 no-repeat;
+    background-size: contain;
+
+    h2 a, p.lead {
+      color: var(--matillion-3);
+    }
+    ul.project-tags li {
+      border: 1px solid var(--matillion-3);
+      color: var(--matillion-3);
+    }
+
+    .client {
+      background: url('../images/logos/matillion-black-logo.svg') no-repeat;
+      height: 32px;
+      background-size: contain;
+    }
+
+    &:hover {
+      background: var(--matillion-3) url('../images/projects/case-study-cards/cs-card-matillion-mobile-hover.png') 0 0 no-repeat;
+      background-size: contain;
+
+        .client {
+          background: url('../images/logos/matillion-white-logo.svg') no-repeat;
+          background-size: contain;
+        }
+        h2 a, p.lead {
+          color: var(--matillion-1);
+        }
+        ul.project-tags li {
+          border: 1px solid var(--matillion-1);
+          color: var(--matillion-1);
+        }
+        h2 a:hover {
+          color: var(--white);
+        }
+        ul.project-tags li:hover {
+          background-color: var(--matillion-1);
+          color: var(--white);
+        }
+      }
     }
 
   // Trainline
@@ -363,6 +424,8 @@
           }
       }
     }
+
+
     // Desktop Large
     @media only screen and (min-width: 1350px) {
 
@@ -373,6 +436,19 @@
 
         &:hover {
           background: var(--cookpad-3) url('../images/projects/case-study-cards/cs-card-cookpad-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      // Cookpad – MISE
+      .project-card.cookpad.mise {
+        background: #F8F6F3 url('../images/projects/case-study-cards/cs-card-cookpad-mise-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: #F8F6F3 url('../images/projects/case-study-cards/cs-card-cookpad-mise-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
         }

@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 18vw;
 }
 .display-6 {
-  font-size: 14vw;
-  line-height: 9.4vw;
+  font-size: clamp(88px, 11vw, 200px);
+  line-height: clamp(62px, 7.6vw, 138px);
 }
 
 h1 {
