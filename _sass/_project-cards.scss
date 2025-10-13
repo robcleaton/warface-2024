@@ -157,7 +157,6 @@
       }
     }
 
-
   // GOVUK
   .project-card.govuk {
     background: var(--govuk-1);
@@ -185,7 +184,6 @@
         }
       }
     }
-
 
   // Lloyds open banking
   .project-card.lloyds {
@@ -371,23 +369,6 @@
         }
     }
 
-  // BackBeat
-    .project-card.backbeat {
-      background: coral;
-      .client {
-        background: url('../images/logos/backbeat-black.svg') no-repeat;
-        height: 52px;
-        background-size: contain;
-      }
-    }
-    .project-card.backbeat:hover {
-      background: blue;
-      .client {
-        background: url('../images/logos/backbeat-white.svg') no-repeat;
-        height: 52px;
-        background-size: contain;
-      }
-    }
 
   // RecliningWorm
     .project-card.recliningworm {
@@ -423,6 +404,44 @@
             color: var(--white);
           }
       }
+    }
+
+    // Shithead
+    .project-card.shithead {
+      background: url('../images/projects/case-study-cards/cs-card-shithead-mobile.png') 0 0 no-repeat;
+      background-color: var(--shithead-1);
+      background-size: contain;
+
+      .client {
+        background: url('../images/logos/shithead-darkRed-logo.svg') no-repeat;
+        height: 52px;
+        background-size: contain;
+      }
+      h2 a, p.lead {
+        color: var(--shithead-2);
+      }
+
+      &:hover {
+        background: url('../images/projects/case-study-cards/cs-card-shithead-mobile.png') 0 0 no-repeat;
+        background-color: var(--shithead-2);
+        background-size: contain;
+
+          .client {
+            background: url('../images/logos/shithead-red-logo.svg') no-repeat;
+            height: 52px;
+            background-size: contain;
+          }
+          h2 a, p.lead {
+            color: var(--shithead-1);
+          }
+          h2 a:hover {
+            color: var(--shithead-3);
+          }
+          ul.project-tags li:hover {
+            background-color: var(--shithead-1);
+            color: var(--shithead-3);
+          }
+      } 
     }
 
 
@@ -521,6 +540,17 @@
 
         &:hover {
           background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+      .project-card.shithead {
+        background-image: url('../images/projects/case-study-cards/cs-card-shithead-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background-image: url('../images/projects/case-study-cards/cs-card-shithead-desktop.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
         }

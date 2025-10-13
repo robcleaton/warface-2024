@@ -116,6 +116,16 @@
     }
   }
 
+  // Shithead
+  .shithead {
+    .logo-div.shithead {
+      background: url('../images/logos/shithead-white-logo.svg') center no-repeat;
+      background-size: contain;
+      height: 60px;
+      width: 400px;
+    }
+  }
+
 .carwow {
   .intro {
     background: url('/assets/images/projects/carwow/carwow-intro.png') center 30% no-repeat;
