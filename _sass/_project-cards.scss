@@ -389,6 +389,40 @@
       }
     }
 
+  // Shithead
+    .project-card.shithead {
+      background: #F8331E;
+
+      .client {
+        background: url('../images/logos/shithead-logo-white.svg') no-repeat;
+        height: 32px;
+        background-size: contain;
+      }
+      h2 a, p.lead {
+        color: #1E1E1E;
+      }
+      ul.project-tags li {
+        border: 1px solid #1E1E1E;
+        color: #1E1E1E;
+      }
+    }
+    .project-card.shithead:hover {
+      background: #540800;
+
+      .client {
+        background: url('../images/logos/shithead-logo-white.svg') no-repeat;
+        height: 32px;
+        background-size: contain;
+      }
+      h2 a, p.lead {
+        color: #FEFFF1;
+      }
+      ul.project-tags li {
+        border: 1px solid #FEFFF1;
+        color: #FEFFF1;
+      }
+    }
+
   // RecliningWorm
     .project-card.recliningworm {
       background: var(--recliningworm-1) url('../images/projects/case-study-cards/cs-card-reclingingworm-mobile.png') 0 0 no-repeat;
