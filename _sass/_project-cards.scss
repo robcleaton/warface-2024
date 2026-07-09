@@ -391,7 +391,8 @@
 
   // Shithead
     .project-card.shithead {
-      background: #F8331E;
+      background: #F8331E url('../images/projects/case-study-cards/cs-card-shithead-mobile.png') 0 0 no-repeat;
+      background-size: contain;
 
       .client {
         background: url('../images/logos/shithead-logo-white.svg') no-repeat;
@@ -407,7 +408,8 @@
       }
     }
     .project-card.shithead:hover {
-      background: #540800;
+      background: #540800 url('../images/projects/case-study-cards/cs-card-shithead-mobile-hover.png') 0 0 no-repeat;
+      background-size: contain;
 
       .client {
         background: url('../images/logos/shithead-logo-white.svg') no-repeat;
@@ -555,6 +557,18 @@
 
         &:hover {
           background: #542188 url('../images/projects/case-study-cards/cs-card-reclingingworm-desktop.png') 0 0 no-repeat;
+          background-size: contain;
+          background-position: right;
+        }
+      }
+
+      .project-card.shithead {
+        background: #F8331E url('../images/projects/case-study-cards/cs-card-shithead-desktop.png') 0 0 no-repeat;
+        background-size: contain;
+        background-position: right;
+
+        &:hover {
+          background: #540800 url('../images/projects/case-study-cards/cs-card-shithead-mobile.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
         }
