@@ -396,7 +396,7 @@
 
       .client {
         background: url('../images/logos/shithead-logo-white.svg') no-repeat;
-        height: 32px;
+        height: 23.04px;
         background-size: contain;
       }
       h2 a, p.lead {
@@ -413,7 +413,7 @@
 
       .client {
         background: url('../images/logos/shithead-logo-white.svg') no-repeat;
-        height: 32px;
+        height: 23.04px;
         background-size: contain;
       }
       h2 a, p.lead {
@@ -567,10 +567,18 @@
         background-size: contain;
         background-position: right;
 
+        .client {
+          height: 32px;
+        }
+
         &:hover {
           background: #540800 url('../images/projects/case-study-cards/cs-card-shithead-mobile.png') 0 0 no-repeat;
           background-size: contain;
           background-position: right;
+
+          .client {
+            height: 32px;
+          }
         }
       }
     }
